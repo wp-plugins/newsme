@@ -1,0 +1,9 @@
+# Version 0.11.0 
+
+* Removed a conditional to check for the widget to be inside WP's
+	`main_query`. This allows the widget to be displayed even inside 
+	custom queries inside the template.
+
+# Version 0.10.10
+
+* Check for curl functions to be installed, show an error otherwise.
