@@ -1,0 +1,119 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpNewsatme 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-30 09:19-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Fabrizio Regini <freegenie@gmail.com>\n"
+"Language-Team: Newsatme <admin@newsatme.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "enter your email in the box below:"
+msgstr "lascia la tua email nel box sotto:"
+
+msgid "If you want updates for" 
+msgstr "Per ricevere news via e-mail su"
+
+msgid "You already subscribed to this topic."
+msgstr "Sei già iscritto a questo argomento."
+
+msgid "Discover" 
+msgstr "Scopri"
+
+msgid "Enter your email address"
+msgstr "Inserisci il tuo indirizzo email"
+
+msgid "Subscribe"
+msgstr "Iscriviti"
+
+msgid "Please enter a valid email"
+msgstr "L'email inserita non è valida"
+
+msgid "You must accept terms of service"
+msgstr "E' obbligatorio acconsentire all'informativa della privacy!"
+
+msgid "An error occurred during subscription request" 
+msgstr "Si è verificato un errore durante l'invio della richiesta."
+
+msgid "I have read and agree to the %s"
+msgstr "Ho letto e acconsento %s"
+
+msgid "Privacy Policy"
+msgstr "Informativa sulla Privacy"
+
+msgid "I consent to the processing of personal data referred in %s"
+msgstr "Acconsento al trattamento dei dati personali di cui al punto %s"
+
+msgid "Purpose of the Treatment"
+msgstr "Fialità del tattamento"
+
+msgid "Display Settings"
+msgstr "Opzioni di visualizzazione"
+
+msgid "Display even without tags"
+msgstr "Mostra anche senza tags"
+
+msgid "Show tags in call-to-action"
+msgstr "Mostra tags nella call-to-action"
+
+msgid "DEM authorization"
+msgstr "Autorizzazione DEM"
+
+msgid "Widget placement"
+msgstr "Posizionamento del widget"
+
+msgid "Advanced options"
+msgstr "Opzioni avanzate"
+
+msgid "Security"
+msgstr "Sicurezza"
+
+msgid "Show the widget even without News@me tags"
+msgstr "Mostra il widget anche se non ci sono tags News@me"
+
+msgid "Show tags instead of title in call-to-action"
+msgstr "Mostra i tag invece del titolo nella call-to-action"
+
+msgid "Don't show checkbox for DEM authorization"
+msgstr "Non mostrare la checkbox per l'autorzzazione alle DEM"
+
+msgid "Select how the widget will be shown on the page"
+msgstr "Scegli la modalità con cui viene mostrato il widget nella pagina"
+
+msgid "Never display widget"
+msgstr "Non mostrare mai il widget"
+
+msgid "Automatically at the end of each article"
+msgstr "In automatico alla fine di ogni articolo"
+
+msgid "With a placeholder inside the article"
+msgstr "Con un placeholder nell'articolo"
+
+msgid "With a tag inside the template"
+msgstr "Con un tag nel template"
+
+msgid "widget is hidden in any case, even if a placeholder is set inside the article or the template function is used."
+msgstr "il widget viene nascosto in ogni caso, anche se presente un segnaposto nell'articolo o un tag nel template."
+
+msgid "widget is shown just after the article body in detail pages."
+msgstr "il widget verrà accodato alla fine dell'articolo, solo nelle pagine interne."
+
+msgid "when this option is active, you need to set a placeholder inside the article's body where you want the widget to be shown. Placeholder to use is the following: <pre> {{NEWSATME}} </pre>" 
+msgstr "quando questa opzione è attiva, è necessario posizionare  un placeholder all'iterno dell'articolo in corrispondenza di dove si vuole mostrare il widget. Il placeholder da inserire è il seguente: <pre> {{NEWSATME}} </pre>"
+
+msgid "widget is shown by using the following tag inside your template:  <pre> <&#63;php echo newsatme_subscribe(); ?> </pre> Only use this tag when a single article is being displayed on the page."
+msgstr "il widget viene mostrato da un tag php nel template. Il tag da configurare è il seguente: <pre> <&#63;php echo newsatme_subscribe(); ?> </pre> Non usare questo tag in elenci di post, usalo solo nei post singoli."
+
+msgid "Thanks for your interest in: %s"
+msgstr "Grazie di aver richiesto aggiornamenti sul tema: %s"
+
+msgid "If you find other intersting articles on our site repeat the subscription."
+msgstr "Se trovi altri argomenti interessanti sul nostro sito ripeti l'iscrizione."
