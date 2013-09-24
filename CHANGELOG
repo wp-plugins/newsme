@@ -1,3 +1,11 @@
+# Version 1.0.0 
+
+* Breaking change, app host changed to app.newsatme.com. 
+	
+# Version 0.11.1 
+
+* Changelog file added to release
+
 # Version 0.11.0 
 
 * Removed a conditional to check for the widget to be inside WP's

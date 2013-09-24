@@ -4,7 +4,7 @@ class NewsAtMe_ClientException extends Exception {}
 
 class NewsAtMe_Client {
   const API_VERSION = 'v1';
-  const BASE_URL = 'https://newsatme.com/'; 
+  const BASE_URL = 'https://app.newsatme.com/'; 
 
   var $api;
   var $output;

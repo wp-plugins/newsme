@@ -75,7 +75,7 @@
       </form>   
     <!-- Article subscription ends here --></div>
     
-    <div class="newsatme_powered"><?php _e('Discover', wpNewsAtMe::WPDOMAIN); ?> <a href="https://newsatme.com" class="newsatme_powered_link" title="Un modo innovativo di ricevere news">News@Me</a><span class="newsatme_mini_logo">&nbsp;</span>
+    <div class="newsatme_powered"><?php _e('Discover', wpNewsAtMe::WPDOMAIN); ?> <a href="https://app.newsatme.com" class="newsatme_powered_link" title="Un modo innovativo di ricevere news">News@Me</a><span class="newsatme_mini_logo">&nbsp;</span>
     </div>
     
   <!-- Subscription callout ends here --></div>
