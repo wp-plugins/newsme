@@ -53,7 +53,7 @@ msgid "I consent to the processing of personal data referred in %s"
 msgstr "Acconsento al trattamento dei dati personali di cui al punto %s"
 
 msgid "Purpose of the Treatment"
-msgstr "Fialità del tattamento"
+msgstr "Finalità del tattamento"
 
 msgid "Display Settings"
 msgstr "Opzioni di visualizzazione"
