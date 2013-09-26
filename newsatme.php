@@ -3,7 +3,7 @@
 Plugin Name: wpNewsAtMe
 Description: wpNewsAtMe sends email alerts using news@me
 Author: News@me
-Version: 1.0.1
+Version: 1.0.2
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -33,7 +33,7 @@ function wpnewsatme_init() {
 
 class wpNewsAtMe {
 
-  const VERSION = '1.0.1'; 
+  const VERSION = '1.0.2'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
@@ -153,7 +153,7 @@ class wpNewsAtMe {
   }
 
   static function modifyPostContent($content) {
-    if (!is_single()) return ; 
+    if (!is_single()) return $content ; 
 
     global $post;
 
