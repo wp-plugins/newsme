@@ -6,7 +6,7 @@
   <?php printf(__('Thanks for your interest in: %s', wpNewsAtMe::WPDOMAIN), $subject); ?>
   <br/>
   <span class="bottomline_message">
-    <?php _e('if you find other intersting articles on our site repeat the subscription', wpNewsAtMe::WPDOMAIN); ?>
+    <?php _e('If you find other intersting articles on our site repeat the subscription.', wpNewsAtMe::WPDOMAIN); ?>
   </span>
 <?php } else { ?> 
 <span class="topline_message"><?php _e('You already subscribed to this topic.', wpNewsAtMe::WPDOMAIN); ?></span>
