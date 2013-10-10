@@ -1,3 +1,11 @@
+# Version 1.0.4 
+
+* Changes metadata into newsatme.php file
+
+# Version 1.0.3 
+
+* Fix a translation bug in Italian language printing string in English.
+
 # Version 1.0.2
 
 * Fix a bug in the_content filter for compatibility with older themes.

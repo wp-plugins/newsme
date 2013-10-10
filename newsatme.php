@@ -1,9 +1,11 @@
 <?php
 /* 
-Plugin Name: wpNewsAtMe
-Description: wpNewsAtMe sends email alerts using news@me
-Author: News@me
-Version: 1.0.3
+Plugin Name: News@Me
+Description: News@Me is a software that simplifies subscriptions to your newsletters by attracting subscribers in a new way. It creates the newsletter and sends out the articles for you, it's all automated. 
+Author: News@Me 
+Author URI: http://newsatme.com/
+Plugin URI: http://wordpress.org/plugins/newsme/
+Version: 1.0.4
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -33,7 +35,7 @@ function wpnewsatme_init() {
 
 class wpNewsAtMe {
 
-  const VERSION = '1.0.3'; 
+  const VERSION = '1.0.4'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 

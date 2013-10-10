@@ -1,6 +1,5 @@
-=== Plugin Name ===
+=== News@Me ===
 Contributors: newsatme
-Donate link: https://newsatme.com/
 Tags: tags, community
 Requires at least: 3.5.0
 Tested up to: 3.6.1
@@ -30,3 +29,30 @@ and sends it out to the readers that are truly interested.
 
 This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
+
+== CHANGELOG == 
+= 1.0.4 = 
+* CHANGE: fix and improve plugin's metadata
+
+= 1.0.3 =
+* Fix a translation bug in Italian language printing string in English.
+
+= 1.0.2 =
+* Fix a bug in the_content filter for compatibility with older themes.
+
+= 1.0.1 =
+* Typo fixed
+
+= 1.0.0 =
+* Breaking change, app host changed to app.newsatme.com. 
+	
+= 0.11.1 =
+* Changelog file added to release
+
+= 0.11.0 =
+* Removed a conditional to check for the widget to be inside WP's
+	`main_query`. This allows the widget to be displayed even inside 
+	custom queries inside the template.
+
+= 0.10.10 =
+* Check for curl functions to be installed, show an error otherwise.
