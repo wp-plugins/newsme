@@ -1,3 +1,8 @@
+# Version 1.0.5 
+
+* add infobox sidebar in plugin settings
+* fix a bug with post sync check in admin post list
+
 # Version 1.0.4 
 
 * Changes metadata into newsatme.php file

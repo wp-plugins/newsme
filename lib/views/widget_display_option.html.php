@@ -17,11 +17,9 @@
   </select>
 </div>
 
-<div>
-
-  <h3>Help</h3>
-
+<div class="inside">
   <ul>
+  	<li><b>Widget placement help</b></li>
     <li>
     <strong><?php _e('Never display widget', wpNewsAtMe::WPDOMAIN); ?>:</strong> 
       <?php _e('widget is hidden in any case, even if a placeholder is set inside the article or the template function is used.', wpNewsAtMe::WPDOMAIN); ?>  

@@ -5,7 +5,7 @@ Description: News@Me is a software that simplifies subscriptions to your newslet
 Author: News@Me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 1.0.4
+Version: 1.0.5
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -35,7 +35,7 @@ function wpnewsatme_init() {
 
 class wpNewsAtMe {
 
-  const VERSION = '1.0.4'; 
+  const VERSION = '1.0.5'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
@@ -488,7 +488,6 @@ class wpNewsAtMe {
   // 2) Ability to connect to news@me
   // 3) The current post to be in sync with the remote one
   static function healthCheck() {
-    global $post;
     self::getConnected();
 
     if (!(function_exists('curl_init') && function_exists('curl_exec')) ) {
@@ -502,16 +501,21 @@ class wpNewsAtMe {
       NewsAtMe_Views::renderServerStatus();
     }
 
-    else if ($post) {
-      $npost = new NewsAtMe_Post($post);
-      if ($npost->is_post_saved()) {
-        try {
-          if (!self::$newsatme_client->checkArticleSignature($post->ID, $npost->signature())) {
-            NewsAtMe_Views::renderPostOutOfSync($npost); 
-          }
-        } catch ( Exception $e) {
-          // TODO: handle exception here
+    if (strstr($_SERVER['REQUEST_URI'], 'wp-admin/post.php')) {
+      self::checkCurrentPostSync(); 
+    }
+  }
+
+  static function checkCurrentPostSync() {
+    global $post;
+    $npost = new NewsAtMe_Post($post);
+    if ($npost->is_post_saved()) {
+      try {
+        if (!self::$newsatme_client->checkArticleSignature($post->ID, $npost->signature())) {
+          NewsAtMe_Views::renderPostOutOfSync($npost); 
         }
+      } catch ( Exception $e) {
+        // TODO: handle exception here
       }
     }
   }

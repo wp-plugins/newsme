@@ -11,9 +11,9 @@ Boost traffic and retain loyal users by reinventing your newsletter.
 
 == Description ==
 
-News@Me is a software that simplifies subscriptions to your newsletters by attracting 
-subscribers in a new way.  It creates the newsletter and sends out the articles for you,
-it's all automated.  And you'll have a new source of loyal traffic..isn't that cool?
+News@Me is a software that simplifies subscriptions to your newsletters by
+attracting subscribers in a new way. It creates the newsletter and sends out
+the articles for you, it's all automated.
 
 News@Me allows you to be less dependent on Google and offers you a new source of loyal traffic. 
 You will increase the number of followers of your newsletter because the reader is asked for 
@@ -31,6 +31,10 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
+= 1.0.5 = 
+* ADD: info box in plugin settings sidebar
+* FIX: post sync check to be perfomed only in post detail
+
 = 1.0.4 = 
 * CHANGE: fix and improve plugin's metadata
 
