@@ -1,3 +1,8 @@
+# Version 1.0.6
+
+* adding informations on WP and plugin's version on API calls
+* optional object wrapper key removed from articles and subscriptions
+
 # Version 1.0.5 
 
 * add infobox sidebar in plugin settings

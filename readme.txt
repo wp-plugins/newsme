@@ -31,6 +31,10 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
+= 1.0.6 =
+* ADD: WP version and plugin version in API calls
+* FIX: articles and subscriptions no longer use verborse params wrapper
+
 = 1.0.5 = 
 * ADD: info box in plugin settings sidebar
 * FIX: post sync check to be perfomed only in post detail

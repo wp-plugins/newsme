@@ -49,9 +49,7 @@ class NewsAtMe_Client {
   }
 
   public function saveArticle($newsatme_post) {
-    return $this->request('articles', array(
-      'article' => $newsatme_post->attributes_with_signature(),
-    ));
+    return $this->request('articles', $newsatme_post->attributes_with_signature()); 
   }
 
   public function deleteArticle($remote_id) {
@@ -60,14 +58,12 @@ class NewsAtMe_Client {
 
   public function saveSubscription($email, $id, $title, $url, $tags, $dem_authorized) {
     $response = $this->request('subscription', array(
-      'subscription' => array(
-        'email' => $email,
-        'title' => $title,
-        'remote_id' => $id,
-        'article_url' => $url,
-        'tags_array' => explode(',', $tags),
-        'dem_authorized' => $dem_authorized
-        )
+      'email' => $email,
+      'title' => $title,
+      'remote_id' => $id,
+      'article_url' => $url,
+      'tags_array' => explode(',', $tags),
+      'dem_authorized' => $dem_authorized
       )
     );
 
@@ -83,7 +79,11 @@ class NewsAtMe_Client {
 	 * @return array|string|NewsAtMe_ClientException
 	 */
 	function request($method, $args = array(), $http = 'POST', $output = 'json') {
+    global $wp_version; 
+
     $this->output = $output;
+
+    $info = array('_plv' => wpNewsAtMe::VERSION, '_wpv' => $wp_version); 
 
 		$api_version = self::API_VERSION;
 		$dot_output = ('json' == $output) ? '' : ".{$output}";
@@ -100,6 +100,7 @@ class NewsAtMe_Client {
         ini_set("arg_separator.output", "&");
       }
 
+      $args = array_merge($args, $info); 
       $url .= '?' . http_build_query($args);
 
       if ($sep_changed) {
@@ -110,6 +111,7 @@ class NewsAtMe_Client {
       break;
 
     case 'POST':
+      $url .= '?' . http_build_query($info); 
       $response = $this->http_request($url, $args, 'POST');
       break;
 
