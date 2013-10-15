@@ -70,13 +70,12 @@
             <?php } ?>
                 
           <!-- Privacy box ends here --></div>
-                
-       
+        
       </form>   
     <!-- Article subscription ends here --></div>
     
-    <div class="newsatme_powered"><?php _e('Discover', wpNewsAtMe::WPDOMAIN); ?> <a href="https://app.newsatme.com" class="newsatme_powered_link" title="Un modo innovativo di ricevere news">News@Me</a><span class="newsatme_mini_logo">&nbsp;</span>
+    <div class="newsatme_powered"><?php _e('Discover', wpNewsAtMe::WPDOMAIN); ?> <a href="https://app.newsatme.com" class="newsatme_powered_link" title="Un modo innovativo di ricevere news">News@Me</a><span class="newsatme_mini_logo">&nbsp; </span>
     </div>
-    
+    <img src="<?php echo NewsAtMe_Views::trackWidgetView(); ?>" width="1" height="1" />
   <!-- Subscription callout ends here --></div>
   <!-- Wrapper subscription ends here --></div>

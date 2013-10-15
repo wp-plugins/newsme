@@ -65,6 +65,12 @@ class NewsAtMe_Views {
     return WpNewsAtMe::getOption('widget_tags_in_call_to_action') && $npost->has_tags() ;
   }
 
+  static function trackWidgetView() {
+    global $post; 
+    $site_id = WpNewsAtMe::getOption('site_id');
+    return NewsAtMe_Client::articleDisplayURL($site_id, $post);
+  }
+
   static function callToActionSubject($post) {
     $npost = new NewsAtMe_Post($post); 
     if (self::tagsOnCallToAction($post)) {

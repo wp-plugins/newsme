@@ -25,6 +25,12 @@ class NewsAtMe_Client {
     }
   }
 
+  static function articleDisplayURL($site_id,$post) {
+    $url = sprintf("%sapi/%s/sites/%s/articles/%s/display",
+      self::BASE_URL, self::API_VERSION, $site_id, $post->ID); 
+    return $url . '/' . rand(0,100000); 
+  }
+
   public function getTags() {
     return $this->request('tags', array(), 'GET');
   }

@@ -31,6 +31,9 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
+= 1.0.7 = 
+* ADD: tracking pixel in subscription form to collect conversion stats
+
 = 1.0.6 =
 * ADD: WP version and plugin version in API calls
 * FIX: articles and subscriptions no longer use verborse params wrapper
