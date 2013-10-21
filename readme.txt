@@ -31,6 +31,9 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
+= 1.1.0 = 
+* CHANGE: subscription form priority raised to stay close to the content. 
+
 = 1.0.7 = 
 * ADD: tracking pixel in subscription form to collect conversion stats
 
