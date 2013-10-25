@@ -30,6 +30,10 @@ and sends it out to the readers that are truly interested.
 This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
+== Screenshots == 
+
+1. This is screenshot 1
+
 == CHANGELOG == 
 = 1.1.0 = 
 * CHANGE: subscription form priority raised to stay close to the content. 
