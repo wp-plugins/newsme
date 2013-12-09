@@ -12,27 +12,8 @@ class NewsAtMe_Views {
     return $checked; 
   }
 
-  static function widgetTagsInCallToAction($display) {
-    $checked = self::isChecked($display);
-    include self::template_path('widget_tags_in_call_to_action');
-  }
-
-  static function widgetDisplayIfNoTags($display) {
-    $checked = self::isChecked($display);
-    include self::template_path('widget_display_if_no_tags');
-  }
-
   static function showDemChoice() {
     return !wpNewsAtMe::getOption('widget_hide_dem_choice'); 
-  }
-
-  static function askAccessControlAllowOrigin($allow_origin, $cookie_domain) {
-    include self::template_path('ask_access_control_allow_origin');
-  }
-
-  static function askDemChoice($option) {
-    $checked = self::isChecked($option); 
-    include self::template_path('widget_ask_dem_choice');
   }
 
   static function widgetDisplayOption($display) {
@@ -47,57 +28,6 @@ class NewsAtMe_Views {
     $signature = $npost->signature(); 
     $string = $npost->string_for_signature(); 
     include self::template_path('post_out_of_sync');
-  }
-
-  static function newsatme_privacy_url() {
-    $site_id = WpNewsAtMe::getOption('site_id');
-    return NewsAtMe_Client::BASE_URL . "statements/$site_id/privacy"; 
-  }
-
-  static function newsatme_dem_statement_url() {
-    $site_id = WpNewsAtMe::getOption('site_id');
-    return NewsAtMe_Client::BASE_URL . "statements/$site_id/dem"; 
-  }
-
-  static function tagsOnCallToAction($post) {
-    // TODO: remove this $npost duplication all around
-    $npost = new NewsAtMe_Post($post);
-    return WpNewsAtMe::getOption('widget_tags_in_call_to_action') && $npost->has_tags() ;
-  }
-
-  static function trackWidgetView() {
-    global $post; 
-    $site_id = WpNewsAtMe::getOption('site_id');
-    return NewsAtMe_Client::articleDisplayURL($site_id, $post);
-  }
-
-  static function callToActionSubject($post) {
-    $npost = new NewsAtMe_Post($post); 
-    if (self::tagsOnCallToAction($post)) {
-      $subject = $npost->tagsString(); 
-    }
-    else {
-      $subject = $npost->title; 
-    }
-    return $subject;
-  }
-
-  static function thankyouMessage($post, $timestamp) {
-    $early = $timestamp > strtotime('-1 min'); 
-    $npost = new NewsAtMe_Post($post); 
-    
-    if (WpNewsAtMe::thankyouMessageSubject() == 'tags' && $npost->has_tags()) {
-      $subscriptionSubject = $npost->tagsString();
-    }
-    else {
-      $subscriptionSubject = $post->post_title; 
-    }
-
-    ob_start(); 
-    include self::template_path('thankyou_message'); 
-    $message = ob_get_contents(); 
-    ob_end_clean(); 
-    return $message;
   }
 
   static function renderMissingApiKey() {
@@ -132,6 +62,7 @@ class NewsAtMe_Views {
   }
 
   static function renderSubscribeForm($post) {
+    $post = new NewsAtMe_Post($post); 
     include self::template_path('subscribe_form');
   }
 

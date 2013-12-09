@@ -23,8 +23,8 @@ class NewsAtMe_Post {
     $this->time      = strtotime($post->post_date_gmt);
     $this->status    = $post->post_status; 
     $this->updated_at = $post->post_modified_gmt; 
-    $this->type       = $post->post_type; 
-    $this->_post      = $post; 
+    $this->type       = $post->post_type;  // TODO: check for this to remove
+    $this->_post      = $post; // TODO: check for this to remove
   }
 
   function attributes() {

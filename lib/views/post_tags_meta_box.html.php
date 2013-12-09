@@ -1,4 +1,4 @@
-<h1>new@me tags</h1>
+<h1>News@me tags</h1>
 <input type="hidden" name="postmeta_noncename" id="newsatme_noncename" value="<?php echo $nonce; ?>" /> 
 <input type="text" id="newsatme_postmeta_tags_field" name="<?php echo wpNewsAtMe::TAGS_INPUT_NAME; ?>" value="<?php echo $tags; ?>" class="widefat" />
 

@@ -5,7 +5,7 @@ Description: News@Me is a software that simplifies subscriptions to your newslet
 Author: News@Me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 1.1.0
+Version: 2.0.1
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -35,7 +35,7 @@ function wpnewsatme_init() {
 
 class wpNewsAtMe {
 
-  const VERSION = '1.1.0'; 
+  const VERSION = '2.0.1'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
@@ -97,18 +97,9 @@ class wpNewsAtMe {
 
   static function frontInit() {
     // collect submit form
-    add_action('parse_request', array(__CLASS__, 'collectSubscriptionForm'));
-    wp_register_script('newsatme_front_js', plugins_url('js/newsatme_front.js' , __FILE__ ), array('jquery'));
+    // add_action('parse_request', array(__CLASS__, 'collectSubscriptionForm'));
+    wp_register_script('newsatme_front_js', NewsAtMe_Client::baseURL() . 'assets/namboot.js', array('jquery'));
     wp_enqueue_script('newsatme_front_js');
-
-    wp_localize_script( 'newsatme_front_js', 'newsatme_strings', array(
-      'email_invalid'  => __('Please enter a valid email', wpNewsAtMe::WPDOMAIN), 
-      'privacy_required' => __('You must accept terms of service', wpNewsAtMe::WPDOMAIN), 
-      'subscription_error' => __('An error occurred during subscription request', wpNewsAtMe::WPDOMAIN)
-    ) );
-
-    wp_register_style('newsatme_front_css', plugins_url('css/newsatme_front.css' , __FILE__ ));
-    wp_enqueue_style('newsatme_front_css');
   }
 
   static function adminInit() {
@@ -129,15 +120,6 @@ class wpNewsAtMe {
     add_settings_section('wpnewsatme-api', 'API Settings', '__return_false', self::WPDOMAIN);
     add_settings_field('api-key', 'API Key', array(__CLASS__, 'askSiteId'), self::WPDOMAIN, 'wpnewsatme-api');
 
-    add_settings_section('wpnewsatme-widget-display', __('Display settings', wpNewsAtMe::WPDOMAIN), '__return_false', self::WPDOMAIN);
-
-    add_settings_field('widget-display-tags-in-cta', __('Display even without tags', wpNewsAtMe::WPDOMAIN), array(__CLASS__, 'askDisplayIfNoTags'), self::WPDOMAIN, 'wpnewsatme-widget-display');
-    add_settings_field('widget-display-if-no-tags', __('Show tags in call-to-action', wpNewsAtMe::WPDOMAIN), array(__CLASS__, 'askTagsInCallToAction'), self::WPDOMAIN, 'wpnewsatme-widget-display');
-    add_settings_field('widget-ask-dem-choice', __('DEM authorization', wpNewsAtMe::WPDOMAIN), array(__CLASS__, 'askDemChoice'), self::WPDOMAIN, 'wpnewsatme-widget-display');
-    add_settings_field('widget-display-settings', __('Widget placement', wpNewsAtMe::WPDOMAIN), array(__CLASS__, 'askWidgetDisplay'), self::WPDOMAIN, 'wpnewsatme-widget-display');
-
-    add_settings_section('wpnewsatme-advanced', __('Advanced options', wpNewsAtMe::WPDOMAIN), '__return_false', self::WPDOMAIN);
-    add_settings_field('widget-access-control-allow-origin', __('Security', wpNewsAtMe::WPDOMAIN), array(__CLASS__, 'askAccessControlAllowOrigin'), self::WPDOMAIN, 'wpnewsatme-advanced');
 
     self::addMetaBox('post'); 
 
@@ -156,102 +138,8 @@ class wpNewsAtMe {
     if (!is_single()) return $content ; 
 
     global $post;
-
-    $option = self::getOption('widget_display');
-    if ($option == '' || $option == false) $option = 'none';
-
-    switch($option) {
-    case self::DISPLAY_OPTION_AUTO: 
-      $widget = self::renderWidget($post);
-      $content .= $widget;
-      self::setWidgetShown($post->ID);
-      break;
-
-    case self::DISPLAY_OPTION_PLACEHOLDER:
-      $widget = self::renderWidget($post);
-      $content = str_replace( self::$placeholder , $widget, $content );
-      self::setWidgetShown($post->ID);
-      break;
-    }
-
-    // Be sure to not print the placeholder if mode gets switched
-    $content = str_replace( self::$placeholder, '', $content );
-
+    $content .= self::renderWidget($post); 
     return $content;
-  }
-
-  static function accessControlHeaders() {
-    $origin = self::getOption('access_control_allow_origin'); 
-    if ($origin) {
-      header("Access-Control-Allow-Origin: $origin");  
-    }
-  }
-
-  static function post_var($name) {
-    if (isset($_POST[$name])) return $_POST[$name]; 
-  }
-
-  static function collectSubscriptionForm() {
-    try {
-      if (self::post_var('newsatme_subscription')) {
-        $id = $_POST['newsatme_subscription']['ID'];
-
-        if (!isset($_COOKIE[self::subscriptionCookieName($id)])) {
-          $email          = $_POST['newsatme_subscription']['email'];
-          $post           = get_post($id);
-          $tags           = get_post_meta($post->ID, self::TAGS_META_KEY, true);
-          $url            = get_permalink($post->ID);
-          $title          = $post->post_title;
-          $dem_authorized = $_POST['newsatme_subscription']['privacy2'];
-          $p              = parse_url($url);
-          $anchor         = "newsatme_article_subscription_$id";
-          $url_for_redirect = sprintf('%s://%s%s?%s#%s', 
-            $p['scheme'], $p['host'], $p['path'], $p['query'], $anchor);
-
-          self::getConnected();
-          if (
-            self::isConnected() && 
-            self::$newsatme_client->saveSubscription($email, $id, $title, $url, $tags, $dem_authorized)
-          ) 
-          {
-            self::setSubscriptionCookie($id) ;
-            self::accessControlHeaders(); 
-            echo NewsAtMe_Views::thankyouMessage($post, strtotime('now')); 
-            exit;
-          }
-          else 
-          {
-            header('HTTP/1.1 503 Service Unavailable'); 
-            exit; 
-          }
-        }
-      }
-    } catch ( Exception $e ) {
-      // TODO: handle exception here
-    }
-  }
-
-  static function isAjax() {
-    return (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && 
-      strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') ;
-  }
-
-  static function thankyouMessageSubject() {
-    return 'tags';
-  }
-
-  static function cookieDomain() {
-    $cookie_domain = self::getOption('cookie_domain'); 
-    if ($cookie_domain) return $cookie_domain; 
-  }
-
-  static function setSubscriptionCookie($id) {
-    $name = self::subscriptionCookieName($id); ;
-    setcookie($name, strtotime('now'), strtotime('+1 year'), '/', self::cookieDomain());
-  }
-
-  static function subscriptionCookieName($id) {
-    return "nam_s_$id";
   }
 
   static function adminMenu() {
@@ -435,18 +323,9 @@ class wpNewsAtMe {
     return $actions;
   }
 
-  static function showHowTos() {
-    NewsAtMe_Views::showHowTos();
-  }
-
   static function showOptionsPage() {		
     if (!current_user_can('manage_options'))
       wp_die( 'You do not have sufficient permissions to access this page.' );
-
-    if ( isset($_GET['show']) && $_GET['show'] == 'how-tos' ) {
-      self::showHowTos();
-      return;
-    }
 
     NewsAtMe_Views::optionsPage(); 
   }
@@ -526,33 +405,16 @@ class wpNewsAtMe {
   }
 
   static function renderWidget($post) {
-    $cookie_name = WpNewsAtMe::subscriptionCookieName($post->ID);
     $output = '';
     ob_start();
 
     if (WpNewsAtMe::isWidgetShowable($post)) {
-      if (isset($_COOKIE[$cookie_name])) {
-        $cookie_content = $_COOKIE[$cookie_name];
-        NewsAtMe_Views::renderSubscriptionDone($cookie_content);
-      }
-      else {
-        NewsAtMe_Views::renderSubscribeForm($post);
-      }
+      NewsAtMe_Views::renderSubscribeForm($post);
     }
     $output = ob_get_contents();
     ob_end_clean();
 
     return $output ;
-  }
-}
-
-function newsatme_subscribe() {
-  $option = wpNewsAtMe::getOption('widget_display');
-  if ($option == '' || $option == false) $option = 'none';
-  if ($option != 'none') {
-    global $post;
-    echo WpNewsAtMe::renderWidget($post);
-    WpNewsAtMe::setWidgetShown($post->ID);
   }
 }
 
@@ -572,6 +434,7 @@ function this_plugin_first() {
 		update_option('active_plugins', $active_plugins);
 	}
 }
+
 add_action("activated_plugin", "this_plugin_first");
 
 // Register `the_content` filter here, due to the high priority required. 

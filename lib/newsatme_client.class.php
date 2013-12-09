@@ -4,7 +4,6 @@ class NewsAtMe_ClientException extends Exception {}
 
 class NewsAtMe_Client {
   const API_VERSION = 'v1';
-  const BASE_URL = 'https://app.newsatme.com/'; 
 
   var $api;
   var $output;
@@ -25,9 +24,13 @@ class NewsAtMe_Client {
     }
   }
 
+  static function baseURL() {
+    return 'https://app.newsatme.com/' ; 
+  }
+
   static function articleDisplayURL($site_id,$post) {
     $url = sprintf("%sapi/%s/sites/%s/articles/%s/display",
-      self::BASE_URL, self::API_VERSION, $site_id, $post->ID); 
+      self::baseURL(), self::API_VERSION, $site_id, $post->ID); 
     return $url . '/' . rand(0,100000); 
   }
 
@@ -94,7 +97,7 @@ class NewsAtMe_Client {
 		$api_version = self::API_VERSION;
 		$dot_output = ('json' == $output) ? '' : ".{$output}";
 
-		$url = self::BASE_URL . "api/{$api_version}/{$method}{$dot_output}";
+		$url = self::baseURL() . "api/{$api_version}/{$method}{$dot_output}";
 
 		switch ($http) {
     case 'GET':
