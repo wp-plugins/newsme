@@ -31,6 +31,10 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
+= 2.0.2 = 
+* CHANGE: load subscription form from remote service
+* REMOVE: legacy plugin settings
+
 = 1.1.0 = 
 * CHANGE: subscription form priority raised to stay close to the content. 
 
