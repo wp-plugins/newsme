@@ -31,6 +31,11 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
+= 2.0.3 = 
+* CHANGE: basic formatting of the Settings elements following WP 3.8.0 release and updates
+* REMOVE: meta-box wrap around API Settings elements
+* ADD: Link to app 'Sign in' in Plugin Info
+
 = 2.0.2 = 
 * CHANGE: load subscription form from remote service
 * REMOVE: legacy plugin settings
