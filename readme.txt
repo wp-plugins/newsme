@@ -31,6 +31,9 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
+= 2.1.0 = 
+* CHANGE: boot javascript is now loaded in footer
+
 = 2.0.3 = 
 * CHANGE: basic formatting of the Settings elements following WP 3.8.0 release and updates
 * REMOVE: meta-box wrap around API Settings elements
