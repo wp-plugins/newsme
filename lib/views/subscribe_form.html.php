@@ -1,1 +1,1 @@
-<div id="NamForm" data-id="<?php echo $post->id; ?>" data-title="<?php echo htmlentities($post->title) ?>" data-tags="<?php echo htmlentities($post->tags_string) ?>" data-site-id="<?php echo WpNewsAtMe::getOption('site_id'); ?>" data-url="<?php echo $post->permalink ?>" ></div>
+<div id="NamForm" data-id="<?php echo $post->id; ?>" data-title="<?php echo htmlspecialchars($post->title) ?>" data-tags="<?php echo htmlspecialchars($post->tags_string) ?>" data-site-id="<?php echo WpNewsAtMe::getOption('site_id'); ?>" data-url="<?php echo $post->permalink ?>" ></div>

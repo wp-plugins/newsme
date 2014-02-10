@@ -31,6 +31,9 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
+= 2.1.1 = 
+* CHANGE: htmlentities replaced with htmlspecialchars for data attributes
+
 = 2.1.0 = 
 * CHANGE: boot javascript is now loaded in footer
 

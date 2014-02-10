@@ -5,7 +5,7 @@ Description: News@Me is a software that simplifies subscriptions to your newslet
 Author: News@Me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 2.1.0
+Version: 2.1.1
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -35,7 +35,7 @@ function wpnewsatme_init() {
 
 class wpNewsAtMe {
 
-  const VERSION = '2.1.0'; 
+  const VERSION = '2.1.1'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
