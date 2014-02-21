@@ -5,7 +5,7 @@ Description: News@Me is a software that simplifies subscriptions to your newslet
 Author: News@Me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 2.1.1
+Version: 2.1.3
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -35,7 +35,7 @@ function wpnewsatme_init() {
 
 class wpNewsAtMe {
 
-  const VERSION = '2.1.1'; 
+  const VERSION = '2.1.3'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
@@ -233,33 +233,6 @@ class wpNewsAtMe {
     }
   }
 
-  static function askAccessControlAllowOrigin() {
-    NewsAtMe_Views::askAccessControlAllowOrigin(
-      self::getOption('access_control_allow_origin'), 
-      self::getOption('cookie_domain')
-    );
-  }
-
-  static function askDemChoice() {
-    NewsAtMe_Views::askDemChoice(
-      self::getOption('widget_hide_dem_choice'));
-  }
-
-  static function askTagsInCallToAction() {
-    NewsAtMe_Views::widgetTagsInCallToAction(
-      self::getOption('widget_tags_in_call_to_action'));
-  }
-
-  static function askDisplayIfNoTags() {
-    NewsAtMe_Views::widgetDisplayIfNoTags(
-      self::getOption('widget_display_if_no_tags'));
-  }
-  
-  static function askWidgetDisplay() {
-    $widget_display = self::getOption('widget_display');
-    NewsAtMe_Views::widgetDisplayOption($widget_display);
-  }
-
   // Following methods generate parts of settings and test forms.
   static function askSiteId() {
     $api_key = self::getOption('api_key');
@@ -360,39 +333,41 @@ class wpNewsAtMe {
     return update_option(self::WPDOMAIN, $new_options); 
   }
 
-  // this method checks for any error on:
-  // 1) The presence of API key to be set
-  // 2) Ability to connect to news@me
-  // 3) The current post to be in sync with the remote one
   static function healthCheck() {
-    self::getConnected();
-
+    // check for curl libs to be there
     if (!(function_exists('curl_init') && function_exists('curl_exec')) ) {
       NewsAtMe_Views::renderCurlMissing(); 
     }
 
+    // check for API key to be there
     if (!self::getAPIKey()) {
       NewsAtMe_Views::renderMissingApiKey();
     }
-    else if (!self::isConnected()) {
-      NewsAtMe_Views::renderServerStatus();
-    }
 
-    if (strstr($_SERVER['REQUEST_URI'], 'wp-admin/post.php')) {
-      self::checkCurrentPostSync(); 
+    try {
+      // start and verify connection
+      self::getConnected();
+      if (!self::isConnected()) {
+         NewsAtMe_Views::renderServerStatus();
+      }
+      else {
+        // if connected, check for current post to be sync
+        if (strstr($_SERVER['REQUEST_URI'], 'wp-admin/post.php')) {
+          self::checkCurrentPostSync(); 
+        }
+      }
+    } catch ( Exception $e) { 
     }
   }
 
   static function checkCurrentPostSync() {
     global $post;
     $npost = new NewsAtMe_Post($post);
+    
     if ($npost->is_post_saved()) {
-      try {
-        if (!self::$newsatme_client->checkArticleSignature($post->ID, $npost->signature())) {
-          NewsAtMe_Views::renderPostOutOfSync($npost); 
-        }
-      } catch ( Exception $e) {
-        // TODO: handle exception here
+      $inSync = self::$newsatme_client->checkArticleSignature($post->ID, $npost->signature()); 
+      if (!$inSync) {
+        NewsAtMe_Views::renderPostOutOfSync($npost); 
       }
     }
   }

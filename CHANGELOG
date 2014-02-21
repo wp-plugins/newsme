@@ -1,3 +1,7 @@
+# Version 2.1.3 
+
+* Fixed issue with blank post page when API connection fails.
+
 # Version 2.1.1 
 
 * Changed htmlspecialentities with htmlspecialchars for data attrs

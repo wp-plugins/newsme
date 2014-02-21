@@ -186,7 +186,7 @@ class NewsAtMe_Client {
       curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
       curl_setopt($ch, CURLOPT_HEADER, false);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2 * 60 * 1000); 
+      curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5); 
 
       $response   = curl_exec($ch);
       $info       = curl_getinfo($ch);
