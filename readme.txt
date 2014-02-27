@@ -1,6 +1,6 @@
-=== News@Me ===
+=== News@me ===
 Contributors: newsatme
-Tags: community, tags
+Tags: widget sign up, customized newsletter, customized digest, customized news, automated newsletter, targeted email, email, email subscription, emailing, mailing list, marketing, newsletter, newsletter signup, widget, subscribers, subscription, responsive widget, conversion
 Requires at least: 3.5.0
 Tested up to: 3.6.1
 Stable tag: trunk
@@ -11,13 +11,13 @@ Boost traffic and retain loyal users by reinventing your newsletter.
 
 == Description ==
 
-News@Me is a software that simplifies subscriptions to your newsletters by
+News@me is a software that simplifies subscriptions to your newsletters by
 attracting subscribers in a new way. It creates the newsletter and sends out
 the articles for you, it's all automated.
 
-News@Me allows you to be less dependent on Google and offers you a new source of loyal traffic. 
+News@me allows you to be less dependent on Google and offers you a new source of loyal traffic. 
 You will increase the number of followers of your newsletter because the reader is asked for 
-their email in a clear and straightforward way. News@Me enhances your content
+their email in a clear and straightforward way. News@me enhances your content
 and sends it out to the readers that are truly interested.
 
 == Installation ==
