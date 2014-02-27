@@ -1,6 +1,6 @@
 === News@Me ===
 Contributors: newsatme
-Tags: tags, community
+Tags: community, tags
 Requires at least: 3.5.0
 Tested up to: 3.6.1
 Stable tag: trunk
