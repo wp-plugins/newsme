@@ -1,5 +1,10 @@
 <div class="inside">
-   <input id='api_key' name='wpnewsatme[api_key]' size='45' type='text' value="<?php esc_attr_e( $api_key ); ?>" />
+  <?php wp_nonce_field( 'update_api_key', 'apinonce' ); ?>
+  <?php if ($site_id) { ?>
+     <input id="site_id" name="wpnewsatme[site_id]" type="hidden" />
+  <? } ?> 
+
+  <input id='api_key' name='wpnewsatme[api_key]' size='45' type='text' value="<?php esc_attr_e( $api_key ); ?>" />
    
   <?php if (!$valid) { ?>
     <br/>

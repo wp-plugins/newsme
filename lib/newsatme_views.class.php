@@ -2,7 +2,7 @@
 
 class NewsAtMe_Views {  
 
-  static function apiKeyForm($api_key, $valid) {
+  static function apiKeyForm($api_key, $site_id, $valid=true) {
     include self::template_path('api_form');
   }
 
