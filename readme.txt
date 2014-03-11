@@ -31,6 +31,9 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
+= 2.1.5 = 
+* FIX: bug due to new style php opening tag
+
 = 2.1.4 = 
 * FIX: bug related to the retrieval of site_id from API keys
 

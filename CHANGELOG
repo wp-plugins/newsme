@@ -1,3 +1,7 @@
+# Version 2.1.5 
+
+* Fixed a bug due to new php style tag 
+
 # Version 2.1.4 
 
 * Fixed a bug related to the retrieval of site's ID.
