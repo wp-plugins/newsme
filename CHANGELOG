@@ -1,3 +1,13 @@
+# Version 2.1.6 
+
+* Plugin now belongs to Plugins section
+* Plugin removed from Settings section
+* Add global navigation in plugin pages for better support
+* Activate account call to action invitation shown in Plugins section
+* Add logo in headings
+* Add helper text below API key input field
+* Remove deprecated addition if auth_key in API params
+
 # Version 2.1.5 
 
 * Fixed a bug due to new php style tag 

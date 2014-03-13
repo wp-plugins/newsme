@@ -5,7 +5,7 @@ Description: News@me is a software that simplifies subscriptions to your newslet
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 2.1.5
+Version: 2.1.6
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -35,7 +35,7 @@ function wpnewsatme_init() {
 
 class wpNewsAtMe {
 
-  const VERSION = '2.1.5'; 
+  const VERSION = '2.1.6'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
@@ -43,7 +43,6 @@ class wpNewsAtMe {
   const SAVED_META_KEY = '_newsatme_saved'; 
   const SEP = ',';
 
-  static $settings;
   static $report;
   static $stats;
   static $newsatme_client;
@@ -106,8 +105,8 @@ class wpNewsAtMe {
 
     register_setting(self::WPDOMAIN, self::WPDOMAIN, array(__CLASS__, 'validateInput'));
 
-    add_settings_section('wpnewsatme-api', 'API Settings', '__return_false', self::WPDOMAIN);
-    add_settings_field('api-key', 'API Key', array(__CLASS__, 'askSiteId'), self::WPDOMAIN, 'wpnewsatme-api');
+    add_settings_section('wpnewsatme-api', '', '__return_false', self::WPDOMAIN);
+    add_settings_field('api-key', 'News@me API key', array(__CLASS__, 'askSiteId'), self::WPDOMAIN, 'wpnewsatme-api');
 
     self::addMetaBox('post'); 
 
@@ -116,15 +115,6 @@ class wpNewsAtMe {
     add_action('trash_post', array(__CLASS__, 'trashPostEvent'), 1, 2);
     add_action('untrash_post', array(__CLASS__, 'untrashPostEvent'), 1, 1);
     add_action('admin_notices', array(__CLASS__, 'healthCheck'), 1, 1);
-    add_action('updated_option', array(__CLASS__, 'updateOptionCheck'), 1, 3);
-  }
-
-  static function updateOptionCheck($option, $old_value, $value) {
-    if ($option == self::WPDOMAIN) {
-      if ($value['api_key'] != '') {
-        self::getAndSaveSiteIdFromAPI($value['api_key']); 
-      }
-    }
   }
 
   static function addMetaBox($post_type) {
@@ -140,9 +130,9 @@ class wpNewsAtMe {
   }
 
   static function adminMenu() {
-    self::$settings = add_options_page(
-      'NewsAtMe Settings',
-      'NewsAtMe',
+    add_plugins_page(
+      'News@me Settings',
+      'News@me',
       'manage_options',
       self::WPDOMAIN,
       array(__CLASS__, 'showOptionsPage')
@@ -182,7 +172,6 @@ class wpNewsAtMe {
   // updated or recovered from trash
   static function savePostEvent($post_id, $post) {
     $npost = new NewsAtMe_Post($post); 
-
 
     if (!current_user_can('edit_post', $npost->id)) {
       return $npost->id ; 
@@ -230,23 +219,12 @@ class wpNewsAtMe {
     }
   }
 
-  static function getAndSaveSiteIdFromAPI($api_key) {
-    wpNewsAtMe::getConnected($api_key);
-    if (self::isConnected()) {
-      $response = self::$newsatme_client->getSite();
-      if ($response['id'] != null) { 
-        self::updateOption('site_id', $response['id']); 
-      } 
-    }
-  }
-
   static function askSiteId() {
     $api_key = self::getOption('api_key');
     NewsAtMe_Views::apiKeyForm($api_key, $site_id);
   }
 
   static function APIErrorReceived($method, $message) {
-    error_log( "wpNewsAtMe::$method: Exception Caught => $message ");
     return new WP_Error( $message );
   }
 
@@ -268,7 +246,6 @@ class wpNewsAtMe {
       self::APIErrorReceived('renderTagsMetaBox', $e->getMessage());
     }
 
-
     NewsAtMe_Views::renderTagsMetaBox($nonce, $newsatme_tags, $available_tags,
       $connection_error);
   }
@@ -281,7 +258,8 @@ class wpNewsAtMe {
       $plugin = plugin_basename(__FILE__);
 
     if ($plugin == $plugin_file) {
-      $settings = array('settings' => '<a href="options-general.php?page=wpnewsatme">' . __('Settings', self::WPDOMAIN) . '</a>');
+      $url = esc_url(add_query_arg(array('page' => wpNewsAtMe::WPDOMAIN), admin_url('plugins.php'))); 
+      $settings = array('settings' => '<a href="' . $url . '">' . __('Settings', self::WPDOMAIN) . '</a>');
       $actions = array_merge((array) $settings, $actions);
     }
 
@@ -289,17 +267,43 @@ class wpNewsAtMe {
   }
 
   static function showOptionsPage() {		
-    if (!current_user_can('manage_options'))
-      wp_die( 'You do not have sufficient permissions to access this page.' );
-
-    NewsAtMe_Views::optionsPage(); 
+    $explicit = isset( $_GET['show'] ) && $_GET['show'] == 'enter-api-key' ; 
+    if ( self::getAPIKey() || $explicit ) {
+      NewsAtMe_Views::enterKeyPage(); 
+    } else {
+      NewsAtMe_Views::getKeyPage(); 
+    }
   }
 
   /**
-   * Processes submitted settings from.
+   * Processes submitted settings from. This funciton is invoked every time 
+   * an option with namespace WPDOMAIN is saved to database. 
    */
   static function validateInput($input) {
     $params = array_map('wp_strip_all_tags', $input);
+
+    if (isset($params['site_id'])) {
+      return $params ; 
+    } 
+
+    if ($params['api_key'] == '') {
+      add_settings_error('api-key-errors', 'api-key', 'Please enter your API key.', 'updated'); 
+      $params['api_key'] = ''; 
+    } else {
+      self::getConnected($params['api_key']); 
+      if (!self::isConnected()){
+        add_settings_error('api-key-errors', 'api-key', 'The API key you entered is not valid. Please double-check it.', 'error'); 
+        $params['api_key'] = ''; 
+      } else {
+        add_settings_error('api-key-errors', 'api-key', 'Success! Your account has been activated.', 'updated'); 
+
+        $response = self::$newsatme_client->getSite();
+        if ($response['id'] != null) { 
+          $params['site_id'] = $response['id']; 
+        }
+      }
+    }
+
     return $params;
   }
 
@@ -319,36 +323,30 @@ class wpNewsAtMe {
     return $default;
   }
 
-  static function updateOption($name, $value) {
-    $options = get_option(self::WPDOMAIN);
-    $new_options = array_merge($options, array($name => $value)); 
-
-    return update_option(self::WPDOMAIN, $new_options); 
-  }
-
   static function healthCheck() {
-    // check for curl libs to be there
-    if (!(function_exists('curl_init') && function_exists('curl_exec')) ) {
-      NewsAtMe_Views::renderCurlMissing(); 
+    global $hook_suffix ; 
+
+    settings_errors('api-key-errors'); 
+    
+    if (!self::getAPIKey()) {
+      if ($hook_suffix == 'plugins.php') {
+        NewsAtMe_Views::renderMissingApiKey(); 
+      }
     }
 
-    if (!self::getAPIKey()) {
-      NewsAtMe_Views::renderMissingApiKey();
+    // Messages to only show in plugin's page
+    if ($_GET['page'] == self::WPDOMAIN) {
+      // check for curl libs to be there
+      if (!(function_exists('curl_init') && function_exists('curl_exec')) ) {
+        NewsAtMe_Views::renderCurlMissing(); 
+      }
     }
-    else {
-      try {
-        // start and verify connection
-        self::getConnected();
-        if (!self::isConnected()) {
-           NewsAtMe_Views::renderServerStatus();
-        }
-        else {
-          // if connected, check for current post to be sync
-          if (strstr($_SERVER['REQUEST_URI'], 'wp-admin/post.php')) {
-            self::checkCurrentPostSync(); 
-          }
-        }
-      } catch ( Exception $e) { 
+
+    // Messages to show only on post page
+    if (strstr($_SERVER['REQUEST_URI'], 'wp-admin/post.php')) {
+      self::getConnected(); 
+      if (self::isConnected()) {
+        self::checkCurrentPostSync(); 
       }
     }
   }
@@ -356,9 +354,13 @@ class wpNewsAtMe {
   static function checkCurrentPostSync() {
     global $post;
     $npost = new NewsAtMe_Post($post);
-    
+    $inSync = false; 
+
     if ($npost->is_post_saved()) {
-      $inSync = self::$newsatme_client->checkArticleSignature($post->ID, $npost->signature()); 
+      try {
+        $inSync = self::$newsatme_client->checkArticleSignature($post->ID, $npost->signature()); 
+      } catch ( Exception $e) { }
+
       if (!$inSync) {
         NewsAtMe_Views::renderPostOutOfSync($npost); 
       }

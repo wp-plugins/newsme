@@ -42,10 +42,8 @@ class NewsAtMe_Post {
     return implode(', ', $this->tags_array); 
   }
 
-  // TODO was more complex than this. The idea was to provide a digest of the 
-  // post's content.
   function string_for_signature() {
-    $this->updated_at;
+    return $this->updated_at;
   }
 
   function signature() {

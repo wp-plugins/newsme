@@ -12,6 +12,10 @@ class NewsAtMe_Views {
     return $checked; 
   }
 
+  static function keyConfigPage() {
+    include self::template_path('key_config_page');
+  }
+
   static function showDemChoice() {
     return !wpNewsAtMe::getOption('widget_hide_dem_choice'); 
   }
@@ -31,6 +35,7 @@ class NewsAtMe_Views {
   }
 
   static function renderMissingApiKey() {
+    $link = esc_url(add_query_arg(array('page' => wpNewsAtMe::WPDOMAIN), admin_url('plugins.php'))); 
     include self::template_path('missing_api_key');
   }
 
@@ -38,8 +43,14 @@ class NewsAtMe_Views {
     include self::template_path('remote_status');
   }
 
-  static function optionsPage() {
-    include self::template_path('options_page');
+  static function enterKeyPage() {
+    $link = esc_url(add_query_arg(array('page' => wpNewsAtMe::WPDOMAIN), admin_url('plugins.php'))); 
+    include self::template_path('enter_key_page');
+  }
+
+  static function getKeyPage() {
+    $link = esc_url(add_query_arg(array('page' => wpNewsAtMe::WPDOMAIN, 'show' => 'enter-api-key'), admin_url('plugins.php'))); 
+    include self::template_path('get_key_page');
   }
   
   static function plugin_root() {

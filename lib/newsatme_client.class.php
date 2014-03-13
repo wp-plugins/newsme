@@ -152,7 +152,6 @@ class NewsAtMe_Client {
   function http_request($url, $fields = array(), $method = 'POST') {
 
     if ( !in_array( $method, array('POST','GET') ) ) $method = 'POST';
-    if ( !isset( $fields['auth_token']) ) $fields['auth_token'] = $this->api;
 
     //some distribs change arg sep to &amp; by default
     $sep_changed = false;

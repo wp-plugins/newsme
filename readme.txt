@@ -31,6 +31,15 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
+= 2.1.6 
+
+* CHANGE: plugin now belongs to Plugins section
+* CHANGE: plugin removed from Settings section
+* ADD: global navigation in plugin pages for better support
+* CHANGE: activate account call to action invitation shown in Plugins section
+* ADD: logo in headings
+* ADD: helper text below API key input field
+
 = 2.1.5 = 
 * FIX: bug due to new style php opening tag
 

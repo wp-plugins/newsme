@@ -3,8 +3,8 @@
 <input type="text" id="newsatme_postmeta_tags_field" name="<?php echo wpNewsAtMe::TAGS_INPUT_NAME; ?>" value="<?php echo $tags; ?>" class="widefat" />
 
 <?php if ($error) { ?>
-  <div class="error">
-    <p>Impossible to connect to news@me to retrieve tags.</p>
+  <div class="updated">
+    <p>News@me is not able to retrieve your tags at the moment. Please try again later.</p>
   </div>
 <?php } ?>
 
