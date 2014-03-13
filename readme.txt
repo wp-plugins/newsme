@@ -31,7 +31,11 @@ This plugin works out of the box. You can add further customization on the
 plugin's settings page. 
 
 == CHANGELOG == 
-= 2.1.6 
+= 2.1.7 =
+
+* CHANGE: activate callout label 
+
+= 2.1.6 =
 
 * CHANGE: plugin now belongs to Plugins section
 * CHANGE: plugin removed from Settings section

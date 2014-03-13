@@ -5,7 +5,7 @@ Description: News@me is a software that simplifies subscriptions to your newslet
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 2.1.6
+Version: 2.1.7
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -35,7 +35,7 @@ function wpnewsatme_init() {
 
 class wpNewsAtMe {
 
-  const VERSION = '2.1.6'; 
+  const VERSION = '2.1.7'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
@@ -295,7 +295,7 @@ class wpNewsAtMe {
         add_settings_error('api-key-errors', 'api-key', 'The API key you entered is not valid. Please double-check it.', 'error'); 
         $params['api_key'] = ''; 
       } else {
-        add_settings_error('api-key-errors', 'api-key', 'Success! Your account has been activated.', 'updated'); 
+        add_settings_error('api-key-errors', 'api-key', 'Success! Your widget has been activated.', 'updated'); 
 
         $response = self::$newsatme_client->getSite();
         if ($response['id'] != null) { 
