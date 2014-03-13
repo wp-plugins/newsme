@@ -22,13 +22,9 @@ and sends it out to the readers that are truly interested.
 
 == Installation ==
 
-1. Install the plugin in your plugins directory and activate it.
-1. Create an account on [News@me](https://app.newsatme.com/users/sign_up)
-1. Visit plugin's settings page and install your API key. 
-1. Start tagging your articles with the new news@me tags' meta box. 
+Upload the News@me plugin to your site. Activate it, then enter your News@me API key.
 
-This plugin works out of the box. You can add further customization on the
-plugin's settings page. 
+1, 2, 3: You're done!
 
 == CHANGELOG == 
 = 2.1.7 =
