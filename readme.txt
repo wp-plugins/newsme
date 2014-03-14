@@ -27,6 +27,10 @@ Upload the News@me plugin to your site. Activate it, then enter your News@me API
 1, 2, 3: You're done!
 
 == CHANGELOG == 
+= 2.1.9 =
+
+* CHANGE: Fix URL's of links in mini global navigation 
+
 = 2.1.8 =
 
 * CHANGE: Add Home and Pricing list item in mini global navigation 
