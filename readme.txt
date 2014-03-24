@@ -7,24 +7,62 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Boost traffic and retain loyal users by reinventing your newsletter.
+Convert visitors into regular readers. Keep them coming back to your site with News@me. Break free from the logic and algorithms of search engines.
 
 == Description ==
 
-News@me is a software that simplifies subscriptions to your newsletters by
-attracting subscribers in a new way. It creates the newsletter and sends out
-the articles for you, it's all automated.
+News@me is our answer to bloggers and online content creators to the need to create their own subscriber base and break free from the logic and algorithms of Google and Facebook to bring more traffic, visits and readers to their valuable content, day after day.
+News@me gives your readers the chance to subscribe to articles published on your site and sends out personalized email summary of your new articles published that are unique to each subscribers according to their interests.
 
-News@me allows you to be less dependent on Google and offers you a new source of loyal traffic. 
-You will increase the number of followers of your newsletter because the reader is asked for 
-their email in a clear and straightforward way. News@me enhances your content
-and sends it out to the readers that are truly interested.
+[Home](http://try.newsatme.com) | [How it
+works](https://newsatme.com/en/how-it-works/) | [Pricing](http://try.newsatme.com/#pricing) | [Get started](https://app.newsatme.com/users/sign_up) | [Support](http://help.newsatme.com/) | [About us](https://newsatme.com/en/about-us/) | [Log in](https://app.newsatme.com/users/sign_in?hl=en)
+
+Right now we are testing the application with one of the biggest digital publisher in Italy, [*AndroidWorld.it*](http://www.androidworld.it/2014/03/17/androidworld-it-introduce-le-notifiche-mirate-via-mail-220437/) and what we found out is that people are really keen on receiving relevant articles. Besides that we saw a remarkable increase in the number of subscriptions when the source is trusted.
+
+In order to understand the power of this solution it’s needed just mention the increase in percentage of newsletter marketing solutions on the market like *Aweber* and *MailChimp*:
+
+* **+300%** the rate of subscriptions of occasional and regular readers compared to the regular newsletter subscriptions;
+
+* **+20%** the averages opening rate of the personalized email summary compared to the average opening of the regular email newsletters in the online publishing industry.
+
+* **+10%** of visits generated to their site making it the third largest source of site traffic after Google and Facebook in less than six months.
+Unlike products like *Aweber* and *MailChimp*, News@me is a solution that creates a unique and direct link between your online content and each of your reader by converting the interests of your visitors in an innovative system for retention.
+
+= News@me for your readers =
+*Three high-value services that you offer to your readers using News@me. They won’t leave you ever again!*
+
+**1. Subscribe to your site through the News@me widget**
+
+A simple invitation with a minimalistic design and that does not affect the reading, the News@me widget catches the attention of your readers at the end of each article and converts this attention  into a subscription to your site. This allows you to create a unique bond between your readers and your publishing activity based on something valuable: their interests, passions and curiosities. 
+
+**2. Receive email digests with your new articles of their interest**
+
+Create a unique experience for your readers with News@me. Each subscriber receives updates on articles and topics of interest through an elegant email summary. Invite your readers to return to your site and read new articles about their interests. Put their passions at the center of your conversation and they’ll keep coming back to your site and read your new articles day by day.
+
+**3. A unique and innovative way to follow topics of interest on your site**
+
+Give more control to your readers. With News@me you let your subscribers choose which articles to get in the email summary, day by day and if their passions and interests change..your email summary changes too! The News manager is a simple and intuitive service offered for free to your subscribers that enhances your online presence.
+
+= News@me for your online content =
+*Analyze the effectiveness of your online content with News@me and discover the interests of your readers. Publish new content that your subscribers will rush to read on your site every day!*
+
+**1. A unique and innovative perspective over your online content.**
+
+News@me gives you an overview over the effectiveness of your online content and the engagement of your readers through the News@me widget. You can see the number of subscribers that the widget has generated and the number of clicks that the customized email summary sent to your subscribers by News@me are bringing to your site, topics and articles published that generate more subscriptions among your readers.
+
+**2. Actionable insights on the performance of your online publishing activity.**
+
+You can take a careful look at the traffic and the number of subscribers who return to your site  to read your new articles of their interest through customized email digests sent by News@me.
+
+**3. Look at the behavior of your readers and the effectiveness of your content.**
+
+Plan ahead your online publishing activity with the certainty of knowing in advance the degree of involvement and interest of your readers, topic by topic. News@me allows you to reach your subscribers through topics of their interest and invite them to your site to read your new articles, day after day.
 
 == Installation ==
 
-Upload the News@me plugin to your site. Activate it, then enter your News@me API key.
+Upload the News@me plugin to your site. Activate it, then enter your News@me API key. Start [adding your News@me tags to your articles](http://help.newsatme.com/customer/portal/articles/1331442-tagging-posts-using-news-me-in-wordpress) and allow your readers to subscribe to your topics and articles today.
 
-1, 2, 3: You're done!
+1, 2, 3: You're done! 
 
 == CHANGELOG == 
 = 2.1.9 =
