@@ -4,7 +4,7 @@ Tags: widget sign up, customized newsletter, customized digest, customized news,
 Requires at least: 3.5.0
 Tested up to: 3.6.1
 Stable tag: trunk
-License: GPLv2 or later
+License: GPLv2 or laterd
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Convert visitors into regular readers. Keep them coming back to your site with News@me. Break free from the logic and algorithms of search engines.
@@ -12,14 +12,14 @@ Convert visitors into regular readers. Keep them coming back to your site with N
 == Description ==
 
 News@me is our answer to bloggers and online content creators to the need to create their own subscriber base and break free from the logic and algorithms of Google and Facebook to bring more traffic, visits and readers to their valuable content, day after day.
-News@me gives your readers the chance to subscribe to articles published on your site and sends out personalized email summary of your new articles published that are unique to each subscribers according to their interests.
+News@me gives your readers the chance to subscribe to articles published on your site and sends out personalized email summary of your new articles that are unique to each subscriber according to their interests.
 
 [Home](http://try.newsatme.com) | [How it
 works](https://newsatme.com/en/how-it-works/) | [Pricing](http://try.newsatme.com/#pricing) | [Get started](https://app.newsatme.com/users/sign_up) | [Support](http://help.newsatme.com/) | [About us](https://newsatme.com/en/about-us/) | [Log in](https://app.newsatme.com/users/sign_in?hl=en)
 
 Right now we are testing the application with one of the biggest digital publisher in Italy, [*AndroidWorld.it*](http://www.androidworld.it/2014/03/17/androidworld-it-introduce-le-notifiche-mirate-via-mail-220437/) and what we found out is that people are really keen on receiving relevant articles. Besides that we saw a remarkable increase in the number of subscriptions when the source is trusted.
 
-In order to understand the power of this solution it’s needed just mention the increase in percentage of newsletter marketing solutions on the market like *Aweber* and *MailChimp*:
+In order to understand the power of this solution it's needed just mention the increase in percentage compared to newsletter marketing solutions on the market like *Aweber* and *MailChimp*:
 
 * **+300%** the rate of subscriptions of occasional and regular readers compared to the regular newsletter subscriptions;
 
@@ -29,7 +29,7 @@ In order to understand the power of this solution it’s needed just mention the
 Unlike products like *Aweber* and *MailChimp*, News@me is a solution that creates a unique and direct link between your online content and each of your reader by converting the interests of your visitors in an innovative system for retention.
 
 = News@me for your readers =
-*Three high-value services that you offer to your readers using News@me. They won’t leave you ever again!*
+*Three high-value services that you offer to your readers using News@me. They won't leave you ever again!*
 
 **1. Subscribe to your site through the News@me widget**
 
@@ -37,7 +37,7 @@ A simple invitation with a minimalistic design and that does not affect the read
 
 **2. Receive email digests with your new articles of their interest**
 
-Create a unique experience for your readers with News@me. Each subscriber receives updates on articles and topics of interest through an elegant email summary. Invite your readers to return to your site and read new articles about their interests. Put their passions at the center of your conversation and they’ll keep coming back to your site and read your new articles day by day.
+Create a unique experience for your readers with News@me. Each subscriber receives updates on articles and topics of interest through an elegant email summary. Invite your readers to return to your site and read new articles about their interests. Put their passions at the center of your conversation and they'll keep coming back to your site and read your new articles day by day.
 
 **3. A unique and innovative way to follow topics of interest on your site**
 
