@@ -72,6 +72,8 @@ Start [adding your News@me tags to your articles](http://help.newsatme.com/custo
 
 2. Create a unique experience for your readers with News@me. Each subscriber receives updates on articles and topics of interest through an elegant email summary. Invite your readers to return to your site and read new articles about their interests. Put their passions at the center of your conversation and they’ll keep coming back to your site and read your new articles day by day.
 
+3. Give more control to your readers. With News@me you let your subscribers choose which articles to get in the email summary, day by day and if their passions and interests change..your email summary changes too! The News manager is a simple and intuitive service offered for free to your subscribers that enhances your online presence.
+
 == CHANGELOG == 
 = 2.1.9 =
 
