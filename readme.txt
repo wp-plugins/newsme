@@ -74,6 +74,12 @@ Start [adding your News@me tags to your articles](http://help.newsatme.com/custo
 
 3. Give more control to your readers. With News@me you let your subscribers choose which articles to get in the email summary, day by day and if their passions and interests change..your email summary changes too! The News manager is a simple and intuitive service offered for free to your subscribers that enhances your online presence.
 
+4. News@me gives you an overview over the effectiveness of your online content and the engagement of your readers through the News@me widget. You can see the number of subscribers that the widget has generated and the number of clicks that the customized email summary sent to your subscribers by News@me are bringing to your site, topics and articles published that generate more subscriptions among your readers.
+
+5. Check the level of interest: number of digest openings and the percentage of openings. Keep track of the level of interest shown by your subscribers to your new content day after day observing the degree of interest of your customized email digest through the number and percentage of openings.
+
+6. Readers like your publishing activity: number of clicks and click-through rate, CTR. Through this analysis you can easily discover the appreciation by your subscribers to your new articles. One subscriber out of two values and reads your new content if the CTR (Click-Through rate) shows a percentage higher than 50%. The closer to 100%, the more your publishing activity is valued and appreciated! On the contrary, a CTR less than 50% is a clear indication to shift your publishing activity away from those topics and instead move toward others for which your subscribers show interest in.
+
 == CHANGELOG == 
 = 2.1.9 =
 
