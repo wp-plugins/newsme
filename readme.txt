@@ -60,9 +60,15 @@ Plan ahead your online publishing activity with the certainty of knowing in adva
 
 == Installation ==
 
-Upload the News@me plugin to your site. Activate it, then enter your News@me API key. Start [adding your News@me tags to your articles](http://help.newsatme.com/customer/portal/articles/1331442-tagging-posts-using-news-me-in-wordpress) and allow your readers to subscribe to your topics and articles today.
+Upload the News@me plugin to your site. Activate it, then enter your News@me API key. 
+
+Start [adding your News@me tags to your articles](http://help.newsatme.com/customer/portal/articles/1331442-tagging-posts-using-news-me-in-wordpress) and allow your readers to subscribe to your topics and articles today.
 
 1, 2, 3: You're done! 
+
+== Screenshots ==
+
+1. A simple invitation with a minimalistic design and that does not affect the reading, the News@me widget catches the attention of your readers at the end of each article and converts this attention  into a subscription to your site. This allows you to create a unique bond between your readers and your publishing activity based on something valuable: their interests, passions and curiosities.
 
 == CHANGELOG == 
 = 2.1.9 =
