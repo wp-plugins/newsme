@@ -14,8 +14,8 @@ Convert visitors into regular readers. Keep them coming back to your site with N
 News@me is our answer to bloggers and online content creators to the need to create their own subscriber base and break free from the logic and algorithms of Google and Facebook to bring more traffic, visits and readers to their valuable content, day after day.
 News@me gives your readers the chance to subscribe to articles published on your site and sends out personalized email summary of your new articles that are unique to each subscriber according to their interests.
 
-[Home](http://try.newsatme.com) | [How it
-works](https://newsatme.com/en/how-it-works/) | [Pricing](http://try.newsatme.com/#pricing) | [Get started](https://app.newsatme.com/users/sign_up) | [Support](http://help.newsatme.com/) | [About us](https://newsatme.com/en/about-us/) | [Log in](https://app.newsatme.com/users/sign_in?hl=en)
+[Home](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+works](https://newsatme.com/en/how-it-works/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=How%20It%20Works&utm_campaign=Wordpress%20Plugin%20Page) | [Pricing](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page#pricing) | [Get started](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](https://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
 Right now we are testing the application with one of the biggest digital publisher in Italy, [*AndroidWorld.it*](http://www.androidworld.it/2014/03/17/androidworld-it-introduce-le-notifiche-mirate-via-mail-220437/) and what we found out is that people are really keen on receiving relevant articles. Besides that we saw a remarkable increase in the number of subscriptions when the source is trusted.
 
@@ -57,6 +57,9 @@ You can take a careful look at the traffic and the number of subscribers who ret
 **3. Look at the behavior of your readers and the effectiveness of your content.**
 
 Plan ahead your online publishing activity with the certainty of knowing in advance the degree of involvement and interest of your readers, topic by topic. News@me allows you to reach your subscribers through topics of their interest and invite them to your site to read your new articles, day after day.
+
+[Home](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+works](https://newsatme.com/en/how-it-works/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=How%20It%20Works&utm_campaign=Wordpress%20Plugin%20Page) | [Pricing](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page#pricing) | [Get started](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](https://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
 == Installation ==
 
