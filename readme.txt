@@ -70,6 +70,8 @@ Start [adding your News@me tags to your articles](http://help.newsatme.com/custo
 
 1. A simple invitation with a minimalistic design and that does not affect the reading, the News@me widget catches the attention of your readers at the end of each article and converts this attention  into a subscription to your site. This allows you to create a unique bond between your readers and your publishing activity based on something valuable: their interests, passions and curiosities.
 
+2. Create a unique experience for your readers with News@me. Each subscriber receives updates on articles and topics of interest through an elegant email summary. Invite your readers to return to your site and read new articles about their interests. Put their passions at the center of your conversation and they’ll keep coming back to your site and read your new articles day by day.
+
 == CHANGELOG == 
 = 2.1.9 =
 
