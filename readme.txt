@@ -71,7 +71,7 @@ Start [adding your News@me tags to your articles](http://help.newsatme.com/custo
 
 == Screenshots ==
 
-1. Start adding your News@me tags to your posts. At the bottom of the page, you will find a meta-box where you can add your News@me tags for each of the topic related to the post you're about to publish. By doing so you'll allow your readers to subscribe to your topics and articles today through the News@me widget. It's that simple!
+1. Start adding your News@me tags to your posts. At the bottom of the page, you will find a meta-box where you can add your News@me tags for each of the topic related to the post you're about to publish. By doing so you'll allow your readers to subscribe to your topics and articles today through the News@me widget. It's that simple! 
 
 2. A simple invitation with a minimalistic design and that does not affect the reading, the News@me widget catches the attention of your readers at the end of each article and converts this attention  into a subscription to your site. This allows you to create a unique bond between your readers and your publishing activity based on something valuable: their interests, passions and curiosities.
 
