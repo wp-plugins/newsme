@@ -1,6 +1,6 @@
 === News@me ===
 Contributors: newsatme
-Tags: widget sign up, customized newsletter, customized digest, customized news, automated newsletter, targeted email, email, email subscription, emailing, mailing list, marketing, newsletter, newsletter signup, widget, subscribers, subscription, responsive widget, conversion
+Tags: email sign up, customized newsletter, customized digest, customized news, automated newsletter, targeted email, email, emailing, mailing list, marketing email, newsletter, newsletter signup, email alerts, subscribers, subscription, post notification, posts digest
 Requires at least: 3.5.0
 Tested up to: 3.6.1
 Stable tag: trunk
