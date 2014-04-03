@@ -1,3 +1,9 @@
+# 2.1.10
+
+* Add tag removal confirmation. Press the backspace key twice to remove  
+* Add height to meta-box and scroll it 
+* Show list of tags as inline list
+
 # Version 2.1.9 
 
 * Fix URL's of links in mini global navigation 

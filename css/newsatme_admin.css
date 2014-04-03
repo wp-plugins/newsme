@@ -1,5 +1,5 @@
 .newsatme_tags_sorting {
-	border: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 	padding: 5px;
 }
 
@@ -135,4 +135,35 @@ h2.newsatme-header {
 
 .wrap-form-options {
 	clear: both;
+}
+
+/* Shorten meta-box */
+.newsatme_available_tag_row {
+	float: left;
+	margin-right: 8px;
+}
+
+.newsatme_available_tag_row a {
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.wrap_tag_list{
+	height: 200px;
+	overflow-y: scroll;	
 }

@@ -29,7 +29,7 @@
       available_tags.push(tag);
     });
 
-    $tagit.tagit({"availableTags": available_tags, allowSpaces: true});
+    $tagit.tagit({"availableTags": available_tags, removeConfirmation: true, allowSpaces: true});
 
     $(document).on('click', '.newsatme_available_tag_row', function(ev) {
       var $target = $(ev.target);

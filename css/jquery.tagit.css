@@ -33,7 +33,7 @@ ul.tagit li.tagit-choice a.tagit-label {
 ul.tagit li.tagit-choice .tagit-close {
     cursor: pointer;
     position: absolute;
-    right: .1em;
+    right: .4em;
     top: 50%;
     margin-top: -8px;
     line-height: 17px;
