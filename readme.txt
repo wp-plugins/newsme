@@ -7,7 +7,7 @@ Stable tag: trunk
 License: GPLv2 or laterd
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Convert visitors into regular readers. Keep them coming back to your site with News@me. Break free from the logic and algorithms of search engines.
+Convert visitors into regular readers. Keep them coming back to your site by sending them articles of your site based on their interests with News@me.
 
 == Description ==
 
