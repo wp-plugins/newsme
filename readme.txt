@@ -1,4 +1,4 @@
-=== News@me ===
+=== Relevant email alerts to your readers by News@me ===
 Contributors: newsatme
 Tags: email sign up, customized newsletter, customized digest, customized news, automated newsletter, targeted email, email, emailing, mailing list, marketing email, newsletter, newsletter signup, email alerts, subscribers, subscription, post notification, posts digest
 Requires at least: 3.5.0
@@ -88,12 +88,6 @@ Start [adding your News@me tags to your articles](http://help.newsatme.com/custo
 8. Readers like your publishing activity: number of clicks and click-through rate, CTR. Through this analysis you can easily discover the appreciation by your subscribers to your new articles. One subscriber out of two values and reads your new content if the CTR (Click-Through rate) shows a percentage higher than 50%. The closer to 100%, the more your publishing activity is valued and appreciated! On the contrary, a CTR less than 50% is a clear indication to shift your publishing activity away from those topics and instead move toward others for which your subscribers show interest in.
 
 == CHANGELOG == 
-= 2.1.10 =
-
-* CHANGE: Add tag removal confirmation. Press the backspace key twice to remove  
-* CHANGE: Add height to meta-box and scroll it 
-* CHANGE: Show list of tags as inline list
-
 = 2.1.9 =
 
 * CHANGE: Fix URL's of links in mini global navigation 
