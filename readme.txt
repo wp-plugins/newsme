@@ -1,4 +1,4 @@
-=== Relevant email alerts to your readers by News@me ===
+=== Relevant email alerts by News@me ===
 Contributors: newsatme
 Tags: email sign up, customized newsletter, customized digest, customized news, automated newsletter, targeted email, email, emailing, mailing list, marketing email, newsletter, newsletter signup, email alerts, subscribers, subscription, post notification, posts digest
 Requires at least: 3.5.0
