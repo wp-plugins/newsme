@@ -81,7 +81,9 @@ Start [adding your News@me tags to your articles](http://help.newsatme.com/custo
 
 5. Give more control to your readers. With News@me you let your subscribers choose which articles to get in the email summary, day by day and if their passions and interests change..your email summary changes too! The News manager is a simple and intuitive service offered for free to your subscribers that enhances your online presence.
 
-6. News@me gives you an overview over the effectiveness of your online content and the engagement of your readers through the News@me widget. You can see the number of subscribers that the widget has generated and the number of clicks that the customized email summary sent to your subscribers by News@me are bringing to your site, topics and articles published that generate more subscriptions among your readers.
+6. News@me gives you an overview over the effectiveness of your online content and the engagement of your readers through the News@me widget. You can see the number of subscribers that the widget has generated and the number of clicks that the customized email summary sent to your subscribers by News@me are bringing to your site.
+
+7. News@me also gives you an overview over the topics and articles published that generate more subscriptions among your readers.
 
 7. Check the level of interest: number of digest openings and the percentage of openings. Keep track of the level of interest shown by your subscribers to your new content day after day observing the degree of interest of your customized email digest through the number and percentage of openings.
 
