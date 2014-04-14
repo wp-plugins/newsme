@@ -85,9 +85,9 @@ Start [adding your News@me tags to your articles](http://help.newsatme.com/custo
 
 7. News@me also gives you an overview over the topics and articles published that generate more subscriptions among your readers.
 
-7. Check the level of interest: number of digest openings and the percentage of openings. Keep track of the level of interest shown by your subscribers to your new content day after day observing the degree of interest of your customized email digest through the number and percentage of openings.
+8. Check the level of interest: number of digest openings and the percentage of openings. Keep track of the level of interest shown by your subscribers to your new content day after day observing the degree of interest of your customized email digest through the number and percentage of openings.
 
-8. Readers like your publishing activity: number of clicks and click-through rate, CTR. Through this analysis you can easily discover the appreciation by your subscribers to your new articles. One subscriber out of two values and reads your new content if the CTR (Click-Through rate) shows a percentage higher than 50%. The closer to 100%, the more your publishing activity is valued and appreciated! On the contrary, a CTR less than 50% is a clear indication to shift your publishing activity away from those topics and instead move toward others for which your subscribers show interest in.
+9. Readers like your publishing activity: number of clicks and click-through rate, CTR. Through this analysis you can easily discover the appreciation by your subscribers to your new articles. One subscriber out of two values and reads your new content if the CTR (Click-Through rate) shows a percentage higher than 50%. The closer to 100%, the more your publishing activity is valued and appreciated! On the contrary, a CTR less than 50% is a clear indication to shift your publishing activity away from those topics and instead move toward others for which your subscribers show interest in.
 
 == CHANGELOG == 
 = 2.1.10 =
