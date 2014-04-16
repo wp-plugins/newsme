@@ -19,7 +19,7 @@ works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing](http://try.
 
 You can read about News@me and see it in action on [*StanfordDaily.com*](http://www.stanforddaily.com/2014/03/26/the-new-stanforddaily-com-embracing-the-digital-first-age/), the Stanford University's digital newspaper. We are also working amongst the others with one of the biggest digital publisher in Italy, [*AndroidWorld.it*](http://www.androidworld.it/2014/03/17/androidworld-it-introduce-le-notifiche-mirate-via-mail-220437/) and what we found out is that people are really keen on receiving relevant articles. Besides that we saw a remarkable increase in the number of subscriptions when the source is trusted.
 
-> * **Special Offer for Bloggers and Online Newspapers!**
+> **Special Offer for Bloggers and Online Newspapers!**
 Write a review about News@me on your blog or online newspaper and <a href="http://try.newsatme.com/special-offer-6-months-free/?utm_source=Wordpress&utm_medium=plugin&utm_content=Special%20offer&utm_campaign=Wordpress%20Plugin%20Page">get the first 6 months free!</a>
 
 In order to understand the power of this solution check out the increase in percentage of some metrics on one of our clients:
