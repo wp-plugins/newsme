@@ -1,6 +1,6 @@
 === Relevant email newsletter alerts by News@me ===
 Contributors: newsatme
-Tags: email sign up, customized newsletter, customized digest, customized news, automated newsletter, targeted email, email, emailing, mailing list, marketing email, newsletter, newsletter signup, email alerts, subscribers, subscription, post notification, posts digest
+Tags: auto newsletter, newsletter signup, customized newsletter, customized digest, mailchimp, automated newsletter, targeted email, email, emailing, mailing list, marketing email, mailpoet, newsletter, newsletter widget, email alerts, subscribers, subscriptions, aweber, post notifications, post, digests, plugin, engagement, conversion rate, marketing tools, aweber
 Requires at least: 3.5.0
 Tested up to: 3.6.1
 Stable tag: trunk
