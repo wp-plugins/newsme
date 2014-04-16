@@ -21,7 +21,7 @@ You can read about News@me and see it in action on [*StanfordDaily.com*](http://
 
 In order to understand the power of this solution check out the increase in percentage of some metrics on one of our clients:
 
-* **+300%** the rate of subscriptions of occasional and regular readers compared to the regular newsletter subscriptions
+* **+300%** the rate of subscriptions of occasional and regular readers compared to the regular newsletter subscriptions.
 
 * **+20%** the average opening rate of the personalized email summary compared to the average opening rate of the regular email newsletters in the online publishing industry.
 
