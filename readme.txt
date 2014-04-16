@@ -19,14 +19,15 @@ works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing](http://try.
 
 You can read about News@me and see it in action on [*StanfordDaily.com*](http://www.stanforddaily.com/2014/03/26/the-new-stanforddaily-com-embracing-the-digital-first-age/), the Stanford University's digital newspaper. We are also working amongst the others with one of the biggest digital publisher in Italy, [*AndroidWorld.it*](http://www.androidworld.it/2014/03/17/androidworld-it-introduce-le-notifiche-mirate-via-mail-220437/) and what we found out is that people are really keen on receiving relevant articles. Besides that we saw a remarkable increase in the number of subscriptions when the source is trusted.
 
-In order to understand the power of this solution it’s needed just mention the increase in percentage of some metrics on one of our clients:
+In order to understand the power of this solution check out the increase in percentage of some metrics on one of our clients:
 
-* **+300%** the rate of subscriptions of occasional and regular readers compared to the regular newsletter subscriptions;
+* **+300%** the rate of subscriptions of occasional and regular readers compared to the regular newsletter subscriptions
 
-* **+20%** the averages opening rate of the personalized email summary compared to the average opening of the regular email newsletters in the online publishing industry.
+* **+20%** the average opening rate of the personalized email summary compared to the average opening rate of the regular email newsletters in the online publishing industry.
 
 * **+10%** of visits generated to their site making it the third largest source of site traffic after Google and Facebook in less than six months.
-Unlike products like *Aweber* and *MailChimp*, News@me is a solution that creates a unique and direct link between your online content and each of your reader by converting the interests of your visitors in an innovative system for retention.
+
+Unlike products like *Aweber* and *MailChimp*, News@me is a solution that creates a unique and direct link between your online content and each of your readers by converting the interests of your visitors in an innovative system for retention.
 
 [Home](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page#pricing) | [Get started](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](https://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
