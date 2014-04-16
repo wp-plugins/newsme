@@ -15,7 +15,6 @@ News@me is our answer to bloggers and online content creators to the need to cre
 News@me gives your readers the chance to subscribe to articles published on your site and sends out personalized email summary of your new articles that are unique to each subscriber according to their interests.
 
 > **Special Offer for Bloggers and Online Newspapers!**
-
 Write a review about News@me on your blog or online newspaper and <a href="http://try.newsatme.com/special-offer-6-months-free/?utm_source=Wordpress&utm_medium=plugin&utm_content=Special%20offer&utm_campaign=Wordpress%20Plugin%20Page">get the first 6 months free!</a>
 
 [Home](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
