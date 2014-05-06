@@ -14,9 +14,6 @@ Convert visitors into regular readers. Keep them coming back to your site by sen
 News@me is our answer to bloggers and online content creators to the need to create their own subscriber base and break free from the logic and algorithms of Google and Facebook to bring more traffic, visits and readers to their valuable content, day after day.
 News@me gives your readers the chance to subscribe to articles published on your site and sends out personalized email summary of your new articles that are unique to each subscriber according to their interests.
 
-> **Special Offer for Bloggers and Online Newspapers!**
-Write a review about News@me on your blog or online newspaper and <a href="http://try.newsatme.com/special-offer-6-months-free/?utm_source=Wordpress&utm_medium=plugin&utm_content=Special%20offer&utm_campaign=Wordpress%20Plugin%20Page">get the first 6 months free!</a>
-
 [Home](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page#pricing) | [Get started](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](https://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
