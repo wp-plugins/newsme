@@ -164,6 +164,25 @@ h2.newsatme-header {
 }
 
 .wrap_tag_list{
-	height: 200px;
+	height: 140px;
 	overflow-y: scroll;	
+}
+
+/* Admin menu */
+
+.wp-newsatme-menu-item {
+	display: block;
+}
+
+/* Pointer: Plugins */
+.plugins-php #wp-pointer-0 {
+	left: 130px!important;
+	position: fixed!important;
+}
+
+@media only screen and (max-width: 900px) {
+	.plugins-php #wp-pointer-0 {
+		left: 38px!important;
+		top: 202px!important;
+	}
 }

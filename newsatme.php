@@ -1,11 +1,11 @@
 <?php
 /* 
 Plugin Name: News@me
-Description: News@me is a software that simplifies subscriptions to your newsletters by attracting subscribers in a new way. It creates the newsletter and sends out the articles for you, it's all automated. 
+Description: Convert visitors into regular readers. Keep them coming back to your site by sending them articles of your site based on their interests with News@me. 
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 2.1.10
+Version: 2.2.0
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -35,7 +35,7 @@ function wpnewsatme_init() {
 
 class wpNewsAtMe {
 
-  const VERSION = '2.1.10'; 
+  const VERSION = '2.2.0'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
@@ -108,17 +108,51 @@ class wpNewsAtMe {
     add_settings_section('wpnewsatme-api', '', '__return_false', self::WPDOMAIN);
     add_settings_field('api-key', 'News@me API key', array(__CLASS__, 'askSiteId'), self::WPDOMAIN, 'wpnewsatme-api');
 
-    self::addMetaBox('post'); 
-
     // Actions which have effect on post's remote status
     add_action('save_post', array(__CLASS__, 'savePostEvent'), 1, 2);
     add_action('trash_post', array(__CLASS__, 'trashPostEvent'), 1, 2);
     add_action('untrash_post', array(__CLASS__, 'untrashPostEvent'), 1, 1);
     add_action('admin_notices', array(__CLASS__, 'healthCheck'), 1, 1);
+
+    if (self::getOption('api_key')) {
+      self::addMetaBox('post'); 
+    } 
+
+    function newsatme_register_pointer_on_menu( $p ) {
+      $p['newsatme_onmenu4'] = array(
+        'target' => '#wp-newsatme-plugin-item',  // 'target' => '#menu-plugins', 
+        'options' => array(
+          'content' => sprintf( '<h3> %s </h3> <p> %s </p>',
+          __('News@me widget'), 
+          __('We hope you find News@me useful. Here you\'ll get to your News@me settings where you\'ll be able to activate your widget and start using our service.')
+          ),
+        'position' => array( 'edge' => 'left', 'align' => 'center' )
+        )
+      );
+      return $p;
+    }
+
+    function newsatme_register_pointer_on_metabox( $p ) {
+      $p['newsatme_onmetabox4'] = array(
+        'target' => '#wpnewsatme-post-tags', 
+        'options' => array(
+          'content' => sprintf( '<h3> %s </h3> <p> %s </p>',
+          __('Introducing News@me topics'), 
+          __('Now you can segment your audience using topics. Add topics to your posts and allow your readers to subscribe to any of them. <br>News@me will send to each subscriber highly targeted newsletter digests of your latest posts based on their interests. Clever!')
+          ),
+        'position' => array( 'edge' => 'bottom', 'align' => 'center' )
+        )
+      );
+      return $p;
+    }
+
+    add_filter('newsatme_admin_pointers-plugins', 'newsatme_register_pointer_on_menu');
+    add_filter('newsatme_admin_pointers-post', 'newsatme_register_pointer_on_metabox');
+
   }
 
   static function addMetaBox($post_type) {
-    add_meta_box('wpnewsatme-post-tags', 'News@me tags', array(__CLASS__, 'renderTagsMetaBox'), $post_type, 'advanced', 'high');
+    add_meta_box('wpnewsatme-post-tags', 'News@me topics', array(__CLASS__, 'renderTagsMetaBox'), $post_type, 'side', 'default');
   }
 
   static function modifyPostContent($content) {
@@ -132,7 +166,7 @@ class wpNewsAtMe {
   static function adminMenu() {
     add_plugins_page(
       'News@me Settings',
-      'News@me',
+      '<span id="wp-newsatme-plugin-item" class="wp-newsatme-menu-item">News@me</span>',
       'manage_options',
       self::WPDOMAIN,
       array(__CLASS__, 'showOptionsPage')
@@ -275,6 +309,35 @@ class wpNewsAtMe {
     }
   }
 
+  static function dontUseTaxonomies() {
+    $use = self::getOption('dont_use_taxonomies_as_topics'); 
+    return $use === true; 
+  }
+
+  static function validateAPIKey($api_key) {
+    self::getConnected($api_key); 
+
+    $params = array(); 
+
+    if (!self::isConnected()){
+      add_settings_error('api-key-errors', 'api-key', 'The API key you entered is not valid. Please double-check it.', 'error'); 
+    } else {
+      $response = self::$newsatme_client->getSite();
+      $params['api_key'] = $api_key; 
+
+      if ($response['id'] != null) { 
+        $params['site_id'] = $response['id']; 
+
+        foreach($response as $key => $value) {
+          if (strpos($key, 'wp_') === 0) $params[substr($key, 3)] = $value ; 
+        }
+      }
+
+      add_settings_error('api-key-errors', 'api-key', 'Success! Your widget has been activated.', 'updated'); 
+      return $params; 
+    }
+  }
+
   /**
    * Processes submitted settings from. This funciton is invoked every time 
    * an option with namespace WPDOMAIN is saved to database. 
@@ -288,23 +351,11 @@ class wpNewsAtMe {
 
     if ($params['api_key'] == '') {
       add_settings_error('api-key-errors', 'api-key', 'Please enter your API key.', 'updated'); 
-      $params['api_key'] = ''; 
     } else {
-      self::getConnected($params['api_key']); 
-      if (!self::isConnected()){
-        add_settings_error('api-key-errors', 'api-key', 'The API key you entered is not valid. Please double-check it.', 'error'); 
-        $params['api_key'] = ''; 
-      } else {
-        add_settings_error('api-key-errors', 'api-key', 'Success! Your widget has been activated.', 'updated'); 
-
-        $response = self::$newsatme_client->getSite();
-        if ($response['id'] != null) { 
-          $params['site_id'] = $response['id']; 
-        }
-      }
+      $validated_settings = self::validateAPIKey($params['api_key']); 
     }
 
-    return $params;
+    return $validated_settings;
   }
 
   static function getAPIKey() {
@@ -402,8 +453,40 @@ function this_plugin_first() {
 		update_option('active_plugins', $active_plugins);
 	}
 }
-
 add_action("activated_plugin", "this_plugin_first");
+
+
+function newsatme_pointer_load( $hook_suffix ) {
+  // Don't run on WP < 3.3
+  if ( get_bloginfo( 'version' ) < '3.3' )
+    return;
+
+  $screen = get_current_screen();
+  $screen_id = $screen->id;
+  $pointers = apply_filters( 'newsatme_admin_pointers-' . $screen_id, array() );
+  if ( ! $pointers || ! is_array( $pointers ) )
+    return;
+  $dismissed = explode( ',', (string) get_user_meta( get_current_user_id(), 'dismissed_wp_pointers', true ) );
+  $valid_pointers =array();
+  foreach ( $pointers as $pointer_id => $pointer ) {
+    if ( in_array( $pointer_id, $dismissed ) || empty( $pointer )  || empty( $pointer_id ) || empty( $pointer['target'] ) || empty( $pointer['options'] ) )
+      continue;
+
+    $pointer['pointer_id'] = $pointer_id;
+    $valid_pointers['pointers'][] =  $pointer;
+  }
+ 
+  if ( empty( $valid_pointers ) )
+    return;
+
+  wp_enqueue_style( 'wp-pointer' );
+  wp_enqueue_script( 'newsatme-pointer', plugins_url( 'js/newsatme-pointer.js', __FILE__ ), array( 'wp-pointer' ) );
+  wp_localize_script( 'newsatme-pointer', 'newsatmePointer', $valid_pointers );
+}
+
+
+
+add_action( 'admin_enqueue_scripts', 'newsatme_pointer_load', 10000 );
 
 // Register `the_content` filter here, due to the high priority required. 
 add_filter('the_content', array('wpNewsAtMe', 'modifyPostContent'), 0); 
