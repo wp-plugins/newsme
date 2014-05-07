@@ -91,6 +91,10 @@ Start [adding your News@me tags to your articles](http://help.newsatme.com/custo
 9. Readers like your publishing activity: number of clicks and click-through rate, CTR. Through this analysis you can easily discover the appreciation by your subscribers to your new articles. One subscriber out of two values and reads your new content if the CTR (Click-Through rate) shows a percentage higher than 50%. The closer to 100%, the more your publishing activity is valued and appreciated! On the contrary, a CTR less than 50% is a clear indication to shift your publishing activity away from those topics and instead move toward others for which your subscribers show interest in.
 
 == CHANGELOG == 
+= 2.2.1 =
+
+* CHANGE: API timeout times and SSL cURL options
+
 = 2.2.0 =
 
 * CHANGE: Add pointers to installed plugins and to add new post
