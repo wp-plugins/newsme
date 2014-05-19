@@ -11,7 +11,7 @@ Convert visitors into regular readers. Keep them coming back to your site by sen
 
 == Description ==
 
-News@me is a new concept of newsletter. News@me is our answer to online media and bloggers to the need of growing their audience, building their own subscriber base and bringing more traffic, visits and readers to their valuable content, day after day.
+News@me is our answer to online media and bloggers to the need of growing their audience, building their own subscriber base and bringing more traffic, visits and readers to their valuable content, day after day.
 News@me gives your readers the ability to subscribe to posts published on your site and sends out highly targeted email newsletter digests of your new posts that are unique to each subscriber based on their interests. News@me works using your tags, categories or News@me topics.
 
 [Home](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
