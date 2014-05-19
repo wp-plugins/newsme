@@ -92,6 +92,10 @@ class NewsAtMe_Post {
     if (strlen($this->get_newsatme_tags()) > 0) {
       $this->tags_array = explode(',', $this->get_newsatme_tags());
     }
+
+    if (!wpNewsAtMe::dontUseTaxonomies() && empty($this->tags_array)) {
+      $this->assign_tags_array_from_taxonomies(); 
+    }
   }
 
   private function get_post_catgories() {

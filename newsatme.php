@@ -5,7 +5,7 @@ Description: Convert visitors into regular readers. Keep them coming back to you
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 2.2.1
+Version: 3.0.0
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -35,7 +35,7 @@ function wpnewsatme_init() {
 
 class wpNewsAtMe {
 
-  const VERSION = '2.2.1'; 
+  const VERSION = '3.0.0'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
@@ -132,13 +132,31 @@ class wpNewsAtMe {
       return $p;
     }
 
+    function newsatme_register_pointer_on_menu_admin_posts( $p ) {
+      $p['newsatme_onmenu4a'] = array(
+        'target' => '#wp-newsatme-plugin-item',  // 'target' => '#menu-plugins', 
+        'options' => array(
+          'content' => sprintf( '<h3> %s </h3> <p> %s </p>',
+          __('New! Audience segmentation gets smarter'), 
+          __('News@me now works right after the activation. The News@me widget is now shown across your site at the bottom of any post that has "Tags" added or "Categories" assigned to it.
+            <br><br>
+            "Tags" and "Categories" are not good for segmenting your audience? Add "News@me topics" to your posts. 
+            <br><br>
+            Check out your <a href="https://app.newsatme.com/dashboard" target="_blank">Dashboard</a> for widget impressions, conversions, subscriptions and much more!')
+          ),
+        'position' => array( 'edge' => 'left', 'align' => 'center' )
+        )
+      );
+      return $p;
+    }
+
     function newsatme_register_pointer_on_metabox( $p ) {
       $p['newsatme_onmetabox4'] = array(
         'target' => '#wpnewsatme-post-tags', 
         'options' => array(
           'content' => sprintf( '<h3> %s </h3> <p> %s </p>',
           __('Introducing News@me topics'), 
-          __('Now you can segment your audience using topics. Add topics to your posts and allow your readers to subscribe to any of them. <br>News@me will send to each subscriber highly targeted newsletter digests of your latest posts based on their interests. Clever!')
+          __('"Tags" and "Categories" are not good for segmenting your audience? Now you can segment your audience using "News@me topics".<br>Add topics to your posts and allow your readers to subscribe to any of them. <br>News@me will send to each subscriber highly targeted newsletter digests of your latest posts based on their interests. Clever!')
           ),
         'position' => array( 'edge' => 'bottom', 'align' => 'center' )
         )
@@ -147,6 +165,7 @@ class wpNewsAtMe {
     }
 
     add_filter('newsatme_admin_pointers-plugins', 'newsatme_register_pointer_on_menu');
+    add_filter('newsatme_admin_pointers-plugins', 'newsatme_register_pointer_on_menu_admin_posts');
     add_filter('newsatme_admin_pointers-post', 'newsatme_register_pointer_on_metabox');
 
   }

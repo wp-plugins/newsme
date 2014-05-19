@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 === Relevant email newsletter plugin by News@me ===
+=======
+=== Targeted email newsletter plugin by News@me ===
+>>>>>>> Stashed changes
 Contributors: newsatme
 Tags: newsletter plugin, auto newsletter, newsletter signup, customized newsletter, customized digest, mailchimp, automated newsletter, targeted email, email, emailing, mailing list, marketing email, mailpoet, newsletter, newsletter widget, email alerts, subscribers, subscriptions, aweber, post notifications, post, digests, plugin, engagement, conversion rate, marketing tools, aweber
 Requires at least: 3.5.0
@@ -11,8 +15,8 @@ Convert visitors into regular readers. Keep them coming back to your site by sen
 
 == Description ==
 
-News@me is our answer to bloggers and online content creators to the need to create their own subscriber base and break free from the logic and algorithms of Google and Facebook to bring more traffic, visits and readers to their valuable content, day after day.
-News@me gives your readers the chance to subscribe to articles published on your site and sends out personalized email summary of your new articles that are unique to each subscriber according to their interests.
+News@me is new concept of newsletter. News@me is our answer to online media and bloggers to the need of growing their audience, building their own subscriber base and bringing more traffic, visits and readers to their valuable content, day after day.
+News@me gives your readers the ability to subscribe to posts published on your site and sends out highly targeted email newsletter digests of your new posts that are unique to each subscriber based on their interests. News@me works using your tags, categories or News@me topics.
 
 [Home](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing](http://try.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page#pricing) | [Get started](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](https://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
@@ -32,17 +36,17 @@ Unlike products like *Aweber* and *MailChimp*, News@me is a solution that create
 = News@me for your readers =
 *Three high-value services that you offer to your readers using News@me. They won't leave you ever again!*
 
-**1. Your readers can subscribe to your site through the News@me widget**
+**1. Your readers can subscribe to your site through the News@me widget at the end of every post**
 
-A simple invitation with a minimalistic design and that does not affect the reading, the **News@me widget catches the attention of your readers at the end of each article and converts this attention into a subscription to your site**. This allows you to create a unique bond between your readers and your publishing activity based on something valuable: their interests, passions and curiosities. 
+A simple invitation with a minimalistic design and that does not affect the reading, the **News@me widget catches the attention of your readers at the end of each article and converts this attention into a subscription to your site**. This allows you to create a unique bond between your readers and your publishing activity based on something valuable: their interests, passions and curiosities. You'll be able to do this just by adding tags, categories or News@me topics to your posts.  
 
-**2. Subscribers receive email digests with your new articles of their interest**
+**2. A unique and innovative way to follow topics of interest on your site**
 
-Create a unique experience for your readers with News@me. **Each subscriber receives updates on articles and topics of interest** through an elegant email summary. Invite your readers to return to your site and read new articles about their interests. Put their passions at the center of your conversation and they'll keep coming back to your site and read your new articles day by day.
+Give more control to your readers. With **News@me you allow your subscribers choose which posts to get in the email newsletter digest**, day by day and if their passions and interests change..your newsletter digest changes too! The *"News manager"* is a simple and intuitive service offered for free to your subscribers that enables your subscribers to follow and unfollow tags, categories and topics of your posts at any time.
 
-**3. A unique and innovative way to follow topics of interest on your site**
+**3. Subscribers receive email newsletter digests with your new posts of their interest based on your tags, categories and topics they currently follow**
 
-Give more control to your readers. With **News@me you let your subscribers choose which articles to get in the email summary**, day by day and if their passions and interests change..your email summary changes too! The News manager is a simple and intuitive service offered for free to your subscribers that enhances your online presence.
+Create a unique experience for your readers with News@me. **Each subscriber receives updates of new posts based on the tags, categories and topics they're following** through an elegant email digest. Invite your readers to return to your site and read your latest posts about their interests. Put their passions at the center of your conversation and they'll keep coming back to your site.
 
 = News@me for your online content =
 *Analyze the effectiveness of your online content with News@me and discover the interests of your readers. Publish new content that your subscribers will rush to read on your site every day!*
@@ -91,6 +95,11 @@ Start [adding your News@me tags to your articles](http://help.newsatme.com/custo
 9. Readers like your publishing activity: number of clicks and click-through rate, CTR. Through this analysis you can easily discover the appreciation by your subscribers to your new articles. One subscriber out of two values and reads your new content if the CTR (Click-Through rate) shows a percentage higher than 50%. The closer to 100%, the more your publishing activity is valued and appreciated! On the contrary, a CTR less than 50% is a clear indication to shift your publishing activity away from those topics and instead move toward others for which your subscribers show interest in.
 
 == CHANGELOG == 
+= 3.0.0 =
+
+* CHANGE: Widget at the bottom of any article that uses Tags or Categories
+* CHANGE: When News@me topics are not added, Tags and Categories are used 
+
 = 2.2.1 =
 
 * CHANGE: API timeout times and SSL cURL options

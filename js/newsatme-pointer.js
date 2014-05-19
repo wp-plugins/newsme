@@ -7,6 +7,11 @@ jQuery(document).ready( function($) {
         $.post( ajaxurl, {
           pointer: pointer.pointer_id,
           action: 'dismiss-wp-pointer'
+        }, function() {
+          var next = 1 + i ;
+          if (newsatmePointer.pointers[next]) {
+            newsatme_open_pointer(next);
+          }
         });
       }
     });
