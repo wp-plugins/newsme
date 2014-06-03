@@ -19,7 +19,7 @@ Sort by:
   <?php foreach($available_tags as $key => $value) { ?>
     <li class="newsatme_available_tag_row test">
       <a href="javascript:void(0);">
-      <span class="tag_name"><?php echo $value['tag'] ?></span>
+      <span class="tag_name"><?php echo htmlspecialchars($value['tag']) ?></span>
       <span class="subs_count" data-count="<?php echo $value['subs'] ;?>">(<?php echo $value['subs'] ?>)</span>
       </a>
     </li>
