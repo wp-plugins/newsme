@@ -1,4 +1,4 @@
-=== Targeted email newsletter plugin by News@me ===
+=== Double your Email Subscribers and Send Automated Targeted Newsletter by News@me ===
 Contributors: newsatme
 Tags: newsletter plugin, auto newsletter, newsletter signup, customized newsletter, customized digest, mailchimp, automated newsletter, targeted email, email, emailing, mailing list, marketing email, mailpoet, newsletter, newsletter widget, email alerts, subscribers, subscriptions, aweber, post notifications, post, digests, plugin, engagement, conversion rate, marketing tools, aweber
 Requires at least: 3.5.0
