@@ -2,28 +2,10 @@
 
 class NewsAtMe_Views {  
 
-  static function apiKeyForm($api_key, $site_id, $valid=true) {
-    include self::template_path('api_form');
-  }
-
   static function isChecked($display) {
     if ($display == '' || $display == 'no') $checked = "" ;
     else $checked = 'checked="checked"';
     return $checked; 
-  }
-
-  static function keyConfigPage() {
-    include self::template_path('key_config_page');
-  }
-
-  static function showDemChoice() {
-    return !wpNewsAtMe::getOption('widget_hide_dem_choice'); 
-  }
-
-  static function widgetDisplayOption($display) {
-    $selected = 'selected="selected"';
-    if ($display == '' || $display == false) $display = 'none';
-    include self::template_path('widget_display_option');
   }
 
   static function renderPostOutOfSync($npost) {
@@ -35,21 +17,34 @@ class NewsAtMe_Views {
   }
 
   static function renderMissingApiKey() {
-    $link = esc_url(add_query_arg(array('page' => wpNewsAtMe::WPDOMAIN), admin_url('plugins.php'))); 
+    $link = esc_url(add_query_arg(array('page' => 'newsatme-activation-page'), 
+    admin_url('plugins.php'))); 
     include self::template_path('missing_api_key');
+  }
+
+  static function navigation($options) {
+    include self::template_path('navigation'); 
+  }
+
+  static function showPreferences() {
+    $post_types = wpNewsAtMe::getPostTypes(); 
+    include self::template_path('preferences_page'); 
   }
 
   static function renderServerStatus() {
     include self::template_path('remote_status');
   }
 
-  static function enterKeyPage() {
-    $link = esc_url(add_query_arg(array('page' => wpNewsAtMe::WPDOMAIN), admin_url('plugins.php'))); 
-    include self::template_path('enter_key_page');
+  static function setKeyPage($api_key) {
+    $link = esc_url(add_query_arg(
+      array('page' => 'newsatme-activation-page'), admin_url('plugins.php'))); 
+    include self::template_path('set_key_page');
   }
 
   static function getKeyPage() {
-    $link = esc_url(add_query_arg(array('page' => wpNewsAtMe::WPDOMAIN, 'show' => 'enter-api-key'), admin_url('plugins.php'))); 
+    $link = esc_url(add_query_arg(
+      array('page' => 'newsatme-activation-page', 'show' => 'enter-api-key'), 
+      admin_url('admin.php'))); 
     include self::template_path('get_key_page');
   }
   
@@ -82,7 +77,6 @@ class NewsAtMe_Views {
     include self::template_path('subscription_done');
   }
 
-  // private
   private static function template_path($template) {
     return self::base_path() . $template . '.html.php';
   }

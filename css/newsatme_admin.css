@@ -114,6 +114,7 @@
 
 /* Show logo in header 32px by 32px */
 h2.newsatme-header {
+	display: inline-block;
 	padding-left: 38px;
 	background: url('images/news-at-me-visual-elements-logo-n-32-32.png') no-repeat 0 9px;
 	margin-bottom: 14px;
@@ -176,13 +177,23 @@ h2.newsatme-header {
 
 /* Pointer: Plugins */
 .plugins-php #wp-pointer-0 {
-	left: 130px!important;
-	position: fixed!important;
+
 }
 
 @media only screen and (max-width: 900px) {
 	.plugins-php #wp-pointer-0 {
-		left: 38px!important;
-		top: 202px!important;
+
 	}
+}
+
+/* Helper class */
+
+#plugin-now-active-header {
+	width: 100%;
+	max-width: 720px;
+}
+
+.label-field {
+	display: block;
+	padding: 0 0 4px;
 }

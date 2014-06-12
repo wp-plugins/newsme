@@ -10,6 +10,7 @@ class NewsAtMe_Post {
   var $time; 
   var $title; 
   var $status; 
+  var $taxonomies; 
 
   function NewsAtMe_Post($post) { $this->__construct($post); }
 
@@ -24,6 +25,7 @@ class NewsAtMe_Post {
     $this->type        = $post->post_type;  // TODO: check for this to remove
     $this->_post       = $post; // TODO: check for this to remove
 
+    $this->setupTaxonomies(); 
     $this->assign_tags_array(); 
     $this->make_tags_string(); 
   }
@@ -80,9 +82,9 @@ class NewsAtMe_Post {
   }
 
   private function assign_tags_array_from_taxonomies() {
-    $this->tags_array = $this->get_post_tags(); 
+    $this->tags_array = $this->getTagLikeTerms(); 
      if (empty($this->tags_array)) {
-      $this->tags_array = $this->get_post_catgories(); 
+      $this->tags_array = $this->getCategoryLikeTerms(); 
     }
   }
 
@@ -98,16 +100,30 @@ class NewsAtMe_Post {
     }
   }
 
-  private function get_post_catgories() {
-    return wp_get_object_terms($this->id, 'category', array('fields' => 'names'));
+  private function getCategoryLikeTerms() {
+    return wp_get_object_terms($this->id, $this->taxonomies['hierarchical'], array('fields' => 'names'));
   }
 
-  private function get_post_tags() {
-    return wp_get_object_terms($this->id, 'post_tag', array('fields' => 'names'));
+  private function getTagLikeTerms() {
+    return wp_get_object_terms($this->id, $this->taxonomies['non-hierarchical'], array('fields' => 'names'));
   }
 
   private function get_newsatme_tags() {
     return get_post_meta($this->id, wpNewsAtMe::TAGS_META_KEY, true);
   }
+
+  private function setupTaxonomies() {
+    $this->taxonomies = array('hierarchical' => array(), 'non-hierarchical' => array()); 
+    foreach(get_taxonomies(array(), 'object') as $k => $v) {
+      if (in_array($this->type, $v->object_type) ) {
+        if ($v->hierarchical) {
+          $this->taxonomies['hierarchical'][] = $k; 
+        } else {
+          $this->taxonomies['non-hierarchical'][] = $k; 
+        }
+      }
+    }
+  }
 }
+
 ?>

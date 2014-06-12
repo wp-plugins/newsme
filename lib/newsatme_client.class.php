@@ -101,7 +101,6 @@ class NewsAtMe_Client {
 
 		switch ($http) {
     case 'GET':
-      //some distribs change arg sep to &amp; by default
       $sep_changed = false;
       if (ini_get("arg_separator.output")!="&"){
         $sep_changed = true;
@@ -153,7 +152,6 @@ class NewsAtMe_Client {
 
     if ( !in_array( $method, array('POST','GET') ) ) $method = 'POST';
 
-    //some distribs change arg sep to &amp; by default
     $sep_changed = false;
     if (ini_get("arg_separator.output")!="&"){
       $sep_changed = true;
