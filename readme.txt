@@ -14,7 +14,7 @@ Convert visitors into regular readers. Keep them coming back to your site by sen
 News@me is a new concept of newsletter. News@me is our answer to online media and bloggers to the need of growing their audience, building their own subscriber base and bringing more traffic, visits and readers to their valuable content, day after day.
 News@me gives your readers the ability to subscribe to posts published on your site and sends out highly targeted email newsletter digests of your new posts that are unique to each subscriber based on their interests. News@me works using your tags, categories or News@me topics.
 
-> **New! Case study:** [**The Galileo Case**](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).
+> **New! Case study: [The Galileo Case]**(http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).
 
 Read on [How a publisher can build a new source of traffic and an active user base in 11 months](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page)</a>.
 
