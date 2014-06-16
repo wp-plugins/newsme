@@ -93,9 +93,47 @@ Start [adding your News@me tags to your articles](http://help.newsatme.com/custo
 
 == Frequently Asked Questions ==
 
-= What’s different from Google Alerts? =
+= What's different from Google Alerts? =
 Unlike Google Alerts, with News@me your reader follows given topics directly from your site and will be receiving only news published on your site related to those given topics. 
 
+= What's different from MailChimp? =
+News@me unlike MailChimp carries out in the background a segmentation of your readers based on the topics across your site carefully chosen by your readers themselves anytime they subscribe to your site through the News@me subscription invitation at the end of each of your post.
+News@me sends out unique email digests of the news published on your site to your segments.
+The email digests sent out happens in the background and the news sent are based on the interests of each reader.
+In brief News@me groups your readers with the topics of their interests, creates and sends out email digests of news published on your site based on the interests of your readers, you don't need to create neither the group or segment nor your email digest.
+
+= What's different from FeedBurner? =
+Unlike FeedBurner, the feed of news published on your site that News@me creates and sends out is unique to each of your readers and it's based on the topics of their interest.
+
+= Who owns the mailing list of the subscribers to my site? =
+The database of the mailing list that News@me creates and helps you managing is 100% in your possession. News@me doesn't hold any bit of your user data and allows you to export your mailing list at any given time.
+
+= How do I assign topics to posts? =
+News@me assigns topics to your posts by using tags and categories found on each post. You'll be able to assign special News@me tags to each post whenever you find that tags and categories are not your preferred way of segmenting your audience.
+
+= How do readers subscribe to the various topics across my site? =
+Your readers are able to start following any given topic through our subscription invitation shown at the bottom of each of your post. Moreover your subscribers are able to manage at any given time the various topics they follow through our innovative News manager. 
+
+= Do subscribers receive emails from various sources? =
+Your subscribers receive only news published on your site. 
+
+= Do my subscribers receive email on your behalf or my behalf? =
+The emails sent to your subscribers show your brand logo and are seen from your subscribers as of your possession. The actual send out is performed by News@me and we take care of the delivery.
+
+= How does the send out of the email digest happens with News@me? =
+You're able to choose the frequency and the time of the day by which News@me creates and sends out the email digests to the segments of subscribers with your news whenever you assign to your new posts the topics that your subscribers are following.
+
+= How does the free trial work? = 
+You get access to all of our features with no limits for 30 days, you’ll also own your subscriber base. Then you can see which paid plan is for you and decide if you want to go on.
+
+= What types of payments do you accept? =
+At this moment we're not ready to accept online payments but you’ll get access to the service as usual once your free trial is over. We'll soon be ready to accept online payments.
+
+Do I have to sign a long term contract?
+There are no contracts. You can close your account at any time.
+
+= Any other questions? =  
+No problem. Just <a href="mailto:staff@newsatme.com" target="_blank">drop us an email</a> and we'll get back to you with all the answers you need.
 
 == CHANGELOG == 
 = 3.1.0 = 
