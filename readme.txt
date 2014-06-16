@@ -16,9 +16,7 @@ News@me gives your readers the ability to subscribe to posts published on your s
 
 > **New! Case study: [The Galileo Case](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).**
 Read on [How a publisher can build a new source of traffic and an active user base in 11 months](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).
-*In this article, you’ll learn...*
-* How one publisher used News@me to boost its audience by increasing its subscriber list  and its returning traffic.
-* Why creating a new approach of a personalized newsletter can make a better reader experience.
+*In this article, you’ll learn...* 1. How one publisher used News@me to boost its audience by increasing its subscriber list  and its returning traffic. 2. Why creating a new approach of a personalized newsletter can make a better reader experience.
 **[Read the case study now](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page)**
 
 [Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
