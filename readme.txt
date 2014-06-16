@@ -64,9 +64,10 @@ works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing](http://news
 
 == Installation ==
 
-Upload the News@me plugin to your site. Activate it, then enter your News@me API key. 
+[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Get started](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
-Start [adding your News@me tags to your articles](http://help.newsatme.com/customer/portal/articles/1331442-tagging-posts-using-news-me-in-wordpress) and allow your readers to subscribe to your topics and articles today.
+Upload the News@me plugin to your site. <a href="https://app.newsatme.com/users/sign_up?hl=en" target="_blank">Sign up for free</a> and activate the plugin. 
 
 1, 2, 3: You're done! 
 
