@@ -97,6 +97,9 @@ works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http:
 
 == Frequently Asked Questions ==
 
+[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
+
 = What's different from Google Alerts? =
 Unlike Google Alerts, with News@me your reader follows given topics directly from your site and will be receiving only news published on your site related to those given topics. 
 
@@ -138,6 +141,9 @@ There are no contracts. You can close your account at any time.
 
 = Any other questions? =  
 No problem. Just <a href="mailto:staff@newsatme.com" target="_blank">drop us an email</a> and we'll get back to you with all the answers you need.
+
+[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
 == CHANGELOG == 
 = 3.1.0 = 
