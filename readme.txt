@@ -73,9 +73,6 @@ Upload the News@me plugin to your site. <a href="https://app.newsatme.com/users/
 
 == Screenshots ==
 
-[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
-
 1. Start adding your News@me tags to your posts. At the bottom of the page, you will find a meta-box where you can add your News@me tags for each of the topic related to the post you're about to publish. By doing so you'll allow your readers to subscribe to your topics and articles today through the News@me widget. It's that simple! 
 
 2. News@me meta-box detail. Add your News@me tags for each of the topic related to the post you're about to publish.
@@ -104,7 +101,7 @@ works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http:
 Unlike Google Alerts, with News@me your reader follows given topics directly from your site and will be receiving only news published on your site related to those given topics. 
 
 = What's different from MailChimp? =
-News@me unlike MailChimp carries out in the background a segmentation of your readers based on the topics across your site carefully chosen by your readers themselves anytime they subscribe to your site through the News@me subscription invitation at the end of each of your post.
+News@me unlike MailChimp carries out in the background a segmentation of your readers based on the topics across your site carefully chosen by your readers themselves anytime they subscribe to your site through the News@me subscription invitation shown at the end of each of your post.
 News@me sends out unique email digests of the news published on your site to your segments.
 The email digests sent out happens in the background and the news sent are based on the interests of each reader.
 In brief News@me groups your readers with the topics of their interests, creates and sends out email digests of news published on your site based on the interests of your readers, you don't need to create neither the group or segment nor your email digest.
@@ -128,7 +125,7 @@ Your subscribers receive only news published on your site.
 The emails sent to your subscribers show your brand logo and are seen from your subscribers as of your possession. The actual send out is performed by News@me and we take care of the delivery.
 
 = How does the send out of the email digest happens with News@me? =
-You're able to choose the frequency and the time of the day by which News@me creates and sends out the email digests to the segments of subscribers with your news whenever you assign to your new posts the topics that your subscribers are following.
+You're able to choose the frequency and the time of the day by which News@me creates and sends out the email digests to the segments of your subscribers with your news whenever you assign to your new posts the topics that your subscribers are following.
 
 = How does the free trial work? = 
 You get access to all of our features with no limits for 30 days, you’ll also own your subscriber base. Then you can see which paid plan is for you and decide if you want to go on.
