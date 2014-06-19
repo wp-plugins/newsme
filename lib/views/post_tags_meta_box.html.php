@@ -3,15 +3,15 @@
 
 <?php if ($error) { ?>
   <div class="updated">
-    <p>News@me is not able to retrieve your tags at the moment. Please try again later.</p>
+    <p><?php _e('News@me is not able to retrieve your topics at the moment. Please try again later.', 'wpnewsatme'); ?></p>
   </div>
 <?php } ?>
 
 <?php if ($available_tags) { ?>
 <div class="newsatme_tags_sorting">
-Sort by:
-  <a href="javascript:;" id="newsatme_tags_sort_name">Name</a> |
-  <a href="javascript:;" id="newsatme_tags_sort_count">Subscribers</a>
+<?php _e('Sort by:', 'wpnewsatme'); ?>
+  <a href="javascript:;" id="newsatme_tags_sort_name"><?php _e('A - Z', 'wpnewsatme'); ?></a> |
+  <a href="javascript:;" id="newsatme_tags_sort_count"><?php _e('Subscribers', 'wpnewsatme'); ?></a>
 </div>
 
 <div class="wrap_tag_list">

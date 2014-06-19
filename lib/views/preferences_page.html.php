@@ -6,10 +6,10 @@
     <form method="post" action="options.php">
       <div>
         <h2>
-          Select post types
+          <?php _e('Select post types', 'wpnewsatme'); ?>
         </h2>
         <p>
-          Enable News@me to work with any preferred type of content.
+          <?php _e('Enable News@me to work with any preferred type of content.', 'wpnewsatme'); ?>
         </p>
 
         <ul>
@@ -28,7 +28,7 @@
       </div>
 
       <p class="submit">
-        <input type="submit" name="Submit" class="button-primary" value="<?php esc_attr_e('Save Changes') ?>" />
+        <input type="submit" name="Submit" class="button-primary" value="<?php esc_attr_e('Save') ?>" />
       </p>
     </form> 
   </div>

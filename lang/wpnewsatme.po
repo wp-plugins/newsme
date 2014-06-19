@@ -2,118 +2,55 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wpNewsatme 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-30 09:19-0500\n"
+"POT-Creation-Date: 2014-06-17 18:01+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Fabrizio Regini <freegenie@gmail.com>\n"
+"Last-Translator: Luigi Claudio <luigi@newsatme.com>\n"
 "Language-Team: Newsatme <admin@newsatme.com>\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: UNITED STATES\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-SearchPath-0: .\n"
 
-msgid "enter your email in the box below:"
+#: lib/newsatme_pointers.class.php:11
+msgid "New! Audience segmentation gets smarter"
 msgstr ""
 
-msgid "If you want updates for" 
+#: lib/newsatme_pointers.class.php:12
+msgid ""
+"News@me now works right after the activation. The News@me widget is now "
+"shown across your site at the bottom of any post that has \"Tags\" added or "
+"\"Categories\" assigned to it.\n"
+"            <br><br>\n"
+"            \"Tags\" and \"Categories\" are not good to you for segmenting "
+"your audience? Add \"News@me topics\" to your posts."
 msgstr ""
 
-msgid "You already subscribed to this topic."
+#: lib/newsatme_pointers.class.php:27
+msgid "Introducing News@me topics"
 msgstr ""
 
-msgid "Discover" 
+#: lib/newsatme_pointers.class.php:28
+msgid ""
+"\"Tags\" and \"Categories\" are not good for segmenting your audience? Now "
+"you can segment your audience using \"News@me topics\".<br>Add topics to "
+"your posts and allow your readers to subscribe to any of them. <br>News@me "
+"will send to each subscriber highly targeted newsletter digests of your "
+"latest posts based on their interests. Clever!"
 msgstr ""
 
-msgid "Enter your email address"
+#: lib/views/navigation.html.php:3
+msgid "News@me"
 msgstr ""
 
-msgid "Subscribe"
+#: lib/views/post_out_of_sync.html.php:2
+msgid "News@me was not able to save your post, please save it again."
 msgstr ""
 
-msgid "Please enter a valid email"
-msgstr ""
-
-msgid "You must accept terms of service"
-msgstr ""
-
-msgid "An error occurred during subscription request" 
-msgstr ""
-
-msgid "I have read and agree to the %s"
-msgstr ""
-
-msgid "Privacy Policy"
-msgstr ""
-
-msgid "I consent to the processing of personal data referred in %s"
-msgstr ""
-
-msgid "Purpose of the Treatment"
-msgstr ""
-
-msgid "Display Settings"
-msgstr ""
-
-msgid "Display even without tags"
-msgstr ""
-
-msgid "Show tags in call-to-action"
-msgstr ""
-
-msgid "DEM authorization"
-msgstr ""
-
-msgid "Widget placement"
-msgstr ""
-
-msgid "Advanced options"
-msgstr ""
-
-msgid "Security"
-msgstr ""
-
-msgid "Show the widget even without News@me tags"
-msgstr ""
-
-msgid "Show tags instead of title in call-to-action"
-msgstr ""
-
-msgid "Don't show checkbox for DEM authorization"
-msgstr ""
-
-msgid "Select how the widget will be shown on the page"
-msgstr ""
-
-msgid "Never display widget"
-msgstr ""
-
-msgid "Automatically at the end of each article"
-msgstr ""
-
-msgid "With a placeholder inside the article"
-msgstr ""
-
-msgid "With a tag inside the template"
-msgstr ""
-
-msgid "widget is hidden in any case, even if a placeholder is set inside the article or the template function is used."
-msgstr ""
-
-msgid "widget is shown just after the article body in detail pages."
-msgstr ""
-
-msgid "when this option is active, you need to set a placeholder inside the article's body where you want the widget to be shown. Placeholder to use is the following: <pre> {{NEWSATME}} </pre>"
-msgstr ""
-
-msgid "widget is shown by using the following tag inside your template:  <pre> <&#63;php echo newsatme_subscribe(); ?> </pre> Only use this tag when a single article is being displayed on the page."
-msgstr ""
-
-msgid "Thanks for your interest in: %s"
-msgstr ""
-
-msgid "If you find other intersting articles on our site repeat the subscription."
+#: newsatme.php:317
+msgid "Settings"
 msgstr ""

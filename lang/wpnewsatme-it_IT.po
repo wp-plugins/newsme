@@ -2,118 +2,455 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wpNewsatme 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-30 09:19-0500\n"
+"POT-Creation-Date: 2014-06-19 11:10+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Fabrizio Regini <freegenie@gmail.com>\n"
+"Last-Translator: Luigi Claudio <luigi@newsatme.com>\n"
 "Language-Team: Newsatme <admin@newsatme.com>\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Italian\n"
-"X-Poedit-Country: ITALY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-SearchPath-0: .\n"
 
-msgid "enter your email in the box below:"
-msgstr "lascia la tua email nel box sotto:"
+#: lib/newsatme_pointers.class.php:11
+msgid "New! Audience segmentation gets smarter"
+msgstr "Novità! La segmentazione del tuo pubblico diventa più intelligente"
 
-msgid "If you want updates for" 
-msgstr "Per ricevere news via e-mail su"
+#: lib/newsatme_pointers.class.php:12
+msgid ""
+"News@me now works right after the activation. The News@me widget is now "
+"shown across your site at the bottom of any post that has \"Tags\" added or "
+"\"Categories\" assigned to it.\n"
+"            <br><br>\n"
+"            \"Tags\" and \"Categories\" are not good to you for segmenting "
+"your audience? Add \"News@me topics\" to your posts."
+msgstr ""
+"News@me adesso funziona subito dopo l’attivazione. ll widget di News@me è "
+"mostrato sul tuo sito alla fine di ogni articolo a cui sono stati aggiunti "
+"dei \"Tag\" o assegnate delle \"Categorie\".  <br><br>\n"
+"Utilizzi \"Tag\" e \"Categorie\" in un modo diverso? Puoi aggiungere gli "
+"\"argomenti di News@me\" ai tuoi articoli e segmentare in questo modo la tua "
+"audience. "
 
-msgid "You already subscribed to this topic."
-msgstr "Sei già iscritto a questo argomento."
+#: lib/newsatme_pointers.class.php:27
+msgid "Introducing a new criteria for segmenting your audience"
+msgstr "Introduciamo un nuovo criterio di segmentazione della tua audience"
 
-msgid "Discover" 
-msgstr "Scopri"
+#: lib/newsatme_pointers.class.php:28
+msgid ""
+"Now you can segment your audience using \"News@me topics\".<br>Add topics to "
+"your posts and allow your readers to subscribe to any of them. <br>News@me "
+"will send to each subscriber highly-targeted newsletter digests of your "
+"latest posts based on their interests. Clever!<br><br><a href=\"http://"
+"newsatme.com?utm_source=wordpress-plugin&utm_medium=link-find-more-pointer-"
+"post&utm_campaign=wordpress-plugin\" target=\"_blank\">Find out more about "
+"News@me</a>, check out our <a href=\"http://help.newsatme.com/?"
+"utm_source=wordpress-plugin&utm_medium=link-support-pointer-"
+"post&utm_campaign=wordpress-plugin\" target=\"_blank\">Support Center</a> or "
+"<a href=\"mailto:support@newsatme.com\" target=\"_blank\">get in touch</a> "
+"for any questions or doubts.<br><br>Check out your <a href=\"https://app."
+"newsatme.com/dashboard?utm_source=wordpress-plugin&utm_medium=link-dashboard-"
+"pointer-post&utm_campaign=wordpress-plugin\" target=\"_blank\">Dashboard</a> "
+"for widget impressions, conversions, subscriptions, audience segmentation "
+"and much more!"
+msgstr ""
+"Adesso puoi segmentare la tua audience attraverso gli \"argomenti di News@me"
+"\".<br>Aggiungi argomenti ai tuoi articoli e permetti ai tuoi lettori di "
+"iscriversi ad ognuno di essi. <br>News@me invierà ad ognuno dei tuoi "
+"iscritti delle newsletter digest mirate con i tuoi nuovi articoli pubblicati "
+"in base ai loro interessi. Ingegnoso!<br><br><a href=\"http://newsatme.com/"
+"it/?utm_source=wordpress-plugin&utm_medium=link-pointer-"
+"post&utm_campaign=wordpress-plugin\" target=\"_blank\">Scopri di più su "
+"News@me</a>, scopri il nostro <a href=\"http://help.newsatme.com/customer/it/"
+"portal/articles?utm_source=wordpress-plugin&utm_medium=link-pointer-"
+"post&utm_campaign=wordpress-plugin\" target=\"_blank\">Centro Supporto</a> o "
+"<a href=\"mailto:support@newsatme.com\" target=\"_blank\">contattaci</a> per "
+"qualsiasi domanda o dubbio.<br><br>Dai un'occhiata alla tua <a href="
+"\"https://app.newsatme.com/dashboard?hl=it&utm_source=wordpress-"
+"plugin&utm_medium=link-dashboard-pointer-post&utm_campaign=wordpress-plugin"
+"\" target=\"_blank\">Dashboard</a> per le visualizzazioni del widget, "
+"conversioni, iscrizioni, segmentazione della tua audience e molto altro! "
 
-msgid "Enter your email address"
-msgstr "Inserisci il tuo indirizzo email"
+#: lib/views/api_form.html.php:10
+msgid ""
+"Please enter a valid News@me API key here. If you need an API key, you can "
+"<a href=\"http://newsatme.com/get-api-key?utm_source=wordpress-"
+"plugin&utm_medium=link-create-one-here-helper&utm_campaign=wordpress-plugin"
+"\" target=\"_blank\">create one here</a>."
+msgstr ""
+"Ti preghiamo di inserire una API key di News@me valida. Se hai bisogno di "
+"una API key, puoi <a href=\"http://newsatme.com/ottieni-api-key-wp\" target="
+"\"_blank\">crearne una qui</a>."
 
-msgid "Subscribe"
-msgstr "Iscriviti"
+#: lib/views/curl_missing.html.php:3
+msgid "Please ask your hosting provider to install"
+msgstr "Ti preghiamo di chiedere al tuo hosting provider di installare"
 
-msgid "Please enter a valid email"
-msgstr "L'email inserita non è valida"
+#: lib/views/get_key_page.html.php:4 lib/views/set_key_page.html.php:4
+msgid "Activate your account"
+msgstr "Attiva il tuo account"
 
-msgid "You must accept terms of service"
-msgstr "E' obbligatorio acconsentire all'informativa della privacy!"
+#: lib/views/get_key_page.html.php:5
+msgid ""
+"News@me converts your occasional visitors into regular readers and sends "
+"them newsletter digests with the new posts published on your site based on "
+"their interests.<br>To use News@me you may need to sign up for an API key. "
+"Get started with the button below."
+msgstr ""
+"New@me trasforma i tuoi visitatori occasionali in lettori abituali e invia "
+"loro newsletter digest con i nuovi articoli pubblicati sul tuo sito in base "
+"ai loro interessi.<br>Per utilizzare News@me puoi aver bisogno di iscriverti "
+"per una API key. Inizia con il pulsante qui sotto."
 
-msgid "An error occurred during subscription request" 
-msgstr "Si è verificato un errore durante l'invio della richiesta."
+#: lib/views/get_key_page.html.php:6
+msgid ""
+"<a href=\"http://newsatme.com/get-api-key-wp\" class=\"button button-primary"
+"\" target=\"_blank\">Create your News@me API key</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/ottieni-api-key-wp\" class=\"button button-"
+"primary\" target=\"_blank\">Crea la tua API key di News@me</a>"
 
-msgid "I have read and agree to the %s"
-msgstr "Ho letto e acconsento %s"
+#: lib/views/get_key_page.html.php:8
+msgid "I already have a key"
+msgstr "Ho già una API key"
 
-msgid "Privacy Policy"
-msgstr "Informativa sulla Privacy"
+#: lib/views/missing_api_key.html.php:4
+msgid "Activate your News@me account"
+msgstr "Attiva il tuo account di News@me"
 
-msgid "I consent to the processing of personal data referred in %s"
-msgstr "Acconsento al trattamento dei dati personali di cui al punto %s"
+#: lib/views/missing_api_key.html.php:6
+msgid ""
+"<strong>Almost done</strong> - Activate your account and start converting "
+"your occasional visitors into regular readers today."
+msgstr ""
+"<strong>Quasi fatto</strong> - Attiva il tuo account e inizia a trasformare "
+"i tuoi visitatori occasionali in lettori abituali oggi stesso."
 
-msgid "Purpose of the Treatment"
-msgstr "Finalità del tattamento"
+#: lib/views/navigation.html.php:3
+msgid "News@me"
+msgstr "News@me"
 
-msgid "Display Settings"
-msgstr "Opzioni di visualizzazione"
+#: lib/views/navigation.html.php:5
+msgid ""
+"<a href=\"http://newsatme.com/en/?utm_source=wordpress-"
+"plugin&utm_medium=link-home&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Home</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/it/?utm_source=wordpress-"
+"plugin&utm_medium=link-home&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Home</a>"
 
-msgid "Display even without tags"
-msgstr "Mostra anche senza tags"
+#: lib/views/navigation.html.php:6
+msgid ""
+"<a href=\"http://newsatme.com/en/how-it-works/?utm_source=wordpress-"
+"plugin&utm_medium=link-how-it-works&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">How it works</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/it/how-it-works/?utm_source=wordpress-"
+"plugin&utm_medium=link-how-it-works&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">Come funziona</a>"
 
-msgid "Show tags in call-to-action"
-msgstr "Mostra tags nella call-to-action"
+#: lib/views/navigation.html.php:7
+msgid ""
+"<a href=\"http://newsatme.com/en/pricing-plans/?utm_source=wordpress-"
+"plugin&utm_medium=link-pricing&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">Pricing plans</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/it/pricing-plans/?utm_source=wordpress-"
+"plugin&utm_medium=link-pricing&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">Costi e piani</a>"
 
-msgid "DEM authorization"
-msgstr "Autorizzazione DEM"
+#: lib/views/navigation.html.php:8
+msgid ""
+"<a href=\"http://help.newsatme.com/?utm_source=wordpress-"
+"plugin&utm_medium=link-support&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">Support</a>"
+msgstr ""
+"<a href=\"http://help.newsatme.com/customer/it/portal/articles?"
+"utm_source=wordpress-plugin&utm_medium=link-support&utm_campaign=wordpress-"
+"plugin\" target=\"_blank\">Supporto</a>"
 
-msgid "Widget placement"
-msgstr "Posizionamento del widget"
+#: lib/views/navigation.html.php:9
+msgid ""
+"<a href=\"http://newsatme.com/en/about-us/?utm_source=wordpress-"
+"plugin&utm_medium=link-about-us&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">About us</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/it/about-us/?utm_source=wordpress-"
+"plugin&utm_medium=link-about-us&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">Chi siamo</a>"
 
-msgid "Advanced options"
-msgstr "Opzioni avanzate"
+#: lib/views/navigation.html.php:10
+msgid ""
+"<a href=\"https://app.newsatme.com/users/sign_in?utm_source=wordpress-"
+"plugin&utm_medium=link-log-in&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Log in</a>"
+msgstr ""
+"<a href=\"https://app.newsatme.com/users/sign_in?hl=it&utm_source=wordpress-"
+"plugin&utm_medium=link-log-in&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Accedi</a>"
 
-msgid "Security"
-msgstr "Sicurezza"
+#: lib/views/post_out_of_sync.html.php:2
+msgid "News@me was not able to save your post, please save it again."
+msgstr ""
+"News@me non è stato in grado di salvare il tuo articolo, ti preghiamo di "
+"salvarlo nuovamente."
 
-msgid "Show the widget even without News@me tags"
-msgstr "Mostra il widget anche se non ci sono tags News@me"
+#: lib/views/post_tags_meta_box.html.php:6
+msgid ""
+"News@me is not able to retrieve your topics at the moment. Please try again "
+"later."
+msgstr ""
+"News@me non è in grado di recuperare i tuoi argomenti al momento. Ti "
+"preghiamo di riprovare più tardi."
 
-msgid "Show tags instead of title in call-to-action"
-msgstr "Mostra i tag invece del titolo nella call-to-action"
+#: lib/views/post_tags_meta_box.html.php:12
+msgid "Sort by:"
+msgstr "Ordina per:"
 
-msgid "Don't show checkbox for DEM authorization"
-msgstr "Non mostrare la checkbox per l'autorzzazione alle DEM"
+#: lib/views/post_tags_meta_box.html.php:13
+msgid "A - Z"
+msgstr "A - Z"
 
-msgid "Select how the widget will be shown on the page"
-msgstr "Scegli la modalità con cui viene mostrato il widget nella pagina"
+#: lib/views/post_tags_meta_box.html.php:14
+msgid "Subscribers"
+msgstr "Iscritti"
 
-msgid "Never display widget"
-msgstr "Non mostrare mai il widget"
+#: lib/views/preferences_page.html.php:9
+msgid "Select post types"
+msgstr "Seleziona post type"
 
-msgid "Automatically at the end of each article"
-msgstr "In automatico alla fine di ogni articolo"
+#: lib/views/preferences_page.html.php:12
+msgid "Enable News@me to work with any preferred type of content."
+msgstr ""
+"Permetti a News@me di funzionare con ogni tipo di contenuto da te preferito."
 
-msgid "With a placeholder inside the article"
-msgstr "Con un placeholder nell'articolo"
+#: lib/views/set_key_page.html.php:7
+msgid "Your account is currently active"
+msgstr "Il tuo account è attivo"
 
-msgid "With a tag inside the template"
-msgstr "Con un tag nel template"
+#: lib/views/set_key_page.html.php:8
+msgid ""
+"Check out your <a href=\"https://app.newsatme.com/dashboard?"
+"utm_source=wordpress-plugin&utm_medium=link-dashboard-plugin-activated-"
+"page&utm_campaign=wordpress-plugin\" target=\"_blank\">Dashboard</a> for "
+"widget impressions, conversions, subscriptions, audience segmentation and "
+"much more!"
+msgstr ""
+"Dai un'occhiata alla tua <a href=\"https://app.newsatme.com/dashboard?"
+"hl=it&utm_source=wordpress-plugin&utm_medium=link-dashboard-plugin-activated-"
+"page&utm_campaign=wordpress-plugin\" target=\"_blank\">Dashboard</a> per le "
+"visualizzazioni del widget, conversioni, iscrizioni, segmentazione della tua "
+"audience e molto altro! "
 
-msgid "widget is hidden in any case, even if a placeholder is set inside the article or the template function is used."
-msgstr "il widget viene nascosto in ogni caso, anche se presente un segnaposto nell'articolo o un tag nel template."
+#: lib/views/set_key_page.html.php:15
+msgid "Your News@me API key"
+msgstr "La tua API key di News@me"
 
-msgid "widget is shown just after the article body in detail pages."
-msgstr "il widget verrà accodato alla fine dell'articolo, solo nelle pagine interne."
+#: lib/views/set_key_page.html.php:25
+msgid ""
+"Please enter a valid News@me API key here. If you need an API key, you can "
+"<a href=\"http://newsatme.com/get-api-key-wp\" target=\"_blank\">create one "
+"here</a>."
+msgstr ""
+"Ti preghiamo di inserire una API key di News@me valida. Se hai bisogno di "
+"una API key, puoi <a href=\"http://newsatme.com/ottieni-api-key-wp\" target="
+"\"_blank\">crearne una qui</a>."
 
-msgid "when this option is active, you need to set a placeholder inside the article's body where you want the widget to be shown. Placeholder to use is the following: <pre> {{NEWSATME}} </pre>" 
-msgstr "quando questa opzione è attiva, è necessario posizionare  un placeholder all'iterno dell'articolo in corrispondenza di dove si vuole mostrare il widget. Il placeholder da inserire è il seguente: <pre> {{NEWSATME}} </pre>"
+#: newsatme.php:164
+msgid "News@me topics"
+msgstr "Argomenti di News@me"
 
-msgid "widget is shown by using the following tag inside your template:  <pre> <&#63;php echo newsatme_subscribe(); ?> </pre> Only use this tag when a single article is being displayed on the page."
-msgstr "il widget viene mostrato da un tag php nel template. Il tag da configurare è il seguente: <pre> <&#63;php echo newsatme_subscribe(); ?> </pre> Non usare questo tag in elenci di post, usalo solo nei post singoli."
+#: newsatme.php:187
+msgid "Preferences"
+msgstr "Preferenze"
 
-msgid "Thanks for your interest in: %s"
-msgstr "Grazie di aver richiesto aggiornamenti sul tema: %s"
+#: newsatme.php:317
+msgid "Account"
+msgstr "Account"
 
-msgid "If you find other intersting articles on our site repeat the subscription."
-msgstr "Se trovi altri argomenti interessanti sul nostro sito ripeti l'iscrizione."
+#: newsatme.php:340
+msgid "The API key you entered is not valid. Please double-check it."
+msgstr "La API key inserita non è valida. Ti preghiamo di ricontrollare."
+
+#: newsatme.php:353
+msgid "Success! Your account has been activated."
+msgstr "Ben fatto! Il tuo account è stato attivato."
+
+#: newsatme.php:375
+msgid "Please enter your API key."
+msgstr "Ti preghiamo di inserire la tua API key."
+
+#~ msgid ""
+#~ "Now you can segment your audience using \"News@me topics\".<br>Add topics "
+#~ "to your posts and allow your readers to subscribe to any of them. "
+#~ "<br>News@me will send to each subscriber highly-targeted newsletter "
+#~ "digests of your latest posts based on their interests. Clever!"
+#~ msgstr ""
+#~ "Adesso puoi segmentare la tua audience attraverso gli \"argomenti di "
+#~ "News@me\".<br>Aggiungi argomenti ai tuoi articoli e permetti ai tuoi "
+#~ "lettori di iscriversi ad ognuno di essi. <br>News@me invierà ad ognuno "
+#~ "dei tuoi iscritti delle newsletter digest mirate con i tuoi nuovi "
+#~ "articoli pubblicati in base ai loro interessi. Ingegnoso!"
+
+#~ msgid "Log in"
+#~ msgstr "Accedi"
+
+#~ msgid "About us"
+#~ msgstr "Chi siamo"
+
+#~ msgid "Support"
+#~ msgstr "Supporto"
+
+#~ msgid "Pricing plans"
+#~ msgstr "Costi e piani"
+
+#~ msgid "How it works"
+#~ msgstr "Come funziona"
+
+#~ msgid ""
+#~ "Please enter a valid News@me API key here. If you need an API key, you "
+#~ "can <a href=\"https://app.newsatme.com/users/sign_up?utm_source=wordpress-"
+#~ "plugin&utm_medium=link-create-one-here-helper&utm_campaign=wordpress-"
+#~ "plugin\" target=\"_blank\">create one here</a>."
+#~ msgstr ""
+#~ "Ti preghiamo di inserire una API key di News@me valida. Se hai bisogno di "
+#~ "una API key, puoi <a href=\"http://newsatme.com/ottieni-la-tua-api-key?"
+#~ "utm_source=wordpress-plugin&utm_medium=link-create-one-here-"
+#~ "helper&utm_campaign=wordpress-plugin\" target=\"_blank\">crearne una qui</"
+#~ "a>."
+
+#~ msgid "Create your News@me API key"
+#~ msgstr "Crea la tua API key di News@me"
+
+#, fuzzy
+#~ msgid "Settings"
+#~ msgstr "Opzioni di visualizzazione"
+
+#~ msgid ""
+#~ "Please enter a valid News@me API key here. If you need an API key, you can"
+#~ msgstr ""
+#~ "Ti preghiamo di inserire una API key di News@me valida. Se hai bisogno di "
+#~ "una API key, puoi"
+
+#~ msgid "create one here."
+#~ msgstr "crearne una qui."
+
+#~ msgid "enter your email in the box below:"
+#~ msgstr "lascia la tua email nel box sotto:"
+
+#~ msgid "If you want updates for"
+#~ msgstr "Per ricevere news via e-mail su"
+
+#~ msgid "You already subscribed to this topic."
+#~ msgstr "Sei già iscritto a questo argomento."
+
+#~ msgid "Discover"
+#~ msgstr "Scopri"
+
+#~ msgid "Enter your email address"
+#~ msgstr "Inserisci il tuo indirizzo email"
+
+#~ msgid "You must accept terms of service"
+#~ msgstr "E' obbligatorio acconsentire all'informativa della privacy!"
+
+#~ msgid "An error occurred during subscription request"
+#~ msgstr "Si è verificato un errore durante l'invio della richiesta."
+
+#~ msgid "I have read and agree to the %s"
+#~ msgstr "Ho letto e acconsento %s"
+
+#~ msgid "Privacy Policy"
+#~ msgstr "Informativa sulla Privacy"
+
+#~ msgid "I consent to the processing of personal data referred in %s"
+#~ msgstr "Acconsento al trattamento dei dati personali di cui al punto %s"
+
+#~ msgid "Purpose of the Treatment"
+#~ msgstr "Finalità del tattamento"
+
+#~ msgid "Display even without tags"
+#~ msgstr "Mostra anche senza tags"
+
+#~ msgid "Show tags in call-to-action"
+#~ msgstr "Mostra tags nella call-to-action"
+
+#~ msgid "DEM authorization"
+#~ msgstr "Autorizzazione DEM"
+
+#~ msgid "Widget placement"
+#~ msgstr "Posizionamento del widget"
+
+#~ msgid "Advanced options"
+#~ msgstr "Opzioni avanzate"
+
+#~ msgid "Security"
+#~ msgstr "Sicurezza"
+
+#~ msgid "Show the widget even without News@me tags"
+#~ msgstr "Mostra il widget anche se non ci sono tags News@me"
+
+#~ msgid "Show tags instead of title in call-to-action"
+#~ msgstr "Mostra i tag invece del titolo nella call-to-action"
+
+#~ msgid "Don't show checkbox for DEM authorization"
+#~ msgstr "Non mostrare la checkbox per l'autorzzazione alle DEM"
+
+#~ msgid "Select how the widget will be shown on the page"
+#~ msgstr "Scegli la modalità con cui viene mostrato il widget nella pagina"
+
+#~ msgid "Never display widget"
+#~ msgstr "Non mostrare mai il widget"
+
+#~ msgid "Automatically at the end of each article"
+#~ msgstr "In automatico alla fine di ogni articolo"
+
+#~ msgid "With a placeholder inside the article"
+#~ msgstr "Con un placeholder nell'articolo"
+
+#~ msgid "With a tag inside the template"
+#~ msgstr "Con un tag nel template"
+
+#~ msgid ""
+#~ "widget is hidden in any case, even if a placeholder is set inside the "
+#~ "article or the template function is used."
+#~ msgstr ""
+#~ "il widget viene nascosto in ogni caso, anche se presente un segnaposto "
+#~ "nell'articolo o un tag nel template."
+
+#~ msgid "widget is shown just after the article body in detail pages."
+#~ msgstr ""
+#~ "il widget verrà accodato alla fine dell'articolo, solo nelle pagine "
+#~ "interne."
+
+#~ msgid ""
+#~ "when this option is active, you need to set a placeholder inside the "
+#~ "article's body where you want the widget to be shown. Placeholder to use "
+#~ "is the following: <pre> {{NEWSATME}} </pre>"
+#~ msgstr ""
+#~ "quando questa opzione è attiva, è necessario posizionare  un placeholder "
+#~ "all'iterno dell'articolo in corrispondenza di dove si vuole mostrare il "
+#~ "widget. Il placeholder da inserire è il seguente: <pre> {{NEWSATME}} </"
+#~ "pre>"
+
+#~ msgid ""
+#~ "widget is shown by using the following tag inside your template:  <pre> "
+#~ "<&#63;php echo newsatme_subscribe(); ?> </pre> Only use this tag when a "
+#~ "single article is being displayed on the page."
+#~ msgstr ""
+#~ "il widget viene mostrato da un tag php nel template. Il tag da "
+#~ "configurare è il seguente: <pre> <&#63;php echo newsatme_subscribe(); ?> "
+#~ "</pre> Non usare questo tag in elenci di post, usalo solo nei post "
+#~ "singoli."
+
+#~ msgid "Thanks for your interest in: %s"
+#~ msgstr "Grazie di aver richiesto aggiornamenti sul tema: %s"
+
+#~ msgid ""
+#~ "If you find other intersting articles on our site repeat the subscription."
+#~ msgstr ""
+#~ "Se trovi altri argomenti interessanti sul nostro sito ripeti l'iscrizione."

@@ -8,10 +8,10 @@ class NewsAtMe_Pointers {
         'target' => '#plugin-now-active-header',  // 'target' => '#menu-plugins', 
         'options' => array(
           'content' => sprintf( '<h3> %s </h3> <p> %s </p>',
-          __('New! Audience segmentation gets smarter'), 
+          __('New! Audience segmentation gets smarter', 'wpnewsatme'), 
           __('News@me now works right after the activation. The News@me widget is now shown across your site at the bottom of any post that has "Tags" added or "Categories" assigned to it.
             <br><br>
-            "Tags" and "Categories" are not good to you for segmenting your audience? Add "News@me topics" to your posts.')
+            "Tags" and "Categories" are not good to you for segmenting your audience? Add "News@me topics" to your posts.', 'wpnewsatme')
           ),
         'position' => array( 'edge' => 'left', 'align' => 'center' )
         )
@@ -24,8 +24,8 @@ class NewsAtMe_Pointers {
         'target' => '#wpnewsatme-post-tags', 
         'options' => array(
           'content' => sprintf( '<h3> %s </h3> <p> %s </p>',
-          __('Introducing News@me topics'), 
-          __('"Tags" and "Categories" are not good for segmenting your audience? Now you can segment your audience using "News@me topics".<br>Add topics to your posts and allow your readers to subscribe to any of them. <br>News@me will send to each subscriber highly targeted newsletter digests of your latest posts based on their interests. Clever!')
+          __('Introducing a new criteria for segmenting your audience', 'wpnewsatme'), 
+          __('Now you can segment your audience using "News@me topics".<br>Add topics to your posts and allow your readers to subscribe to any of them. <br>News@me will send to each subscriber highly-targeted newsletter digests of your latest posts based on their interests. Clever!<br><br><a href="http://newsatme.com?utm_source=wordpress-plugin&utm_medium=link-find-more-pointer-post&utm_campaign=wordpress-plugin" target="_blank">Find out more about News@me</a>, check out our <a href="http://help.newsatme.com/?utm_source=wordpress-plugin&utm_medium=link-support-pointer-post&utm_campaign=wordpress-plugin" target="_blank">Support Center</a> or <a href="mailto:support@newsatme.com" target="_blank">get in touch</a> for any questions or doubts.<br><br>Check out your <a href="https://app.newsatme.com/dashboard?utm_source=wordpress-plugin&utm_medium=link-dashboard-pointer-post&utm_campaign=wordpress-plugin" target="_blank">Dashboard</a> for widget impressions, conversions, subscriptions, audience segmentation and much more!', 'wpnewsatme')
           ),
         'position' => array( 'edge' => 'bottom', 'align' => 'center' )
         )

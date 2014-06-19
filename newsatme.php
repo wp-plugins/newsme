@@ -5,7 +5,7 @@ Description: Convert visitors into regular readers. Keep them coming back to you
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 3.1.0
+Version: 3.1.1
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -43,7 +43,7 @@ define('NEWSATME_ROOT', __FILE__);
 
 class wpNewsAtMe {
 
-  const VERSION = '3.1.0'; 
+  const VERSION = '3.1.1'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
@@ -156,7 +156,7 @@ class wpNewsAtMe {
   }
 
   static function addMetaBox($post_type) {
-    add_meta_box('wpnewsatme-post-tags', 'News@me topics', 
+    add_meta_box('wpnewsatme-post-tags', __('News@me topics', 'wpnewsatme'), 
       array(__CLASS__, 'renderTagsMetaBox'), $post_type, 'side', 'default');
   }
 
@@ -175,11 +175,11 @@ class wpNewsAtMe {
       plugins_url('/images/favicon.ico', __FILE__)
     );
 
-    add_submenu_page('newsatme-activation-page', 'News@me Activation', 'Activation', 
+    add_submenu_page('newsatme-activation-page', 'News@me Account', 'Account', 
       'manage_options', 'newsatme-activation-page', 
       array(__CLASS__, 'showActivationPage' ));
 
-    add_submenu_page('newsatme-activation-page', 'News@me Settings', 'Preferences', 
+    add_submenu_page('newsatme-activation-page', 'News@me Settings', __('Preferences', 'wpnewsatme'), 
       'manage_options', 'newsatme-preferences-page', 
       array(__CLASS__, 'showPreferencesPage' ));
   }
@@ -308,7 +308,7 @@ class wpNewsAtMe {
 
     if ($plugin == $plugin_file) {
       $url = esc_url(add_query_arg(array('page' => 'newsatme-activation-page'), admin_url('plugins.php'))); 
-      $settings = array('settings' => '<a href="' . $url . '">' . __('Settings', self::WPDOMAIN) . '</a>');
+      $settings = array('settings' => '<a href="' . $url . '">' . __('Account', self::WPDOMAIN) . '</a>');
       $actions = array_merge((array) $settings, $actions);
     }
 
@@ -331,7 +331,7 @@ class wpNewsAtMe {
     $params = array(); 
 
     if (!self::isConnected()){
-      add_settings_error('api-key-errors', 'api-key', 'The API key you entered is not valid. Please double-check it.', 'error'); 
+      add_settings_error('api-key-errors', 'api-key', __('The API key you entered is not valid. Please double-check it.', 'wpnewsatme'), 'error'); 
     } else {
       $response = self::$newsatme_client->getSite();
       $params['api_key'] = $api_key; 
@@ -344,7 +344,7 @@ class wpNewsAtMe {
         }
       }
 
-      add_settings_error('api-key-errors', 'api-key', 'Success! Your plugin has been activated.', 'updated'); 
+      add_settings_error('api-key-errors', 'api-key', __('Success! Your account has been activated.', 'wpnewsatme'), 'updated'); 
       return $params; 
     }
   }
@@ -366,7 +366,7 @@ class wpNewsAtMe {
     } 
 
     if ($params['api_key'] == '') {
-      add_settings_error('api-key-errors', 'api-key', 'Please enter your API key.', 'updated'); 
+      add_settings_error('api-key-errors', 'api-key', __('Please enter your API key.', 'wpnewsatme'), 'updated'); 
     } else {
       $validated_settings = self::getSiteIdFromRemote($params['api_key']); 
     }
