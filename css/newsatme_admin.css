@@ -1,10 +1,18 @@
 .newsatme_tags_sorting {
 	border-bottom: 1px solid #ccc;
-	padding: 5px;
+	padding: 0;
 }
 
 .newsatme_tags_sorting .active {
 	font-weight: 700;
+}
+
+.newsatme_available_topics { 
+  display: none; 
+}
+
+#wpnewsatme-post-tags .tagit {
+  border: 0px ; 
 }
 
 .wrap .newsatme-updated {
@@ -140,12 +148,30 @@ h2.newsatme-header {
 
 /* Shorten meta-box */
 .newsatme_available_tag_row {
+	background: #e0e0e0;
 	float: left;
 	margin-right: 8px;
+	padding: 0;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
 }
 
 .newsatme_available_tag_row a {
+	display: block;
+	padding: 2px 6px;
+	text-decoration: none;
+}
+
+.newsatme_available_tag_row a:link,
+.newsatme_available_tag_row a:visited {
+	color: #0074A1;
 	font-size: 14px;
+}
+
+.newsatme_available_tag_row a:hover,
+.newsatme_available_tag_row a:focus {
+	background: #2ea2cc;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -166,7 +192,7 @@ h2.newsatme-header {
 
 .wrap_tag_list{
 	height: 140px;
-	overflow-y: scroll;	
+	overflow-y: auto;	
 }
 
 /* Admin menu */
@@ -197,3 +223,77 @@ h2.newsatme-header {
 	display: block;
 	padding: 0 0 4px;
 }
+
+
+/* Metabox layout */
+
+.wrap-topics-stuff {
+	margin-top: 15px;
+	padding: 0 12px 12px;
+}
+
+#wpnewsatme-post-tags .inside {
+	padding: 0;
+}
+
+.existing-topics {
+	border-color: #ddd;
+	margin: 5px 0 10px;
+	padding: 8px;
+	border-width: 1px;
+	border-style: solid;
+	line-height: 1.8em;
+	word-spacing: 3px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+/* Messages in metabox */
+
+.newsatme_metabox_notice_updated {
+	background-color: #fff;
+	border-left: 4px solid #7ad03a;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);	
+	padding: 1px 12px;
+}
+
+.newsatme_metabox_notice_info {
+	margin-bottom: 20px;
+	padding: 6px 12px 12px;
+	border: 1px solid #e1e1e1;
+	background-color: #f6fbfd;
+}
+
+.topics-state-icon:before {
+  top: 5px
+}
+
+.topics-state-icon:before {
+    color: #2ea2cc;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out
+}
+
+.topics-state-icon:before {
+    position: relative;
+    display: inline-block;
+    margin-right: 1px;
+    font: 400 20px/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+#major-visibility-actions {
+    padding: 10px;
+    clear: both;
+    border-top: 1px solid #ddd;
+    background: #f5f5f5
+}
+
+#major-visibility-actions label {
+	color: #aa0000;
+}
+

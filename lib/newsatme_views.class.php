@@ -63,7 +63,11 @@ class NewsAtMe_Views {
     include self::template_path('curl_missing'); 
   }
   
-  static function renderTagsMetaBox($nonce, $tags, $available_tags, $error) {
+  static function renderTopicsMetaBox($post, $nonce, $available_tags, $error) {
+    $disabled = $post->disabled; 
+    if ($disabled) {
+      $disabled_checked = " checked=\"checked\" ";
+    }
     include self::template_path('post_tags_meta_box');
   }
 
@@ -82,4 +86,3 @@ class NewsAtMe_Views {
   }
 }
 
-?>

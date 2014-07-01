@@ -5,12 +5,16 @@ class NewsAtMe_Post {
   var $permalink; 
   var $post_title; 
   var $post_content; 
-  var $tags_array; 
   var $tags_string; 
   var $time; 
   var $title; 
   var $status; 
   var $taxonomies; 
+  var $disabled; 
+  var $assigned_topics; 
+
+  const SAVED_TOPICS_META_KEY = 'newsatme_saved_topics'; 
+  const DISABLED_POST = 'disabled_post'; 
 
   function NewsAtMe_Post($post) { $this->__construct($post); }
 
@@ -24,10 +28,37 @@ class NewsAtMe_Post {
     $this->updated_at  = $post->post_modified_gmt;
     $this->type        = $post->post_type;  // TODO: check for this to remove
     $this->_post       = $post; // TODO: check for this to remove
+    $this->disabled    = $this->isDisabled(); 
+    $this->topics      = array(); 
+  }
 
-    $this->setupTaxonomies(); 
-    $this->assign_tags_array(); 
-    $this->make_tags_string(); 
+  function setTopics($topics) {
+    if (is_array($topics)) {
+      $this->topics = $topics; 
+    }
+    else {
+      $this->topics = explode(wpNewsAtMe::SEP, $topics); 
+    }
+  }
+
+  function getTopics() {
+    if ($this->emptyTopics()) {
+      $backup_topics = $this->getBackupTopics(); 
+
+      if (!self::emptyArray($backup_topics)) {
+        $this->topics = $backup_topics; 
+      } 
+      else {
+        $this->setupTaxonomies(); 
+        $this->assignComputedTopics(); 
+      }
+    }
+
+    return $this->topics;
+  }
+
+  function getTopicsString() {
+    return implode(wpNewsAtMe::SEP, $this->getTopics()); 
   }
 
   function attributes() {
@@ -36,13 +67,9 @@ class NewsAtMe_Post {
       'url'        => $this->permalink,
       'title'      => $this->title,
       'html_body'  => $this->content,
-      'tags_array' => $this->tags_array,
+      'tags_array' => $this->getTopicsIfEnabled(),
       'publish_at' => $this->time
     ); 
-  }
-
-  function tagsString() {
-    return implode(', ', $this->tags_array); 
   }
 
   function string_for_signature() {
@@ -57,17 +84,53 @@ class NewsAtMe_Post {
     return ($this->status != 'auto-draft');
   }
 
-  function has_tags() {
-    $count = strlen(trim($this->tags_string)) ; 
-    return $count; 
-  }
-
   function published() {
     return in_array($this->status, array('publish', 'future')); 
   }
 
-  function draft() {
-    return in_array($this->status, array('draft')); 
+  function unpublished() {
+    return in_array($this->status, array('pending', 'draft')); 
+  }
+
+  function backupTopics() {
+    update_post_meta($this->id, self::SAVED_TOPICS_META_KEY, $this->topics);
+  }
+
+  function flushTopicsBackup() {
+    delete_post_meta($this->id, self::SAVED_TOPICS_META_KEY);
+  }
+
+  function disable() {
+    update_post_meta($this->id, self::DISABLED_POST, true);
+    $this->disabled = true; 
+    if (!$this->emptyTopics()) {
+      $this->backupTopics(); 
+    }
+  }
+
+  function enable() {
+    if ($this->emptyTopics()) {
+      $this->topics = $this->getBackupTopics(); 
+    }
+    delete_post_meta($this->id, self::DISABLED_POST);
+    $this->disabled = false; 
+  }
+
+  function isDisabled() {
+    return get_post_meta($this->id, self::DISABLED_POST, true); 
+  }
+
+  private function getTopicsIfEnabled() {
+    if ($this->isDisabled()) {
+      return array(); 
+    }
+    else {
+      return $this->getTopics(); 
+    }
+  }
+
+  private function getBackupTopics() {
+    return get_post_meta($this->id, self::SAVED_TOPICS_META_KEY, true); 
   }
 
   function attributes_with_signature() {
@@ -77,26 +140,21 @@ class NewsAtMe_Post {
     );
   }
 
-  private function make_tags_string() {
-    $this->tags_string = implode(',', $this->tags_array); 
+  function emptyTopics() {
+    $diff = array_diff($this->topics, array(''));
+    return empty($diff);
   }
 
-  private function assign_tags_array_from_taxonomies() {
-    $this->tags_array = $this->getTagLikeTerms(); 
-     if (empty($this->tags_array)) {
-      $this->tags_array = $this->getCategoryLikeTerms(); 
+  private function assignTopicsFromTaxonomies() {
+    $this->topics = $this->getTagLikeTerms(); 
+     if ($this->emptyTopics()) {
+      $this->topics = $this->getCategoryLikeTerms(); 
     }
   }
 
-  private function assign_tags_array() {
-    $this->tags_array = array(); 
-
-    if (strlen($this->get_newsatme_tags()) > 0) {
-      $this->tags_array = explode(',', $this->get_newsatme_tags());
-    }
-
-    if (!wpNewsAtMe::dontUseTaxonomies() && empty($this->tags_array)) {
-      $this->assign_tags_array_from_taxonomies(); 
+  private function assignComputedTopics() {
+    if (wpNewsAtMe::autoModeEnbled() && $this->emptyTopics()) {
+      $this->assignTopicsFromTaxonomies(); 
     }
   }
 
@@ -106,10 +164,6 @@ class NewsAtMe_Post {
 
   private function getTagLikeTerms() {
     return wp_get_object_terms($this->id, $this->taxonomies['non-hierarchical'], array('fields' => 'names'));
-  }
-
-  private function get_newsatme_tags() {
-    return get_post_meta($this->id, wpNewsAtMe::TAGS_META_KEY, true);
   }
 
   private function setupTaxonomies() {
@@ -124,6 +178,13 @@ class NewsAtMe_Post {
       }
     }
   }
+
+  static function emptyArray($array) {
+    if (!is_array($array)) $array = array();
+    $diff = array_diff($array, array('')); 
+    return empty($diff);
+  }
+
 }
 
 ?>

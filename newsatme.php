@@ -5,7 +5,7 @@ Description: Convert visitors into regular readers. Keep them coming back to you
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 3.1.1
+Version: 3.2.0
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -39,17 +39,22 @@ define('NEWSAMTE_API_KEY_OPTION_NAME', 'wpnewsatme');
 
 define('NEWSATME_POST_TYPES_OPTION_GROUP', 'newsatme-post-types-option-group'); 
 define('NEWSATME_POST_TYPES_OPTION_NAME', 'newsatme-post-types');
+define('NEWSATME_VISIBILITY_OPTION_GROUP', 'newsatme-visibility-option-group'); 
+define('NEWSATME_VISIBILITY_AUTO_MODE', 'newsatme-auto-mode');
+
 define('NEWSATME_ROOT', __FILE__); 
 
 class wpNewsAtMe {
 
-  const VERSION = '3.1.1'; 
+  const VERSION = '3.2.0'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
   const TAGS_INPUT_NAME = '_newsatme_tags'; 
-  const SAVED_META_KEY = '_newsatme_saved'; 
+  const DISABLED_POST_NAME = '_newsatme_disabled_post'; 
   const SEP = ',';
+
+  const DONT_USE_TAXONOMIES_AS_TOPICS = 'dont_use_taxonomies_as_topics'; 
 
   static $report;
   static $stats;
@@ -100,11 +105,16 @@ class wpNewsAtMe {
   static function frontInit() {
     wp_register_script('newsatme_front_js', NewsAtMe_Client::baseURL() . 'assets/namboot.js', array('jquery'), false, true);
     wp_enqueue_script('newsatme_front_js');
+
+    add_filter('clean_url', function($url) {
+        if (FALSE === strpos( $url, 'namboot.js' )) return $url;
+        else return "$url' async defer='defer";
+    }, 11, 1 );
   }
 
   static function adminInit() {
     wp_register_script('underscore',  plugins_url('js/underscore-min.js' , __FILE__ ));
-    wp_register_script('tag-it',  plugins_url('js/tag-it.min.js' , __FILE__ ), array('jquery', 'jquery-ui-autocomplete', 'jquery-ui-widget'));
+    wp_register_script('tag-it',  plugins_url('js/tag-it.js' , __FILE__ ), array('jquery', 'jquery-ui-autocomplete', 'jquery-ui-widget'));
     wp_register_script('newsatme_admin_js', plugins_url('js/newsatme_admin.js' , __FILE__ ), array('tag-it', 'underscore'));
     wp_enqueue_script('newsatme_admin_js');
 
@@ -119,6 +129,7 @@ class wpNewsAtMe {
       NEWSAMTE_API_KEY_OPTION_NAME, array(__CLASS__, 'validateAPIKey'));
 
     add_settings_section('wpnewsatme-api', '', '__return_false', NEWSATME_API_KEY_OPTION_GROUP);
+
     add_settings_field('api-key', 'News@me API key', 'void', 
       NEWSATME_API_KEY_OPTION_GROUP, 'wpnewsatme-api');
 
@@ -126,6 +137,13 @@ class wpNewsAtMe {
       array(__CLASS__, 'validatePostTypes')); 
     add_settings_section('post_types', 'Post Types', '__return_false', 
       NEWSATME_POST_TYPES_OPTION_GROUP);
+
+    register_setting(NEWSATME_VISIBILITY_OPTION_GROUP, NEWSATME_VISIBILITY_AUTO_MODE, 
+      array(__CLASS__, 'validateVisibility')); 
+    add_settings_section('widget_visibility', 'Visibility', '__return_false', 
+      NEWSATME_VISIBILITY_OPTION_GROUP);
+    add_settings_field('auto-mode', 'Auto mode', 'void', NEWSATME_VISIBILITY_OPTION_GROUP, 
+      'auto_mode'); 
 
     add_action('save_post', array(__CLASS__, 'savePostEvent'), 1, 2);
     add_action('trash_post', array(__CLASS__, 'trashPostEvent'), 1, 2);
@@ -142,7 +160,6 @@ class wpNewsAtMe {
         self::addMetaBox($k); 
       }
     } 
-
   }
 
   static function registerSettingsFieldsForPostTypes() {
@@ -156,8 +173,10 @@ class wpNewsAtMe {
   }
 
   static function addMetaBox($post_type) {
-    add_meta_box('wpnewsatme-post-tags', __('News@me topics', 'wpnewsatme'), 
-      array(__CLASS__, 'renderTagsMetaBox'), $post_type, 'side', 'default');
+    if (self::postTypeEnabled($post_type)) {
+      add_meta_box('wpnewsatme-post-tags', __('News@me topics', 'wpnewsatme'), 
+        array(__CLASS__, 'renderTagsMetaBox'), $post_type, 'side', 'default');
+    }
   }
 
   static function modifyPostContent($content) {
@@ -198,11 +217,12 @@ class wpNewsAtMe {
     }
   }
 
-  static function deletePost($post) {
+  static function deletePost($npost) {
     try {
       self::getConnected();
       if (self::isConnected()) {
-        self::$newsatme_client->deleteArticle($post->ID);
+        $npost->backupTopics(); 
+        self::$newsatme_client->deleteArticle($npost->id);
       } else { throw new Exception('not connected'); }
     } catch ( Exception $e) {
       self::APIErrorReceived('trashPost', $e->getMessage());
@@ -210,7 +230,8 @@ class wpNewsAtMe {
   }
 
   static function trashPostEvent($post_id, $post) {
-    self::deletePost($post); 
+    $npost = new NewsAtMe_Post($post);
+    self::deletePost($npost); 
     return $post->ID;
   }
 
@@ -228,46 +249,34 @@ class wpNewsAtMe {
   }
 
   static function savePostEvent($post_id, $post) {
+    if (!current_user_can('edit_post', $post_id)) {
+      return $post_id; 
+    }
+
     $npost = new NewsAtMe_Post($post); 
 
-    if (!current_user_can('edit_post', $npost->id)) {
-      return $npost->id ; 
+    if (!self::invalidNonce($post_id)) {
+      $npost->setTopics($_POST[self::TAGS_INPUT_NAME]);
+
+      if ($_POST[self::DISABLED_POST_NAME])     $npost->disable(); 
+      else                                      $npost->enable(); 
     }
 
-    if (!self::invalidNonce($npost->id)) {
-      self::updateTagMeta($npost->id, $npost->tags_string); 
-    }
-
-    if ($npost->published()) {
-      self::savePostToRemote($npost->_post); 
-    }
-
-    if ($npost->draft()) {
-      self::deletePost($npost->_post); 
-    }
+    if ($npost->published())        self::savePostToRemote($npost); 
+    if ($npost->unpublished())      self::deletePost($npost); 
 
     return $post->ID;
   }
 
-  static function updateTagMeta($post_id) {
-    if (!isset($_POST[self::TAGS_INPUT_NAME])) {
-      return ; 
-    }
-
-    $tags = $_POST[self::TAGS_INPUT_NAME];
-    if ($tags) {
-      update_post_meta($post_id, self::TAGS_META_KEY, strtolower($tags));
-    } else {
-      delete_post_meta($post_id, self::TAGS_META_KEY);
-    }
-  }
-
-  static function savePostToRemote($post) {
+  static function savePostToRemote($npost) {
     try {
       self::getConnected();
       if (self::isConnected()) {
-        self::$newsatme_client->saveArticle( new NewsAtMe_Post($post) );
-        update_post_meta($post->ID, self::SAVED_META_KEY, strtotime('now'));
+        self::$newsatme_client->saveArticle( $npost );
+
+        if (!$npost->disabled) {
+          $npost->flushTopicsBackup(); 
+        }
       } else { throw new Exception('not connected'); }
     } catch ( Exception $e) {
       self::APIErrorReceived('savePostEvent', $e->getMessage());
@@ -282,22 +291,39 @@ class wpNewsAtMe {
     global $post;
 
     $nonce = wp_create_nonce( plugin_basename(__FILE__) );
-    $newsatme_tags = get_post_meta($post->ID, self::TAGS_META_KEY, true);
-    $available_tags = array();
+
+    $response = self::getArticleTopicsFromRemote($post->ID); 
+
+    $npost = new NewsAtMe_Post($post); 
+    $npost->setTopics($response['article_tags']); 
+
+    NewsAtMe_Views::renderTopicsMetaBox($npost, $nonce, 
+      $response['available_tags'], 
+      $response['connection_error']); 
+  }
+
+  static function getArticleTopicsFromRemote($post_id) {
+    $available_tags   = array();
+    $article_tags     = "";
     $connection_error = false;
 
     try {
       self::getConnected();
       if (self::isConnected()) {
-        $available_tags = self::$newsatme_client->getTags();
+        $response = self::$newsatme_client->getArticleTags($post_id);
+        $available_tags = $response['available_tags']; 
+        $article_tags = $response['tags']; 
       } else { throw new Exception('not connected'); }
     } catch ( Exception $e) {
       $connection_error = true;
       self::APIErrorReceived('renderTagsMetaBox', $e->getMessage());
     }
 
-    NewsAtMe_Views::renderTagsMetaBox($nonce, $newsatme_tags, $available_tags,
-      $connection_error);
+    return array(
+      'available_tags' => $available_tags, 
+      'article_tags' => $article_tags, 
+      'connection_error' => $connection_error
+    ); 
   }
 
   static function showPluginActionLinks($actions, $plugin_file) {
@@ -315,13 +341,12 @@ class wpNewsAtMe {
     return $actions;
   }
 
-
   static function getPostTypes() {
     return get_post_types( array('public' => true), 'objects'); 
   }
 
   static function dontUseTaxonomies() {
-    $use = self::getOption('dont_use_taxonomies_as_topics'); 
+    $use = self::getOption(self::DONT_USE_TAXONOMIES_AS_TOPICS); 
     return $use === true; 
   }
 
@@ -353,12 +378,14 @@ class wpNewsAtMe {
     return $input; 
   }
 
-  /**
-   * Processes submitted settings form. This funciton is invoked every time 
-   * an option with namespace WPDOMAIN is saved to database. 
-   */
-  static function validateAPIKey($input) {
+  static function validateVisibility($input) {
+    $options = get_option('wpnewsatme'); 
+    unset($options[self::DONT_USE_TAXONOMIES_AS_TOPICS]); 
+    update_option('wpnewsatme', $options); 
+    return $input; 
+  }
 
+  static function validateAPIKey($input) {
     $params = array_map('wp_strip_all_tags', $input);
 
     if (isset($params['site_id'])) {
@@ -417,9 +444,10 @@ class wpNewsAtMe {
     $npost = new NewsAtMe_Post($post);
     $inSync = false; 
 
-    if ($npost->is_post_saved()) {
+    if ($npost->is_post_saved() && !$npost->unpublished()) {
       try {
-        $inSync = self::$newsatme_client->checkArticleSignature($post->ID, $npost->signature()); 
+        $inSync = self::$newsatme_client->checkArticleSignature(
+          $post->ID, $npost->signature()); 
       } catch ( Exception $e) { }
 
       if (!$inSync) {
@@ -431,9 +459,9 @@ class wpNewsAtMe {
   static function isWidgetShowable($post) {
     $npost = new NewsAtMe_Post($post);
     return (
-      $npost->has_tags() && 
+      self::getAPIKey() && 
       self::postTypeEnabled($post->post_type) && 
-      is_single()
+      is_single() && !$npost->disabled
     ); 
   }
 
@@ -448,6 +476,12 @@ class wpNewsAtMe {
     }
 
     return $output ;
+  }
+
+  static function autoModeEnbled() {
+    $value = get_option(NEWSATME_VISIBILITY_AUTO_MODE, true); 
+    
+    return $value && !self::dontUseTaxonomies(); 
   }
 
   static function postTypeEnabled($name) {

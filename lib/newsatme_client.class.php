@@ -34,8 +34,8 @@ class NewsAtMe_Client {
     return $url . '/' . rand(0,100000); 
   }
 
-  public function getTags() {
-    return $this->request('tags', array(), 'GET');
+  public function getArticleTags($article_id) {
+    return $this->request(sprintf('articles/%s/tags', $article_id), array(), 'GET'); 
   }
 
   public function ping($api_key) {
@@ -63,20 +63,6 @@ class NewsAtMe_Client {
 
   public function deleteArticle($remote_id) {
     return $this->request('articles/' . $remote_id, array('_method' => 'delete'), 'POST');
-  }
-
-  public function saveSubscription($email, $id, $title, $url, $tags, $dem_authorized) {
-    $response = $this->request('subscription', array(
-      'email' => $email,
-      'title' => $title,
-      'remote_id' => $id,
-      'article_url' => $url,
-      'tags_array' => explode(',', $tags),
-      'dem_authorized' => $dem_authorized
-      )
-    );
-
-    return 'ok' == $response['status'] ;
   }
 
 	/**
