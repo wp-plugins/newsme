@@ -47,8 +47,8 @@
       </ul>
     </div>
   </div>
-</div>
   <?php } ?>
+</div>
 <?php } ?>
   <div id="major-visibility-actions">
     <label> 
