@@ -5,7 +5,7 @@ Description: Convert visitors into regular readers. Keep them coming back to you
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 3.2.0
+Version: 3.2.1
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -46,7 +46,7 @@ define('NEWSATME_ROOT', __FILE__);
 
 class wpNewsAtMe {
 
-  const VERSION = '3.2.0'; 
+  const VERSION = '3.2.1'; 
   const WPDOMAIN = 'wpnewsatme';
   const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
@@ -106,10 +106,12 @@ class wpNewsAtMe {
     wp_register_script('newsatme_front_js', NewsAtMe_Client::baseURL() . 'assets/namboot.js', array('jquery'), false, true);
     wp_enqueue_script('newsatme_front_js');
 
-    add_filter('clean_url', function($url) {
-        if (FALSE === strpos( $url, 'namboot.js' )) return $url;
-        else return "$url' async defer='defer";
-    }, 11, 1 );
+    add_filter('clean_url', array(__CLASS__, 'addDeferAndAsyncToURL'), 11, 1 );
+  }
+
+  static function addDeferAndAsyncToURL($url) {
+    if (FALSE === strpos( $url, 'namboot.js' )) return $url;
+    else return "$url' async defer='defer";
   }
 
   static function adminInit() {
@@ -404,6 +406,7 @@ class wpNewsAtMe {
   static function getAPIKey() {
     return self::getOption('api_key');
   }
+
 
   static function getOption( $name, $default = false ) {
     $options = get_option(self::WPDOMAIN);

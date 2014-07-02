@@ -148,6 +148,10 @@ No problem. Just <a href="mailto:staff@newsatme.com" target="_blank">drop us an 
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
 == CHANGELOG == 
+= 3.2.1 = 
+
+* FIX: restore compatibility with older PHP versions 
+
 = 3.2.0 = 
 
 * CHANGE: Tags or categories as topics now optional in Preferences
