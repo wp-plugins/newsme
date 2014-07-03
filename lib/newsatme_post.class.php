@@ -46,7 +46,7 @@ class NewsAtMe_Post {
       $backup_topics = $this->getBackupTopics(); 
 
       if (!self::emptyArray($backup_topics)) {
-        $this->topics = $backup_topics; 
+        $this->setTopics($backup_topics); 
       } 
       else {
         $this->setupTaxonomies(); 
@@ -110,7 +110,7 @@ class NewsAtMe_Post {
 
   function enable() {
     if ($this->emptyTopics()) {
-      $this->topics = $this->getBackupTopics(); 
+      $this->setTopics($this->getBackupTopics()); 
     }
     delete_post_meta($this->id, self::DISABLED_POST);
     $this->disabled = false; 
@@ -146,9 +146,9 @@ class NewsAtMe_Post {
   }
 
   private function assignTopicsFromTaxonomies() {
-    $this->topics = $this->getTagLikeTerms(); 
-     if ($this->emptyTopics()) {
-      $this->topics = $this->getCategoryLikeTerms(); 
+    $this->setTopics($this->getTagLikeTerms()); 
+    if ($this->emptyTopics()) {
+      $this->setTopics($this->getCategoryLikeTerms()); 
     }
   }
 
