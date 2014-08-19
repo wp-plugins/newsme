@@ -34,7 +34,6 @@ In order to understand the power of this solution check out the increase in perc
 
 Unlike products like *Aweber* and *MailChimp*, News@me is a solution that creates a unique and direct link between your online content and each of your readers by converting the interests of your visitors in an innovative system for retention.
 
-
 = Our products for growing your audience =
 *High-quality mailing list and automated targeted newsletter. A new source of traffic you own and much more for your editorial activity.*
 
