@@ -1,6 +1,6 @@
 === Double your Email Subscribers and Send Automated Targeted Newsletter by News@me ===
 Contributors: newsatme
-Tags: newsletter plugin, auto newsletter, newsletter signup, customized newsletter, customized digest, mailchimp, automated newsletter, targeted email, email, emailing, mailing list, marketing email, mailpoet, newsletter, newsletter widget, email alerts, subscribers, subscriptions, aweber, post notifications, post, digests, plugin, engagement, conversion rate, marketing tools, aweber
+Tags: signup form, newsletter plugin, auto newsletter, newsletter signup, customized newsletter, customized digest, mailchimp, automated newsletter, targeted email, email, emailing, mailing list, marketing email, mailpoet, newsletter, newsletter widget, email alerts, subscribers, subscriptions, aweber, post notifications, post, digests, plugin, engagement, conversion rate, marketing tools, aweber
 Requires at least: 3.5.0
 Tested up to: 3.6.1
 Stable tag: trunk
@@ -20,7 +20,7 @@ Read on [How a publisher can build a new source of traffic and an active user ba
 **[Read the case study now](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page)**
 
 [Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
 You can read about News@me and see it in action on [*StanfordDaily.com*](http://www.stanforddaily.com/2014/03/26/the-new-stanforddaily-com-embracing-the-digital-first-age/), the Stanford University's digital newspaper. We are also working amongst the others with one of the biggest digital publisher in Italy, [*AndroidWorld.it*](http://www.androidworld.it/2014/03/17/androidworld-it-introduce-le-notifiche-mirate-via-mail-220437/) and what we found out is that people are really keen on receiving relevant articles. Besides that we saw a remarkable increase in the number of subscriptions when the source is trusted.
 
@@ -34,12 +34,34 @@ In order to understand the power of this solution check out the increase in perc
 
 Unlike products like *Aweber* and *MailChimp*, News@me is a solution that creates a unique and direct link between your online content and each of your readers by converting the interests of your visitors in an innovative system for retention.
 
+
+= Our products for growing your audience =
+*High-quality mailing list and automated targeted newsletter. A new source of traffic you own and much more for your editorial activity.*
+
+**Email signup form**
+Give your readers the opportunity to subscribe to your articles and topics. A simple signup form with a minimalistic design at the end of each article. Create a unique bond between your readers and your editorial activity based on something valuable: their interests, passions and curiosities.
+[Explore our email signup form](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=ExploreSignupForm&utm_campaign=Wordpress%20Plugin%20Page)
+
+**Accurate audience segmentation**
+We introduce a new criteria for segmenting your online audience: interests and passions. Grow your audience and build high-quality mailing lists based on the topics your readers are interested in the most.
+[Explore our audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=ExploreAudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page)
+
+**Automated targeted newsletter**
+Create a unique experience for your readers. Subscribers receive updates on articles and topics of interest through an elegant email digest. Invite your readers to return to your site and read new articles about their interests, put their passions at the center of your conversation.
+
+**News manager for your readers**
+Let your subscribers choose which articles to get in the email newsletter digest, day by day and if their passions and interests change..your newsletter digest changes too! The News manager is a simple and intuitive service offered for free to your subscribers.
+
+**Editorial activity analysis**
+Take a careful look at the traffic and the number of subscribers who return to your site. Plan ahead your online editorial activity with the certainty of knowing in advance the degree of involvement and interest of your readers, topic by topic.
+
+
 = News@me for your readers =
 *Three high-value services that you offer to your readers using News@me. They won't leave you ever again!*
 
-**1. Your readers can subscribe to your site through the News@me widget at the end of every post**
+**1. Your readers can subscribe to your site through the News@me signup form at the end of every post**
 
-A simple invitation with a minimalistic design and that does not affect the reading, the **News@me widget catches the attention of your readers at the end of each article and converts this attention into a subscription to your site**. This allows you to create a unique bond between your readers and your publishing activity based on something valuable: their interests, passions and curiosities. You'll be able to do this just by adding tags, categories or News@me topics to your posts.  
+A unique email signup form at the end of each article with the title of your post. **Catch the attention of your readers** with our content-aware invitation when they're feeling great about your work and convert this attention into a subscription. This allows you to create a unique bond between your readers and your publishing activity based on something valuable: their interests, passions and curiosities. You'll be able to do this just by adding tags, categories or News@me topics to your posts.  
 
 **2. A unique and innovative way to follow topics of interest on your site**
 
@@ -54,7 +76,7 @@ Create a unique experience for your readers with News@me. **Each subscriber rece
 
 **1. A unique and innovative perspective over your online content.**
 
-News@me gives you an overview over the effectiveness of your online content and the engagement of your readers through the News@me widget. You can see the number of **subscribers that the widget has generated** and the number of clicks that the customized email summary sent to your subscribers by News@me are bringing to your site, **topics and articles published that generate more subscriptions among your readers**.
+News@me gives you an overview over the effectiveness of your online content and the engagement of your readers through the News@me signup form. You can see the number of **subscribers that the signup form has generated** and the number of clicks that the customized email summary sent to your subscribers by News@me are bringing to your site, **topics and articles published that generate more subscriptions among your readers**.
 
 **2. Actionable insights on the performance of your online publishing activity.**
 
@@ -65,30 +87,30 @@ You can take a **careful look at the traffic** and the number of subscribers who
 Plan ahead your online publishing activity with the certainty of knowing in advance the degree of involvement and **interest of your readers, topic by topic**.
 
 [Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
 == Installation ==
 
 [Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
-Upload the News@me plugin to your site. <a href="https://app.newsatme.com/users/sign_up?hl=en" target="_blank">Sign up for free</a> and activate the plugin. 
+Upload the News@me plugin to your site. <a href="http://newsatme.com/get-api-key-wp-page" target="_blank">Get an API key for your site</a> for free and activate your account. 
 
 1, 2, 3: You're done! 
 
 == Screenshots ==
 
-1. Start adding your News@me tags to your posts. At the bottom of the page, you will find a meta-box where you can add your News@me tags for each of the topic related to the post you're about to publish. By doing so you'll allow your readers to subscribe to your topics and articles today through the News@me widget. It's that simple! 
+1. Start adding your News@me tags to your posts. At the bottom of the page, you will find a meta-box where you can add your News@me tags for each of the topic related to the post you're about to publish. By doing so you'll allow your readers to subscribe to your topics and articles today through the News@me signup form. It's that simple! 
 
 2. News@me meta-box detail. Add your News@me tags for each of the topic related to the post you're about to publish.
 
-3. A simple invitation with a minimalistic design and that does not affect the reading, the News@me widget catches the attention of your readers at the end of each article and converts this attention  into a subscription to your site. This allows you to create a unique bond between your readers and your publishing activity based on something valuable: their interests, passions and curiosities.
+3. A unique email signup form at the end of each article with the title of your post. Catch the attention of your readers with our content-aware invitation when they're feeling great about your work and convert this attention into a subscription. This allows you to create a unique bond between your readers and your editorial activity based on something valuable: their interests, passions and curiosities.
 
 4. Create a unique experience for your readers with News@me. Each subscriber receives updates on articles and topics of interest through an elegant email summary. Invite your readers to return to your site and read new articles about their interests. Put their passions at the center of your conversation and they’ll keep coming back to your site and read your new articles day by day.
 
 5. Give more control to your readers. With News@me you let your subscribers choose which articles to get in the email summary, day by day and if their passions and interests change..your email summary changes too! The News manager is a simple and intuitive service offered for free to your subscribers that enhances your online presence.
 
-6. News@me gives you an overview over the effectiveness of your online content and the engagement of your readers through the News@me widget. You can see the number of subscribers that the widget has generated and the number of clicks that the customized email summary sent to your subscribers by News@me are bringing to your site.
+6. News@me gives you an overview over the effectiveness of your online content and the engagement of your readers through the News@me signup form. You can see the number of subscribers that the signup form has generated and the number of clicks that the customized email summary sent to your subscribers by News@me are bringing to your site.
 
 7. News@me also gives you an overview over the topics and articles published that generate more subscriptions among your readers.
 
@@ -100,7 +122,7 @@ Upload the News@me plugin to your site. <a href="https://app.newsatme.com/users/
 == Frequently Asked Questions ==
 
 [Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
 = What's different from Google Alerts? =
 Unlike Google Alerts, with News@me your reader follows given topics directly from your site and will be receiving only news published on your site related to those given topics. 
@@ -145,7 +167,7 @@ There are no contracts. You can close your account at any time.
 No problem. Just <a href="mailto:staff@newsatme.com" target="_blank">drop us an email</a> and we'll get back to you with all the answers you need.
 
 [Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Pricing plans](http://newsatme.com/en/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Pricing&utm_campaign=Wordpress%20Plugin%20Page) | [Support](http://help.newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Support&utm_campaign=Wordpress%20Plugin%20Page) | [About us](http://newsatme.com/en/about-us/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=About%20Us&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page) | [Log in](https://app.newsatme.com/users/sign_in?hl=en&utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Log%20In&utm_campaign=Wordpress%20Plugin%20Page)
 
 == CHANGELOG == 
 = 3.2.5 =
