@@ -22,19 +22,22 @@ works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://
 
 = Check News@me in action today, read what people say about us =
 
-[*StanfordDaily.com*](http://www.stanforddaily.com)
+[**StanfordDaily.com**](http://www.stanforddaily.com)
+
 The Stanford Daily has grown to its current status as one of the finest college newspapers in the country. 
 
 Read what they say about our product.
-[The new StanfordDaily.com: Embracing the digital-first age](http://www.stanforddaily.com/2014/03/26/the-new-stanforddaily-com-embracing-the-digital-first-age/)
+
+[**The new StanfordDaily.com: Embracing the digital-first age**](http://www.stanforddaily.com/2014/03/26/the-new-stanforddaily-com-embracing-the-digital-first-age/)
 *"..That’s a cutting-edge subscription service called News@me that we hope will change the way you get your news from us.."*. [Read more](http://www.stanforddaily.com/2014/03/26/the-new-stanforddaily-com-embracing-the-digital-first-age/)
 
-[Great way to keep visitors coming back](http://wordpress.org/support/topic/great-way-to-keep-visitors-coming-back)
+[**Great way to keep visitors coming back**](http://wordpress.org/support/topic/great-way-to-keep-visitors-coming-back)
 “My organization has been using News@me for five months now, and we've been very pleased so far. Above all else, the plugin is a great way to target one of the hardest-to-reach segments of our readership: one-time visitors.”. [Read more](http://wordpress.org/support/topic/great-way-to-keep-visitors-coming-back)
 
 Try out the product as for your readers.
+
 Read and subscribe to one of their articles with our signup form at the end of the post. 
-[Researchers use batteries to capture and convert heat energy](http://www.stanforddaily.com/2014/05/29/researchers-use-batteries-to-capture-and-convert-heat-energy/)
+[*Researchers use batteries to capture and convert heat energy*](http://www.stanforddaily.com/2014/05/29/researchers-use-batteries-to-capture-and-convert-heat-energy/)
 
 > **New! Case study: [The Galileo Case](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).**
 Read on [How a publisher can build a new source of traffic and an active user base in 11 months](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).
