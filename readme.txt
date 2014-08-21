@@ -17,7 +17,24 @@ works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://
 News@me is a new concept of newsletter. News@me is our answer to online media and bloggers to the need of growing their audience, building their own subscriber base and bringing more traffic, visits and readers to their valuable content, day after day.
 News@me gives your readers the ability to subscribe to posts published on your site and sends out highly targeted email newsletter digests of your new posts that are unique to each subscriber based on their interests. News@me works using your tags, categories or News@me topics.
 
-You can read about News@me and see it in action on [*StanfordDaily.com*](http://www.stanforddaily.com/2014/03/26/the-new-stanforddaily-com-embracing-the-digital-first-age/), the Stanford University's digital newspaper. We are also working amongst the others with one of the biggest digital publisher in Italy, [*AndroidWorld.it*](http://www.androidworld.it/2014/03/17/androidworld-it-introduce-le-notifiche-mirate-via-mail-220437/) and what we found out is that people are really keen on receiving relevant articles. Besides that we saw a remarkable increase in the number of subscriptions when the source is trusted.
+[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
+
+= Check News@me in action today, read what people say about us =
+
+[*StanfordDaily.com*](http://www.stanforddaily.com)
+The Stanford Daily has grown to its current status as one of the finest college newspapers in the country. 
+
+Read what they say about our product.
+[The new StanfordDaily.com: Embracing the digital-first age](http://www.stanforddaily.com/2014/03/26/the-new-stanforddaily-com-embracing-the-digital-first-age/)
+*"..That’s a cutting-edge subscription service called News@me that we hope will change the way you get your news from us.."*. [Read more](http://www.stanforddaily.com/2014/03/26/the-new-stanforddaily-com-embracing-the-digital-first-age/)
+
+[Great way to keep visitors coming back](http://wordpress.org/support/topic/great-way-to-keep-visitors-coming-back)
+“My organization has been using News@me for five months now, and we've been very pleased so far. Above all else, the plugin is a great way to target one of the hardest-to-reach segments of our readership: one-time visitors.”. [Read more](http://wordpress.org/support/topic/great-way-to-keep-visitors-coming-back)
+
+Try out the product as for your readers.
+Read and subscribe to one of their articles with our signup form at the end of the post. 
+[Researchers use batteries to capture and convert heat energy](http://www.stanforddaily.com/2014/05/29/researchers-use-batteries-to-capture-and-convert-heat-energy/)
 
 > **New! Case study: [The Galileo Case](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).**
 Read on [How a publisher can build a new source of traffic and an active user base in 11 months](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).
