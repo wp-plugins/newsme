@@ -11,7 +11,7 @@ Effective email signup form integrated with your articles and tags. Automated ne
 
 == Description ==
 
-[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+[Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 News@me is a new concept of newsletter. News@me is our answer to online media and bloggers to the need of growing their audience, building their own subscriber base and bringing more traffic, visits and readers to their valuable content, day after day.
@@ -28,14 +28,14 @@ News@me gives your readers the ability to subscribe to posts published on your s
 Read and subscribe to one of their articles with our signup form at the end of the post, try out the product as for your readers.
 [Researchers use batteries to capture and convert heat energy](http://www.stanforddaily.com/2014/05/29/researchers-use-batteries-to-capture-and-convert-heat-energy/)
 
-[**Sosogay.co.uk**](http://sosogay.co.uk). The most popular and fastest-growing online LGBT lifestyle magazine in the UK.
+[**SoSoGay.co.uk**](http://sosogay.co.uk). The most popular and fastest-growing online LGBT lifestyle magazine in the UK.
 
-[**Thestartupmagazine.co.uk**](http://thestartupmagazine.co.uk). An online business magazine with an editorial focus on developing resource for startups and entrepreneurs.
+[**TheStartupMagazine.co.uk**](http://thestartupmagazine.co.uk). An online business magazine with an editorial focus on developing resource for startups and entrepreneurs.
 
 [**AndroidWorld.it**](http://www.androidworld.it). A Banzai Media site, the first italian site covering all news about Android.
 
 
-[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+[Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 > **New! Case study: [The Galileo Case](http://newsatme.com/en/publisher-can-build-new-source-traffic-active-user-base-11-months/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).**
@@ -99,12 +99,12 @@ You can take a **careful look at the traffic** and the number of subscribers who
 
 Plan ahead your online publishing activity with the certainty of knowing in advance the degree of involvement and **interest of your readers, topic by topic**.
 
-[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+[Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 == Installation ==
 
-[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+[Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 Upload the News@me plugin to your site. <a href="http://newsatme.com/get-api-key-wp-page" target="_blank">Get an API key for your site</a> for free and activate your account. 
@@ -134,7 +134,7 @@ Upload the News@me plugin to your site. <a href="http://newsatme.com/get-api-key
 
 == Frequently Asked Questions ==
 
-[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+[Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 = What's different from Google Alerts? =
@@ -179,7 +179,7 @@ There are no contracts. You can close your account at any time.
 = Any other questions? =  
 No problem. Just <a href="mailto:staff@newsatme.com" target="_blank">drop us an email</a> and we'll get back to you with all the answers you need.
 
-[Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
+[Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 == CHANGELOG == 
