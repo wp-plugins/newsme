@@ -18,7 +18,7 @@ News@me is a new concept of newsletter. News@me is our answer to online media an
 News@me gives your readers the ability to subscribe to posts published on your site and sends out highly targeted email newsletter digests of your new posts that are unique to each subscriber based on their interests. News@me works using your tags, categories or News@me topics.
 
 = News@me in action, read what they say =
-*Check News@me in action today and read what people say about us.*
+*Check News@me in action today and read what people say about the product.*
 
 [**StanfordDaily.com**](http://www.stanforddaily.com). The Stanford Daily has grown to its current status as one of the finest college newspapers in the country. 
 
@@ -27,7 +27,7 @@ News@me gives your readers the ability to subscribe to posts published on your s
 [Great way to keep visitors coming back](http://wordpress.org/support/topic/great-way-to-keep-visitors-coming-back): *"My organization has been using News@me for five months now, and we've been very pleased so far. Above all else, the plugin is a great way to target one of the hardest-to-reach segments of our readership: one-time visitors."* [Read more](http://wordpress.org/support/topic/great-way-to-keep-visitors-coming-back)
 
 Read and subscribe to one of their articles with our signup form at the end of the post, try out the product as for your readers.
-[Researchers use batteries to capture and convert heat energy](http://www.stanforddaily.com/2014/05/29/researchers-use-batteries-to-capture-and-convert-heat-energy/)
+[*Researchers use batteries to capture and convert heat energy*](http://www.stanforddaily.com/2014/05/29/researchers-use-batteries-to-capture-and-convert-heat-energy/)
 
 [**SoSoGay.co.uk**](http://sosogay.co.uk). The most popular and fastest-growing online LGBT lifestyle magazine in the UK.
 
