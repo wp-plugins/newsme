@@ -1,4 +1,4 @@
-=== Double your Email Subscribers and Send Automated Targeted Newsletter by News@me ===
+=== Effective email signup form. +300% Email Subscribers and Automated Newsletter ===
 Contributors: newsatme
 Tags: signup form, newsletter plugin, auto newsletter, newsletter signup, customized newsletter, customized digest, mailchimp, automated newsletter, targeted email, email, emailing, mailing list, marketing email, mailpoet, newsletter, newsletter widget, email alerts, subscribers, subscriptions, aweber, post notifications, post, digests, plugin, engagement, conversion rate, marketing tools, aweber
 Requires at least: 3.5.0
@@ -7,7 +7,7 @@ Stable tag: trunk
 License: GPLv2 or laterd
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Convert visitors into regular readers. Keep them coming back to your site by sending them articles of your site based on their interests with News@me.
+Effective email signup form integrated with your articles and tags. Automated newsletter based on the interests of your readers. Analytics and tracking tools by News@me.
 
 == Description ==
 
