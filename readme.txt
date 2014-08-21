@@ -17,7 +17,8 @@ works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://
 News@me is a new concept of newsletter. News@me is our answer to online media and bloggers to the need of growing their audience, building their own subscriber base and bringing more traffic, visits and readers to their valuable content, day after day.
 News@me gives your readers the ability to subscribe to posts published on your site and sends out highly targeted email newsletter digests of your new posts that are unique to each subscriber based on their interests. News@me works using your tags, categories or News@me topics.
 
-**Check News@me in action today, read what people say about us**
+**News@me in action, read what they say**
+*Check News@me in action today and read what people say about us.*
 
 [**StanfordDaily.com**](http://www.stanforddaily.com). The Stanford Daily has grown to its current status as one of the finest college newspapers in the country. 
 
