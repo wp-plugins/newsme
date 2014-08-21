@@ -28,23 +28,12 @@ News@me gives your readers the ability to subscribe to posts published on your s
 Read and subscribe to one of their articles with our signup form at the end of the post, try out the product as for your readers.
 [Researchers use batteries to capture and convert heat energy](http://www.stanforddaily.com/2014/05/29/researchers-use-batteries-to-capture-and-convert-heat-energy/)
 
-
 [**Sosogay.co.uk**](http://sosogay.co.uk). The most popular and fastest-growing online LGBT lifestyle magazine in the UK.
-
-Read and subscribe to one of their articles with our signup form at the end of the post, try out the product as for your readers.
-[Gadget Review: Sennheiser Momentum On-Ear Headphonesu](http://sosogay.co.uk/2014/gadget-review-sennheiser-momentum-ear-headphonesu/)
-
 
 [**Thestartupmagazine.co.uk**](http://thestartupmagazine.co.uk). An online business magazine with an editorial focus on developing resource for startups and entrepreneurs.
 
-Read and subscribe to one of their articles with our signup form at the end of the post, try out the product as for your readers.
-[Startup Business Ideas](http://thestartupmagazine.co.uk/startup-business-ideas/#sthash.6LExJhOs.dpbs)
-
-
 [**AndroidWorld.it**](http://www.androidworld.it). A Banzai Media site, the first italian site covering all news about Android.
 
-Read and subscribe to one of their articles with our signup form at the end of the post, try out the product as for your readers.
-[Messaggistica senza tracce grazie a Cyber Dust](http://www.androidworld.it/2014/08/21/messaggistica-tracce-grazie-cyber-dust-foto-243666/)
 
 [Home](http://newsatme.com/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Home&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
