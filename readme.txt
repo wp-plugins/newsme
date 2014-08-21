@@ -7,7 +7,7 @@ Stable tag: trunk
 License: GPLv2 or laterd
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Effective email signup form integrated with your articles and tags. Automated newsletter based on the interests of your readers. Analytics and tracking tools by News@me.
+Effective email signup form integrated with your articles and tags. Automated newsletter based on the interests of your readers. Analytics by News@me.
 
 == Description ==
 
