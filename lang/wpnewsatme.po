@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wpNewsatme 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-01 17:01+0100\n"
+"POT-Creation-Date: 2014-08-19 11:09+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Fabrizio Regini <freegenie@gmail.com>\n"
+"Last-Translator: Luigi Claudio <luigi@newsatme.com>\n"
 "Language-Team: Newsatme <admin@newsatme.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
@@ -109,26 +109,34 @@ msgstr ""
 
 #: lib/views/navigation.html.php:7
 msgid ""
+"<a href=\"http://newsatme.com/en/improve-the-performance-of-your-quality-"
+"content/?utm_source=wordpress-"
+"plugin&utm_medium=performance&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Performance</a>"
+msgstr ""
+
+#: lib/views/navigation.html.php:8
+msgid ""
 "<a href=\"http://newsatme.com/en/pricing-plans/?utm_source=wordpress-"
 "plugin&utm_medium=link-pricing&utm_campaign=wordpress-plugin\" target="
 "\"_blank\">Pricing plans</a>"
 msgstr ""
 
-#: lib/views/navigation.html.php:8
+#: lib/views/navigation.html.php:9
+msgid ""
+"<a href=\"http://newsatme.com/en/category/blog/?utm_source=wordpress-"
+"plugin&utm_medium=link-Blog&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Blog</a>"
+msgstr ""
+
+#: lib/views/navigation.html.php:10
 msgid ""
 "<a href=\"http://help.newsatme.com/?utm_source=wordpress-"
 "plugin&utm_medium=link-support&utm_campaign=wordpress-plugin\" target="
 "\"_blank\">Support</a>"
 msgstr ""
 
-#: lib/views/navigation.html.php:9
-msgid ""
-"<a href=\"http://newsatme.com/en/about-us/?utm_source=wordpress-"
-"plugin&utm_medium=link-about-us&utm_campaign=wordpress-plugin\" target="
-"\"_blank\">About us</a>"
-msgstr ""
-
-#: lib/views/navigation.html.php:10
+#: lib/views/navigation.html.php:11
 msgid ""
 "<a href=\"https://app.newsatme.com/users/sign_in?utm_source=wordpress-"
 "plugin&utm_medium=link-log-in&utm_campaign=wordpress-plugin\" target=\"_blank"
@@ -227,26 +235,26 @@ msgid ""
 "here</a>."
 msgstr ""
 
-#: newsatme.php:184
+#: newsatme.php:179
 msgid "News@me topics"
 msgstr ""
 
-#: newsatme.php:208
+#: newsatme.php:203
 msgid "Preferences"
 msgstr ""
 
-#: newsatme.php:345
+#: newsatme.php:340
 msgid "Account"
 msgstr ""
 
-#: newsatme.php:367
+#: newsatme.php:362
 msgid "The API key you entered is not valid. Please double-check it."
 msgstr ""
 
-#: newsatme.php:380
+#: newsatme.php:375
 msgid "Success! Your account has been activated."
 msgstr ""
 
-#: newsatme.php:407
+#: newsatme.php:399
 msgid "Please enter your API key."
 msgstr ""

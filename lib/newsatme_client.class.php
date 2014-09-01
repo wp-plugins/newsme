@@ -25,7 +25,7 @@ class NewsAtMe_Client {
   }
 
   static function baseURL() {
-    return 'https://app.newsatme.com/' ; 
+    return 'https://app.newsatme.com/' ;
   }
 
   static function articleDisplayURL($site_id,$post) {
