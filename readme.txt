@@ -184,6 +184,10 @@ No problem. Just <a href="mailto:staff@newsatme.com" target="_blank">drop us an 
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 == CHANGELOG == 
+= 3.2.6 =
+
+* FIX: bug with widget not being displayed in pages 
+
 = 3.2.5 =
 
 * FIX: a bug which was preventing the widget to be displayed on the page

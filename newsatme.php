@@ -5,7 +5,7 @@ Description: Convert visitors into regular readers. Keep them coming back to you
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 3.2.5
+Version: 3.2.6
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -46,9 +46,8 @@ define('NEWSATME_ROOT', __FILE__);
 
 class wpNewsAtMe {
 
-  const VERSION = '3.2.5'; 
+  const VERSION = '3.2.6'; 
   const WPDOMAIN = 'wpnewsatme';
-  const DEBUG = false;
   const TAGS_META_KEY = '_newsatme_tags'; 
   const TAGS_INPUT_NAME = '_newsatme_tags'; 
   const DISABLED_POST_NAME = '_newsatme_disabled_post'; 
@@ -115,17 +114,17 @@ class wpNewsAtMe {
   }
 
   static function adminInit() {
-    wp_register_script('underscore',  plugins_url('js/underscore-min.js' , __FILE__ ));
+    wp_register_script('underscore',  plugins_url('js/underscore-min.'.self::VERSION.'.js' , __FILE__ ));
 
-    wp_register_script('tag-it',  plugins_url('js/tag-it-20140701.js' , __FILE__ ), array('jquery', 'jquery-ui-autocomplete', 'jquery-ui-widget'));
-    wp_register_script('newsatme_admin_js', plugins_url('js/newsatme-admin-20140701.js' , __FILE__ ), array('tag-it', 'underscore'));
+    wp_register_script('tag-it',  plugins_url('js/tag-it.'.self::VERSION.'.js' , __FILE__ ), array('jquery', 'jquery-ui-autocomplete', 'jquery-ui-widget'));
+    wp_register_script('newsatme_admin_js', plugins_url('js/newsatme-admin.'.self::VERSION.'.js' , __FILE__ ), array('tag-it', 'underscore'));
     wp_enqueue_script('newsatme_admin_js');
 
-    wp_register_style('tag-it-css-zendesk', plugins_url('css/tagit.ui-zendesk-20140701.css', __FILE__));
-    wp_register_style('tag-it-css', plugins_url('css/jquery.tagit-20140701.css', __FILE__), array('tag-it-css-zendesk'));
+    wp_register_style('tag-it-css-zendesk', plugins_url('css/tagit.ui-zendesk.'.self::VERSION.'.css', __FILE__));
+    wp_register_style('tag-it-css', plugins_url('css/jquery.tagit.'.self::VERSION.'.css', __FILE__), array('tag-it-css-zendesk'));
     wp_enqueue_style('tag-it-css');
 
-    wp_register_style('newsatme_admin_css', plugins_url('css/newsatme-admin-20140701.css' , __FILE__ ));
+    wp_register_style('newsatme_admin_css', plugins_url('css/newsatme-admin.'.self::VERSION.'.css' , __FILE__ ));
     wp_enqueue_style('newsatme_admin_css');
 
     register_setting(NEWSATME_API_KEY_OPTION_GROUP,
@@ -463,10 +462,12 @@ class wpNewsAtMe {
 
   static function isWidgetShowable($post) {
     $npost = new NewsAtMe_Post($post);
+    $is_single = $post->post_type == 'page' || is_single(); 
+
     return (
       self::getAPIKey() && 
       self::postTypeEnabled($post->post_type) && 
-      is_single() && !$npost->disabled 
+      $is_single && !$npost->disabled 
     ); 
   }
 
