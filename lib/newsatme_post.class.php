@@ -89,7 +89,7 @@ class NewsAtMe_Post {
   }
 
   function unpublished() {
-    return in_array($this->status, array('pending', 'draft')); 
+    return in_array($this->status, array('pending', 'draft', 'private')); 
   }
 
   function backupTopics() {

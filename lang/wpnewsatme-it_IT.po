@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wpNewsatme 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-01 17:04+0100\n"
+"POT-Creation-Date: 2014-08-19 11:09+0100\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Fabrizio Regini <freegenie@gmail.com>\n"
+"Last-Translator: Luigi Claudio <luigi@newsatme.com>\n"
 "Language-Team: Newsatme <admin@newsatme.com>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
@@ -145,6 +145,18 @@ msgstr ""
 
 #: lib/views/navigation.html.php:7
 msgid ""
+"<a href=\"http://newsatme.com/en/improve-the-performance-of-your-quality-"
+"content/?utm_source=wordpress-"
+"plugin&utm_medium=performance&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Performance</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/it/improve-the-performance-of-your-quality-"
+"content/?utm_source=wordpress-"
+"plugin&utm_medium=performance&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Performance</a>"
+
+#: lib/views/navigation.html.php:8
+msgid ""
 "<a href=\"http://newsatme.com/en/pricing-plans/?utm_source=wordpress-"
 "plugin&utm_medium=link-pricing&utm_campaign=wordpress-plugin\" target="
 "\"_blank\">Pricing plans</a>"
@@ -153,7 +165,17 @@ msgstr ""
 "plugin&utm_medium=link-pricing&utm_campaign=wordpress-plugin\" target="
 "\"_blank\">Costi e piani</a>"
 
-#: lib/views/navigation.html.php:8
+#: lib/views/navigation.html.php:9
+msgid ""
+"<a href=\"http://newsatme.com/en/category/blog/?utm_source=wordpress-"
+"plugin&utm_medium=link-Blog&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Blog</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/it/category/blog/?utm_source=wordpress-"
+"plugin&utm_medium=link-Blog&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Blog</a>"
+
+#: lib/views/navigation.html.php:10
 msgid ""
 "<a href=\"http://help.newsatme.com/?utm_source=wordpress-"
 "plugin&utm_medium=link-support&utm_campaign=wordpress-plugin\" target="
@@ -163,17 +185,7 @@ msgstr ""
 "utm_source=wordpress-plugin&utm_medium=link-support&utm_campaign=wordpress-"
 "plugin\" target=\"_blank\">Supporto</a>"
 
-#: lib/views/navigation.html.php:9
-msgid ""
-"<a href=\"http://newsatme.com/en/about-us/?utm_source=wordpress-"
-"plugin&utm_medium=link-about-us&utm_campaign=wordpress-plugin\" target="
-"\"_blank\">About us</a>"
-msgstr ""
-"<a href=\"http://newsatme.com/it/about-us/?utm_source=wordpress-"
-"plugin&utm_medium=link-about-us&utm_campaign=wordpress-plugin\" target="
-"\"_blank\">Chi siamo</a>"
-
-#: lib/views/navigation.html.php:10
+#: lib/views/navigation.html.php:11
 msgid ""
 "<a href=\"https://app.newsatme.com/users/sign_in?utm_source=wordpress-"
 "plugin&utm_medium=link-log-in&utm_campaign=wordpress-plugin\" target=\"_blank"
@@ -295,26 +307,35 @@ msgstr ""
 "una API key, puoi <a href=\"http://newsatme.com/ottieni-api-key-wp\" target="
 "\"_blank\">crearne una qui</a>."
 
-#: newsatme.php:184
+#: newsatme.php:179
 msgid "News@me topics"
 msgstr "Argomenti di News@me"
 
-#: newsatme.php:208
+#: newsatme.php:203
 msgid "Preferences"
 msgstr "Preferenze"
 
-#: newsatme.php:345
+#: newsatme.php:340
 msgid "Account"
 msgstr "Account"
 
-#: newsatme.php:367
+#: newsatme.php:362
 msgid "The API key you entered is not valid. Please double-check it."
 msgstr "La API key inserita non è valida. Ti preghiamo di ricontrollare."
 
-#: newsatme.php:380
+#: newsatme.php:375
 msgid "Success! Your account has been activated."
 msgstr "Ben fatto! Il tuo account è stato attivato."
 
-#: newsatme.php:407
+#: newsatme.php:399
 msgid "Please enter your API key."
 msgstr "Ti preghiamo di inserire la tua API key."
+
+#~ msgid ""
+#~ "<a href=\"http://newsatme.com/en/about-us/?utm_source=wordpress-"
+#~ "plugin&utm_medium=link-about-us&utm_campaign=wordpress-plugin\" target="
+#~ "\"_blank\">About us</a>"
+#~ msgstr ""
+#~ "<a href=\"http://newsatme.com/it/about-us/?utm_source=wordpress-"
+#~ "plugin&utm_medium=link-about-us&utm_campaign=wordpress-plugin\" target="
+#~ "\"_blank\">Chi siamo</a>"
