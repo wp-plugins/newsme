@@ -28,12 +28,6 @@ class NewsAtMe_Client {
     return 'https://app.newsatme.com/' ;
   }
 
-  static function articleDisplayURL($site_id,$post) {
-    $url = sprintf("%sapi/%s/sites/%s/articles/%s/display",
-      self::baseURL(), self::API_VERSION, $site_id, $post->ID); 
-    return $url . '/' . rand(0,100000); 
-  }
-
   public function getArticleTags($article_id) {
     return $this->request(sprintf('articles/%s/tags', $article_id), array(), 'GET'); 
   }

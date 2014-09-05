@@ -35,7 +35,6 @@ Read and subscribe to one of their articles with our signup form at the end of t
 
 [**AndroidWorld.it**](http://www.androidworld.it). A Banzai Media site, the first italian site covering all news about Android.
 
-
 [Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
@@ -184,6 +183,10 @@ No problem. Just <a href="mailto:staff@newsatme.com" target="_blank">drop us an 
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 == CHANGELOG == 
+= 3.2.7 =
+
+* FIX: save topics when post is saved with private status
+
 = 3.2.6 =
 
 * FIX: bug with widget not being displayed in pages 
