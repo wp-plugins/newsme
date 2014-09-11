@@ -2,7 +2,7 @@
 Contributors: newsatme
 Tags: signup form, newsletter plugin, auto newsletter, newsletter signup, customized newsletter, customized digest, mailchimp, automated newsletter, targeted email, email, emailing, mailing list, marketing email, mailpoet, newsletter, newsletter widget, email alerts, subscribers, subscriptions, aweber, post notifications, post, digests, plugin, engagement, conversion rate, marketing tools, aweber
 Requires at least: 3.5.0
-Tested up to: 3.6.1
+Tested up to: 4.0
 Stable tag: trunk
 License: GPLv2 or laterd
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -183,6 +183,11 @@ No problem. Just <a href="mailto:staff@newsatme.com" target="_blank">drop us an 
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/en/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](https://app.newsatme.com/users/sign_up?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 == CHANGELOG == 
+= 3.3.0 =
+
+* CHANGE: Tags as topics now optional in Preferences
+* CHANGE: Categories as topics now optional in Preferences 
+
 = 3.2.7 =
 
 * FIX: save topics when post is saved with private status

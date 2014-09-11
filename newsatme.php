@@ -5,7 +5,7 @@ Description: Convert visitors into regular readers. Keep them coming back to you
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 3.2.7
+Version: 3.3.0
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -41,12 +41,14 @@ define('NEWSATME_POST_TYPES_OPTION_GROUP', 'newsatme-post-types-option-group');
 define('NEWSATME_POST_TYPES_OPTION_NAME', 'newsatme-post-types');
 define('NEWSATME_VISIBILITY_OPTION_GROUP', 'newsatme-visibility-option-group'); 
 define('NEWSATME_VISIBILITY_AUTO_MODE', 'newsatme-auto-mode');
+define('NEWSATME_VISIBILITY_USE_CATEGORIES', 'newsatme-use-categories');
+define('NEWSATME_VISIBILITY_USE_TAGS', 'newsatme-use-tags');
 
 define('NEWSATME_ROOT', __FILE__); 
 
 class wpNewsAtMe {
 
-  const VERSION = '3.2.7'; 
+  const VERSION = '3.3.0'; 
   const WPDOMAIN = 'wpnewsatme';
   const TAGS_META_KEY = '_newsatme_tags'; 
   const TAGS_INPUT_NAME = '_newsatme_tags'; 
@@ -142,10 +144,10 @@ class wpNewsAtMe {
 
     register_setting(NEWSATME_VISIBILITY_OPTION_GROUP, NEWSATME_VISIBILITY_AUTO_MODE, 
       array(__CLASS__, 'validateVisibility')); 
-    add_settings_section('widget_visibility', 'Visibility', '__return_false', 
-      NEWSATME_VISIBILITY_OPTION_GROUP);
-    add_settings_field('auto-mode', 'Auto mode', 'void', NEWSATME_VISIBILITY_OPTION_GROUP, 
-      'auto_mode'); 
+    register_setting(NEWSATME_VISIBILITY_OPTION_GROUP, NEWSATME_VISIBILITY_USE_CATEGORIES,
+      array(__CLASS__, 'validateVisibility')); 
+    register_setting(NEWSATME_VISIBILITY_OPTION_GROUP, NEWSATME_VISIBILITY_USE_TAGS,
+      array(__CLASS__, 'validateVisibility')); 
 
     add_action('save_post', array(__CLASS__, 'savePostEvent'), 1, 2);
     add_action('trash_post', array(__CLASS__, 'trashPostEvent'), 1, 2);
@@ -484,9 +486,23 @@ class wpNewsAtMe {
     return $output ;
   }
 
+  
+  static function anyModeEnabled() {
+    return self::useTags() || self::useCategories() || self::autoModeEnbled(); 
+  }
+
+  static function useTags() {
+    $value = get_option(NEWSATME_VISIBILITY_USE_TAGS, false); 
+    return $value && !self::dontUseTaxonomies(); 
+  }
+
+  static function useCategories() {
+    $value = get_option(NEWSATME_VISIBILITY_USE_CATEGORIES, false); 
+    return $value && !self::dontUseTaxonomies(); 
+  }
+
   static function autoModeEnbled() {
     $value = get_option(NEWSATME_VISIBILITY_AUTO_MODE, true); 
-    
     return $value && !self::dontUseTaxonomies(); 
   }
 

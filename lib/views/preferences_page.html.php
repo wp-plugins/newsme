@@ -35,14 +35,53 @@
           <?php _e('Adding topics to posts', 'wpnewsatme'); ?>
         </h2>
         <p>
-          <?php _e('Enable News@me to add tags or categories as topics to your posts. You can add or remove topics at any time.<br><i>By disabling this preference, News@me will work only on those posts which topics have been added to.</i>', 'wpnewsatme'); ?>
+          <?php _e('Enable News@me to add tags or categories as topics to your posts. You can add or remove topics at any time.<br><i>By disabling this preference, the <a href="http://newsatme.com/en/subscription-invitation?utm_source=wordpress-plugin&utm_medium=link-preferences-signupform&utm_campaign=wordpress-plugin" target="_blank">email signup form</a> will only show up on those posts which topics have been added to.</i>', 'wpnewsatme'); ?>
         </p>
         <ul>
           <li>
           <input type="hidden" name="newsatme-auto-mode" value="0" />
-          <input type="checkbox" name="newsatme-auto-mode" value="1" <?php echo (wpNewsAtMe::autoModeEnbled() ? 'checked=\"checked\"' : '') ?>" id="<?php echo 'auto-mode'; ?>" />
-          <label for="<?php echo 'auto-mode' ?>"><?php _e('Add tags or categories as topics', 'wpnewsatme'); ?></label>
+          <input type="checkbox" name="newsatme-auto-mode" value="1" <?php echo (wpNewsAtMe::autoModeEnbled() ? 'checked=\"checked\"' : '') ?>" id="auto-mode" />
+          <label for="auto-mode"><?php _e('<b>Auto mode</b>: add your tags or categories as topics', 'wpnewsatme'); ?>
+            <br>
+            <i class="marginl-poke-fourtimes"><?php _e('Add your tags as topics. Add your categories when no tags have been added to the post.', 'wpnewsatme'); ?></i></label>
           </li>
+
+          <li>
+          <input type="hidden" name="newsatme-use-categories" value="0" />
+          <input type="checkbox" name="newsatme-use-categories" value="1" <?php echo (wpNewsAtMe::useCategories() ? 'checked=\"checked\"' : '') ?>" id="use-categories" />
+          <label for="use-categories"><?php _e('<b>Categories</b>: add your categories as topics', 'wpnewsatme'); ?>
+            <br>
+            <i class="marginl-poke-fourtimes"><?php _e('Add the categories of the post as topics.', 'wpnewsatme'); ?></i></label>
+          </label>
+          </li>
+
+          <li>
+          <input type="hidden" name="newsatme-use-tags" value="0" />
+          <input type="checkbox" name="newsatme-use-tags" value="1" <?php echo (wpNewsAtMe::useTags() ? 'checked=\"checked\"' : '') ?>" id="use-tags" />
+          <label for="use-tags"><?php _e('<b>Tags</b>: add your tags as topics', 'wpnewsatme'); ?>
+            <br>
+            <i class="marginl-poke-fourtimes"><?php _e('Add the tags of the post as topics.', 'wpnewsatme'); ?></i></label>
+          </label>
+          </li>
+
+          <script type="text/javascript">
+            jQuery(function() {
+              var $ = jQuery, elements = $('#use-tags, #use-categories, #auto-mode'); 
+              elements.each(function(index, el) {
+                
+                $(el).on('change', function(ell) {
+                  if ($(this).is(':checked')) {
+                    var change_id = $(this).attr('id'); 
+                    $(elements).closest(':checked').each(function(index, xor) {
+                      if (change_id != $(this).attr('id')) {
+                        $(this).prop('checked', false); 
+                      }
+                    }); 
+                  }
+                }); 
+              }); 
+            }); 
+          </script>
         </ul>
         <?php settings_fields(NEWSATME_VISIBILITY_OPTION_GROUP); ?>
       </div>

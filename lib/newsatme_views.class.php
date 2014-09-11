@@ -68,6 +68,7 @@ class NewsAtMe_Views {
     if ($disabled) {
       $disabled_checked = " checked=\"checked\" ";
     }
+    $url_to_preferences = esc_url(add_query_arg(array('page' => 'newsatme-preferences-page'), admin_url('admin.php'))); 
     include self::template_path('post_tags_meta_box');
   }
 

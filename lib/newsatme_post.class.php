@@ -145,7 +145,7 @@ class NewsAtMe_Post {
     return empty($diff);
   }
 
-  private function assignTopicsFromTaxonomies() {
+  private function assignTopicsWithAutoMode() {
     $this->setTopics($this->getTagLikeTerms()); 
     if ($this->emptyTopics()) {
       $this->setTopics($this->getCategoryLikeTerms()); 
@@ -153,8 +153,16 @@ class NewsAtMe_Post {
   }
 
   private function assignComputedTopics() {
-    if (wpNewsAtMe::autoModeEnbled() && $this->emptyTopics()) {
-      $this->assignTopicsFromTaxonomies(); 
+    if ($this->emptyTopics()) {
+      if (wpNewsAtMe::autoModeEnbled()) {
+        $this->assignTopicsWithAutoMode(); 
+      }
+      else if (wpNewsAtMe::useCategories()) {
+        $this->setTopics($this->getCategoryLikeTerms());
+      } 
+      else if (wpNewsAtMe::useTags()) {
+        $this->setTopics($this->getTagLikeTerms());
+      }
     }
   }
 
