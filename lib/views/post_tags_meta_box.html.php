@@ -17,10 +17,18 @@
   <p class="howto"><?php _e('Separate topics with commas', 'wpnewsatme'); ?></p>
   <input type="text" id="newsatme_postmeta_tags_field" name="<?php echo wpNewsAtMe::TAGS_INPUT_NAME; ?>" value="<?php echo $post->getTopicsString(); ?>" class="widefat" />
 
-  <?php if (!$post->isDisabled() && wpNewsAtMe::autoModeEnbled() && $post->emptyTopics()) { ?>
+  <?php if (!$post->isDisabled() && $post->emptyTopics() && wpNewsAtMe::anyModeEnabled()) { ?>
     <div class="newsatme_metabox_notice_info">
       <div class="topics-state-icon dashicons-info">
-      <?php _e('With no topics added, News@me adds tags or categories as topics to your post. You can add or remove topics at any time. ', 'wpnewsatme'); ?>
+      <?php if (wpNewsAtMe::autoModeEnbled()) { ?> 
+        <?php _e('<b>Auto mode</b>: when no topics added, News@me adds your tags or categories as topics. You can add or remove topics at any time.', 'wpnewsatme'); ?>
+      <?php } else if (wpNewsAtMe::useCategories()) { ?> 
+        <?php _e('<b>Categories</b>: when no topics added, News@me adds your categories as topics. You can add or remove topics at any time.', 'wpnewsatme'); ?>
+      <?php } else if (wpNewsAtMe::useTags()) { ?> 
+        <?php _e('<b>Tags</b>: when no topics added, News@me adds your tags as topics. You can add or remove topics at any time.', 'wpnewsatme'); ?>
+      <?php } ?> 
+
+        <a href="<?php echo $url_to_preferences ?>"><?php _e('Check out your Preferences', 'wpnewsatme'); ?></a>.
       </div>
     </div>
   <?php } ?> 
