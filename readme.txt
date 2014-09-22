@@ -31,7 +31,7 @@ Read and subscribe to one of their articles with our signup form at the end of t
 
 [**SoSoGay.co.uk**](http://sosogay.co.uk). The most popular and fastest-growing online LGBT lifestyle magazine in the UK.
 
-[**TheStartupMagazine.co.uk**](http://thestartupmagazine.co.uk). An online business magazine with an editorial focus on developing resource for startups and entrepreneurs.
+[**TheStartupMag.com**](http://thestartupmag.com). An online business magazine with an editorial focus on developing resource for startups and entrepreneurs.
 
 [**AndroidWorld.it**](http://www.androidworld.it). A Banzai Media site, the first italian site covering all news about Android.
 
