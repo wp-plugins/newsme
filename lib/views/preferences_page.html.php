@@ -1,6 +1,14 @@
 <div class="wrap">
   <?php echo NewsAtMe_Views::navigation(array('page' => 'preferences')); ?>
 
+  <div class="wrap-intro-section">
+    <h1>
+      <?php _e('Segment your audience using "News@me topics".', 'wpnewsatme') ?></h1>
+    <h2>          
+      <?php _e('Add topics to your posts and allow your readers to subscribe to any of them. <br>News@me will send to each subscriber highly-targeted newsletter digests of your latest posts based on their interests. Clever!', 'wpnewsatme'); ?>
+  </h2></div>
+<br>
+<hr>
   <div class="wrap-form-options">
     <form method="post" action="options.php">
       <div>
@@ -35,7 +43,7 @@
           <?php _e('Adding topics to posts', 'wpnewsatme'); ?>
         </h2>
         <p>
-          <?php _e('Enable News@me to add tags or categories as topics to your posts. You can add or remove topics at any time.<br><i>By disabling this preference, the <a href="http://newsatme.com/en/subscription-invitation?utm_source=wordpress-plugin&utm_medium=link-preferences-signupform&utm_campaign=wordpress-plugin" target="_blank">email signup form</a> will only show up on those posts which topics have been added to.</i>', 'wpnewsatme'); ?>
+          <?php _e('Enable News@me to add tags or categories as topics to your posts. You can add or remove topics at any time.<br><i>By disabling this preference, the <a href="http://newsatme.com/subscription-invitation/?utm_source=wordpress-plugin&utm_medium=link-preferences-signupform&utm_campaign=wordpress-plugin" target="_blank">email signup form</a> will only show up on those posts which topics have been added to.</i>', 'wpnewsatme'); ?>
         </p>
         <ul>
           <li>

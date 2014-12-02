@@ -5,7 +5,7 @@ Description: Convert visitors into regular readers. Keep them coming back to you
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 3.3.0
+Version: 3.3.1
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -48,7 +48,7 @@ define('NEWSATME_ROOT', __FILE__);
 
 class wpNewsAtMe {
 
-  const VERSION = '3.3.0'; 
+  const VERSION = '3.3.1'; 
   const WPDOMAIN = 'wpnewsatme';
   const TAGS_META_KEY = '_newsatme_tags'; 
   const TAGS_INPUT_NAME = '_newsatme_tags'; 
@@ -431,7 +431,7 @@ class wpNewsAtMe {
       }
     }
 
-    if ($_GET['page'] == 'newsatme-activation-page') {
+    if (isset($_GET['page']) && $_GET['page'] == 'newsatme-activation-page') {
       if (!(function_exists('curl_init') && function_exists('curl_exec')) ) {
         NewsAtMe_Views::renderCurlMissing(); 
       }

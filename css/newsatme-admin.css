@@ -262,6 +262,13 @@ h2.newsatme-header {
 	padding: 1px 12px;
 }
 
+.newsatme_metabox_notice_success {
+	margin-bottom: 20px;
+	padding: 6px 12px 12px;
+	border: 1px solid #e1e1e1;
+	background-color: #dff0d8;
+}
+
 .newsatme_metabox_notice_info {
 	margin-bottom: 20px;
 	padding: 6px 12px 12px;
@@ -269,25 +276,32 @@ h2.newsatme-header {
 	background-color: #f6fbfd;
 }
 
+.topics-state-info-icon {
+	color: #2ea2cc;
+}
+
+.topics-state-success-icon {
+	color: #3c763d;
+}
+
 .topics-state-icon:before {
   top: 5px
 }
 
 .topics-state-icon:before {
-    color: #2ea2cc;
-    -webkit-transition: all .1s ease-in-out;
-    -moz-transition: all .1s ease-in-out;
-    transition: all .1s ease-in-out
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out
 }
 
 .topics-state-icon:before {
-    position: relative;
-    display: inline-block;
-    margin-right: 1px;
-    font: 400 20px/1 dashicons;
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+  position: relative;
+  display: inline-block;
+  margin-right: 1px;
+  font: 400 20px/1 dashicons;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
 }
 
 #major-visibility-actions {
@@ -301,3 +315,18 @@ h2.newsatme-header {
 	color: #aa0000;
 }
 
+/* Wrap intro section plugin page */
+
+.wrap-intro-section h1, 
+.wrap-intro-section h2
+ {
+	line-height: 1.4em;
+}
+
+.wrap-intro-section h1 {
+	margin: 0;
+}
+
+.wrap-intro-section h2 {
+	font-weight: 300;
+}

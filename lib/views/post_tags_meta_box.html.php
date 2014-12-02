@@ -19,7 +19,7 @@
 
   <?php if (!$post->isDisabled() && $post->emptyTopics() && wpNewsAtMe::anyModeEnabled()) { ?>
     <div class="newsatme_metabox_notice_info">
-      <div class="topics-state-icon dashicons-info">
+      <div class="topics-state-info-icon topics-state-icon dashicons-info">
       <?php if (wpNewsAtMe::autoModeEnbled()) { ?> 
         <?php _e('<b>Auto mode</b>: when no topics added, News@me adds your tags or categories as topics. You can add or remove topics at any time.', 'wpnewsatme'); ?>
       <?php } else if (wpNewsAtMe::useCategories()) { ?> 
@@ -29,6 +29,14 @@
       <?php } ?> 
 
         <a href="<?php echo $url_to_preferences ?>"><?php _e('Check out your Preferences', 'wpnewsatme'); ?></a>.
+      </div>
+    </div>
+  <?php } ?> 
+
+  <?php if (!$post->isDisabled() && !$post->emptyTopics() && wpNewsAtMe::anyModeEnabled()) { ?>
+    <div class="newsatme_metabox_notice_success">
+      <div class="topics-state-success-icon topics-state-icon dashicons-yes">
+        <?php _e('<b>Great!</b> Subscribers following these topics will see this post in the digest.<br><br>New subscribers to this post will start following these topics.', 'wpnewsatme'); ?>
       </div>
     </div>
   <?php } ?> 
