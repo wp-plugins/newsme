@@ -1,0 +1,1 @@
+<div id="NamForm" data-id="<?php echo $post->id; ?>" data-title="<?php echo htmlspecialchars($post->title) ?>" data-tags="<?php echo htmlspecialchars($post->getTopicsString()) ?>" data-site-id="<?php echo WpNewsAtMe::getOption('site_id'); ?>" data-url="<?php echo $post->permalink ?>" ></div>

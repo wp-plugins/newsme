@@ -1,0 +1,435 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wpNewsatme 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-02 12:14+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Fabrizio Regini <freegenie@gmail.com>\n"
+"Language-Team: Newsatme <admin@newsatme.com>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.6.11\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: lib/newsatme_pointers.class.php:11
+msgid "New! Audience segmentation gets smarter"
+msgstr "Novità! La segmentazione del tuo pubblico diventa più intelligente"
+
+#: lib/newsatme_pointers.class.php:12
+msgid ""
+"News@me now works right after the activation. The News@me widget is now "
+"shown across your site at the bottom of any post that has \"Tags\" added or "
+"\"Categories\" assigned to it.\n"
+"            <br><br>\n"
+"            \"Tags\" and \"Categories\" are not good to you for segmenting "
+"your audience? Add \"News@me topics\" to your posts."
+msgstr ""
+"News@me adesso funziona subito dopo l’attivazione. ll widget di News@me è "
+"mostrato sul tuo sito alla fine di ogni articolo a cui sono stati aggiunti "
+"dei \"Tag\" o assegnate delle \"Categorie\".  <br><br>\n"
+"Utilizzi \"Tag\" e \"Categorie\" in un modo diverso? Puoi aggiungere gli "
+"\"argomenti di News@me\" ai tuoi articoli e segmentare in questo modo la tua "
+"audience. "
+
+#: lib/newsatme_pointers.class.php:27
+msgid "Introducing a new criteria for segmenting your audience"
+msgstr "Introduciamo un nuovo criterio di segmentazione della tua audience"
+
+#: lib/newsatme_pointers.class.php:28
+msgid ""
+"Now you can segment your audience using \"News@me topics\".<br>Add topics to "
+"your posts and allow your readers to subscribe to any of them. <br>News@me "
+"will send to each subscriber highly-targeted newsletter digests of your "
+"latest posts based on their interests. Clever!<br><br><a href=\"http://"
+"newsatme.com/?utm_source=wordpress-plugin&utm_medium=link-find-more-pointer-"
+"post&utm_campaign=wordpress-plugin\" target=\"_blank\">Find out more about "
+"News@me</a>, check out our <a href=\"http://docs.newsatme.com/?"
+"utm_source=wordpress-plugin&utm_medium=link-support-pointer-"
+"post&utm_campaign=wordpress-plugin\" target=\"_blank\">Support Center</a> or "
+"<a href=\"mailto:support@newsatme.com\" target=\"_blank\">get in touch</a> "
+"for any questions or doubts.<br><br>Check out your <a href=\"https://app."
+"newsatme.com/dashboard?utm_source=wordpress-plugin&utm_medium=link-dashboard-"
+"pointer-post&utm_campaign=wordpress-plugin\" target=\"_blank\">Dashboard</a> "
+"for widget impressions, conversions, subscriptions, audience segmentation "
+"and much more!"
+msgstr ""
+"Adesso puoi segmentare la tua audience attraverso gli \"argomenti di News@me"
+"\".<br>Aggiungi argomenti ai tuoi articoli e permetti ai tuoi lettori di "
+"iscriversi ad ognuno di essi. <br>News@me invierà ad ognuno dei tuoi "
+"iscritti delle newsletter digest mirate con i tuoi nuovi articoli pubblicati "
+"in base ai loro interessi. Ingegnoso!<br><br><a href=\"http://newsatme.com/?"
+"utm_source=wordpress-plugin&utm_medium=link-pointer-"
+"post&utm_campaign=wordpress-plugin\" target=\"_blank\">Scopri di più su "
+"News@me</a>, scopri il nostro <a href=\"http://docs.newsatme.com/?"
+"utm_source=wordpress-plugin&utm_medium=link-pointer-"
+"post&utm_campaign=wordpress-plugin\" target=\"_blank\">Centro Supporto</a> o "
+"<a href=\"mailto:support@newsatme.com\" target=\"_blank\">contattaci</a> per "
+"qualsiasi domanda o dubbio.<br><br>Dai un'occhiata alla tua <a href="
+"\"https://app.newsatme.com/dashboard?hl=it&utm_source=wordpress-"
+"plugin&utm_medium=link-dashboard-pointer-post&utm_campaign=wordpress-plugin"
+"\" target=\"_blank\">Dashboard</a> per le visualizzazioni del widget, "
+"conversioni, iscrizioni, segmentazione della tua audience e molto altro! "
+
+#: lib/views/curl_missing.html.php:3
+msgid "Please ask your hosting provider to install"
+msgstr "Ti preghiamo di chiedere al tuo hosting provider di installare"
+
+#: lib/views/get_key_page.html.php:4 lib/views/set_key_page.html.php:4
+msgid "Activate your account"
+msgstr "Attiva il tuo account"
+
+#: lib/views/get_key_page.html.php:5
+msgid ""
+"News@me converts your occasional visitors into regular readers and sends "
+"them newsletter digests with the new posts published on your site based on "
+"their interests.<br>To use News@me you may need to sign up for an API key. "
+"Get started with the button below."
+msgstr ""
+"New@me trasforma i tuoi visitatori occasionali in lettori abituali e invia "
+"loro newsletter digest con i nuovi articoli pubblicati sul tuo sito in base "
+"ai loro interessi.<br>Per utilizzare News@me puoi aver bisogno di iscriverti "
+"per una API key. Inizia con il pulsante qui sotto."
+
+#: lib/views/get_key_page.html.php:6
+msgid ""
+"<a href=\"http://newsatme.com/get-api-key-wp\" class=\"button button-primary"
+"\" target=\"_blank\">Create your News@me API key</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/get-api-key-wp\" class=\"button button-primary"
+"\" target=\"_blank\">Crea la tua API key di News@me</a>"
+
+#: lib/views/get_key_page.html.php:8
+msgid "I already have a key"
+msgstr "Ho già una API key"
+
+#: lib/views/missing_api_key.html.php:4
+msgid "Activate your News@me account"
+msgstr "Attiva il tuo account di News@me"
+
+#: lib/views/missing_api_key.html.php:6
+msgid ""
+"<strong>Almost done</strong> - Activate your account and start converting "
+"your occasional visitors into regular readers today."
+msgstr ""
+"<strong>Quasi fatto</strong> - Attiva il tuo account e inizia a trasformare "
+"i tuoi visitatori occasionali in lettori abituali oggi stesso."
+
+#: lib/views/navigation.html.php:3
+msgid "News@me"
+msgstr "News@me"
+
+#: lib/views/navigation.html.php:5
+msgid ""
+"<a href=\"http://newsatme.com/?utm_source=wordpress-plugin&utm_medium=link-"
+"home&utm_campaign=wordpress-plugin\" target=\"_blank\">Home</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/?utm_source=wordpress-plugin&utm_medium=link-"
+"home&utm_campaign=wordpress-plugin\" target=\"_blank\">Home</a>"
+
+#: lib/views/navigation.html.php:6
+msgid ""
+"<a href=\"http://newsatme.com/how-it-works/?utm_source=wordpress-"
+"plugin&utm_medium=link-how-it-works&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">How it works</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/how-it-works/?utm_source=wordpress-"
+"plugin&utm_medium=link-how-it-works&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">Come funziona</a>"
+
+#: lib/views/navigation.html.php:7
+msgid ""
+"<a href=\"http://newsatme.com/improve-the-performance-of-your-quality-"
+"content/?utm_source=wordpress-"
+"plugin&utm_medium=performance&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Performance</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/improve-the-performance-of-your-quality-"
+"content/?utm_source=wordpress-"
+"plugin&utm_medium=performance&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Performance</a>"
+
+#: lib/views/navigation.html.php:8
+msgid ""
+"<a href=\"http://newsatme.com/pricing-plans/?utm_source=wordpress-"
+"plugin&utm_medium=link-pricing&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">Pricing</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/pricing-plans/?utm_source=wordpress-"
+"plugin&utm_medium=link-pricing&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">Costi</a>"
+
+#: lib/views/navigation.html.php:9
+msgid ""
+"<a href=\"http://newsatme.com/category/blog/?utm_source=wordpress-"
+"plugin&utm_medium=link-Blog&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Blog</a>"
+msgstr ""
+"<a href=\"http://newsatme.com/category/blog/?utm_source=wordpress-"
+"plugin&utm_medium=link-Blog&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Blog</a>"
+
+#: lib/views/navigation.html.php:10
+msgid ""
+"<a href=\"http://docs.newsatme.com/?utm_source=wordpress-"
+"plugin&utm_medium=link-support&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">Support</a>"
+msgstr ""
+"<a href=\"http://docs.newsatme.com/?utm_source=wordpress-"
+"plugin&utm_medium=link-support&utm_campaign=wordpress-plugin\" target="
+"\"_blank\">Supporto</a>"
+
+#: lib/views/navigation.html.php:11
+msgid ""
+"<a href=\"https://app.newsatme.com/users/sign_in?utm_source=wordpress-"
+"plugin&utm_medium=link-log-in&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Log in</a>"
+msgstr ""
+"<a href=\"https://app.newsatme.com/users/sign_in?hl=it&utm_source=wordpress-"
+"plugin&utm_medium=link-log-in&utm_campaign=wordpress-plugin\" target=\"_blank"
+"\">Accedi</a>"
+
+#: lib/views/post_out_of_sync.html.php:2
+msgid "News@me was not able to save your post, please save it again."
+msgstr ""
+"News@me non è stato in grado di salvare il tuo articolo, ti preghiamo di "
+"salvarlo nuovamente."
+
+#: lib/views/post_tags_meta_box.html.php:6
+#: lib/views/post_tags_meta_box.html.php:10
+msgid ""
+"News@me is not able to retrieve your topics at the moment. Please try again "
+"later."
+msgstr ""
+"News@me non è in grado di recuperare i tuoi argomenti al momento. Ti "
+"preghiamo di riprovare più tardi."
+
+#: lib/views/post_tags_meta_box.html.php:16
+msgid "Add"
+msgstr "Aggiungi"
+
+#: lib/views/post_tags_meta_box.html.php:17
+msgid "Separate topics with commas"
+msgstr "Separa argomenti con virgole"
+
+#: lib/views/post_tags_meta_box.html.php:24
+msgid ""
+"<b>Auto mode</b>: when no topics added, News@me adds your tags or categories "
+"as topics. You can add or remove topics at any time."
+msgstr ""
+"<b>Auto mode</b>: con nessun argomento aggiunto, News@me aggiunge i tuoi "
+"tags o categorie come argomenti. È possibile aggiungere o rimuovere gli "
+"argomenti in qualsiasi momento."
+
+#: lib/views/post_tags_meta_box.html.php:26
+msgid ""
+"<b>Categories</b>: when no topics added, News@me adds your categories as "
+"topics. You can add or remove topics at any time."
+msgstr ""
+"<b>Categorie</b>: con nessun argomento aggiunto, News@me aggiunge le tue "
+"categorie come argomenti. È possibile aggiungere o rimuovere gli argomenti "
+"in qualsiasi momento."
+
+#: lib/views/post_tags_meta_box.html.php:28
+msgid ""
+"<b>Tags</b>: when no topics added, News@me adds your tags as topics. You can "
+"add or remove topics at any time."
+msgstr ""
+"<b>Tags</b>: con nessun argomento aggiunto, News@me aggiunge i tuoi tags "
+"come argomenti. È possibile aggiungere o rimuovere gli argomenti in "
+"qualsiasi momento."
+
+#: lib/views/post_tags_meta_box.html.php:31
+msgid "Check out your Preferences"
+msgstr "Dai uno sguardo alle Preferenze"
+
+#: lib/views/post_tags_meta_box.html.php:39
+msgid ""
+"<b>Great!</b> Subscribers following these topics will see this post in the "
+"digest.<br><br>New subscribers to this post will start following these "
+"topics."
+msgstr ""
+"<b>Ottimo!</b> Gli iscritti che seguono questi argomenti vedranno questo "
+"articolo nel digest.<br><br>I nuovi iscritti a questo articolo inizieranno a "
+"seguire questi argomenti."
+
+#: lib/views/post_tags_meta_box.html.php:45
+msgid "Choose from existing topics"
+msgstr "Scegli tra gli argomenti esistenti"
+
+#: lib/views/post_tags_meta_box.html.php:48
+msgid "Sort by:"
+msgstr "Ordina per:"
+
+#: lib/views/post_tags_meta_box.html.php:49
+msgid "A - Z"
+msgstr "A - Z"
+
+#: lib/views/post_tags_meta_box.html.php:50
+msgid "Subscribers"
+msgstr "Iscritti"
+
+#: lib/views/post_tags_meta_box.html.php:72
+msgid "Hide News@me from this post"
+msgstr "Nascondi News@me da questo articolo"
+
+#: lib/views/preferences_page.html.php:6
+msgid "Segment your audience using \"News@me topics\"."
+msgstr "Segmenta la tua audience attraverso gli \"argomenti di News@me\"."
+
+#: lib/views/preferences_page.html.php:8
+msgid ""
+"Add topics to your posts and allow your readers to subscribe to any of them. "
+"<br>News@me will send to each subscriber highly-targeted newsletter digests "
+"of your latest posts based on their interests. Clever!"
+msgstr ""
+"Aggiungi argomenti ai tuoi articoli e permetti ai tuoi lettori di iscriversi "
+"ad ognuno di essi. <br>News@me invierà ad ognuno dei tuoi iscritti delle "
+"newsletter digest mirate con i tuoi nuovi articoli pubblicati in base ai "
+"loro interessi. Ingegnoso!"
+
+#: lib/views/preferences_page.html.php:16
+msgid "Select post types"
+msgstr "Seleziona post type"
+
+#: lib/views/preferences_page.html.php:19
+msgid "Enable News@me to work with any preferred type of content."
+msgstr ""
+"Permetti a News@me di funzionare con ogni tipo di contenuto da te preferito."
+
+#: lib/views/preferences_page.html.php:43
+msgid "Adding topics to posts"
+msgstr "Aggiungere argomenti agli articoli"
+
+#: lib/views/preferences_page.html.php:46
+msgid ""
+"Enable News@me to add tags or categories as topics to your posts. You can "
+"add or remove topics at any time.<br><i>By disabling this preference, the <a "
+"href=\"http://newsatme.com/subscription-invitation/?utm_source=wordpress-"
+"plugin&utm_medium=link-preferences-signupform&utm_campaign=wordpress-plugin"
+"\" target=\"_blank\">email signup form</a> will only show up on those posts "
+"which topics have been added to.</i>"
+msgstr ""
+"Permetti a News@me di aggiungere tags o categorie come argomenti ai tuoi "
+"articoli. È possibile aggiungere o rimuovere gli argomenti in qualsiasi "
+"momento.<br><i>Disabilitando questa preferenza, <a href=\"http://newsatme."
+"com/subscription-invitation/?utm_source=wordpress-plugin&utm_medium=link-"
+"preferences-signupform&utm_campaign=wordpress-plugin\" target=\"_blank\">il "
+"form di iscrizione</a> si mostrerà solo su quegli articoli a cui sono stati "
+"aggiunti argomenti.</i>"
+
+#: lib/views/preferences_page.html.php:52
+msgid "<b>Auto mode</b>: add your tags or categories as topics"
+msgstr "<b>Auto mode</b>: aggiungi i tuoi tags o categorie come argomenti"
+
+#: lib/views/preferences_page.html.php:54
+msgid ""
+"Add your tags as topics. Add your categories when no tags have been added to "
+"the post."
+msgstr ""
+"Aggiungi i tuoi tags come argomenti. Aggiungi le tue categorie  quando i "
+"tags non sono stati aggiunti al post."
+
+#: lib/views/preferences_page.html.php:60
+msgid "<b>Categories</b>: add your categories as topics"
+msgstr "<b>Categorie</b>: aggiungi le tue categorie come argomenti"
+
+#: lib/views/preferences_page.html.php:62
+msgid "Add the categories of the post as topics."
+msgstr "Aggiungi le categorie del post come argomenti."
+
+#: lib/views/preferences_page.html.php:69
+msgid "<b>Tags</b>: add your tags as topics"
+msgstr "<b>Tags</b>: aggiungi i tuoi tags come argomenti"
+
+#: lib/views/preferences_page.html.php:71
+msgid "Add the tags of the post as topics."
+msgstr "Aggiungi i tags del post come argomenti."
+
+#: lib/views/set_key_page.html.php:7
+msgid "Your account is currently active"
+msgstr "Il tuo account è attivo"
+
+#: lib/views/set_key_page.html.php:8
+msgid ""
+"Check out your <a href=\"https://app.newsatme.com/dashboard?"
+"utm_source=wordpress-plugin&utm_medium=link-dashboard-plugin-activated-"
+"page&utm_campaign=wordpress-plugin\" target=\"_blank\">Dashboard</a> for "
+"widget impressions, conversions, subscriptions, audience segmentation and "
+"much more!"
+msgstr ""
+"Dai un'occhiata alla tua <a href=\"https://app.newsatme.com/dashboard?"
+"hl=it&utm_source=wordpress-plugin&utm_medium=link-dashboard-plugin-activated-"
+"page&utm_campaign=wordpress-plugin\" target=\"_blank\">Dashboard</a> per le "
+"visualizzazioni del widget, conversioni, iscrizioni, segmentazione della tua "
+"audience e molto altro! "
+
+#: lib/views/set_key_page.html.php:15
+msgid "Your News@me API key"
+msgstr "La tua API key di News@me"
+
+#: lib/views/set_key_page.html.php:25
+msgid ""
+"Please enter a valid News@me API key here. If you need an API key, you can "
+"<a href=\"http://newsatme.com/get-api-key-wp\" target=\"_blank\">create one "
+"here</a>."
+msgstr ""
+"Ti preghiamo di inserire una API key di News@me valida. Se hai bisogno di "
+"una API key, puoi <a href=\"http://newsatme.com/get-api-key-wp\" target="
+"\"_blank\">crearne una qui</a>."
+
+#: newsatme.php:181
+msgid "News@me topics"
+msgstr "Argomenti di News@me"
+
+#: newsatme.php:205
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: newsatme.php:342
+msgid "Account"
+msgstr "Account"
+
+#: newsatme.php:364
+msgid "The API key you entered is not valid. Please double-check it."
+msgstr "La API key inserita non è valida. Ti preghiamo di ricontrollare."
+
+#: newsatme.php:377
+msgid "Success! Your account has been activated."
+msgstr "Ben fatto! Il tuo account è stato attivato."
+
+#: newsatme.php:401
+msgid "Please enter your API key."
+msgstr "Ti preghiamo di inserire la tua API key."
+
+#~ msgid ""
+#~ "When no topics added, News@me adds your tags or categories as topics. You "
+#~ "can add or remove topics at any time. Check out your Preferences."
+#~ msgstr ""
+#~ "Con nessun argomento aggiunto, News@me aggiunge i tuoi tags o categorie "
+#~ "come argomenti al tuo articolo. È possibile aggiungere o rimuovere gli "
+#~ "argomenti in qualsiasi momento. Dai uno sguardo alle tue Preferenze."
+
+#~ msgid ""
+#~ "When no topics added, News@me adds your categories as topics. You can add "
+#~ "or remove topics at any time. Check out your Preferences."
+#~ msgstr ""
+#~ "Con nessun argomento aggiunto, News@me aggiunge le tue categorie come "
+#~ "argomenti al tuo articolo. È possibile aggiungere o rimuovere gli "
+#~ "argomenti in qualsiasi momento. Dai uno sguardo alle tue Preferenze."
+
+#~ msgid "Only use categories as topics"
+#~ msgstr "Usa solo le categorie come argomenti"
+
+#~ msgid ""
+#~ "<a href=\"http://newsatme.com/en/about-us/?utm_source=wordpress-"
+#~ "plugin&utm_medium=link-about-us&utm_campaign=wordpress-plugin\" target="
+#~ "\"_blank\">About us</a>"
+#~ msgstr ""
+#~ "<a href=\"http://newsatme.com/it/about-us/?utm_source=wordpress-"
+#~ "plugin&utm_medium=link-about-us&utm_campaign=wordpress-plugin\" target="
+#~ "\"_blank\">Chi siamo</a>"
