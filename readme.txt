@@ -12,7 +12,7 @@ Effective email signup form integrated with your articles and tags. Automated ne
 == Description ==
 
 [Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 News@me is a new concept of newsletter. News@me is our answer to online media and bloggers to the need of growing their audience, building their own subscriber base and bringing more traffic, visits and readers to their valuable content, day after day.
 News@me gives your readers the ability to subscribe to posts published on your site and sends out highly targeted email newsletter digests of your new posts that are unique to each subscriber based on their interests. News@me works using your tags, categories or News@me topics.
@@ -36,7 +36,7 @@ Read and subscribe to one of their articles with our signup form at the end of t
 [**AndroidWorld.it**](http://www.androidworld.it). A Banzai Media site, the first italian site covering all news about Android.
 
 [Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 > **New! Case study: [The Galileo Case](http://newsatme.com/publisher-can-build-new-source-traffic-active-user-base-11-months/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).**
 Read on [How a publisher can build a new source of traffic and an active user base in 11 months](http://newsatme.com/publisher-can-build-new-source-traffic-active-user-base-11-months/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=GalileoCase&utm_campaign=Wordpress%20Plugin%20Page).
@@ -100,12 +100,12 @@ You can take a **careful look at the traffic** and the number of subscribers who
 Plan ahead your online publishing activity with the certainty of knowing in advance the degree of involvement and **interest of your readers, topic by topic**.
 
 [Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 == Installation ==
 
 [Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 Upload the News@me plugin to your site. <a href="http://newsatme.com/get-api-key-wp-page" target="_blank">Get an API key for your site</a> for free and activate your account. 
 
@@ -135,7 +135,7 @@ Upload the News@me plugin to your site. <a href="http://newsatme.com/get-api-key
 == Frequently Asked Questions ==
 
 [Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 = What's different from Google Alerts? =
 Unlike Google Alerts, with News@me your reader follows given topics directly from your site and will be receiving only news published on your site related to those given topics. 
@@ -168,19 +168,16 @@ The emails sent to your subscribers show your brand logo and are seen from your 
 You're able to choose the frequency and the time of the day by which News@me creates and sends out the email digests to the segments of your subscribers with your news whenever you assign to your new posts the topics that your subscribers are following.
 
 = How does the free trial work? = 
-You get access to all of our features with no limits for 30 days, you’ll also own your subscriber base. Then you can see which paid plan is for you and decide if you want to go on.
-
-= What types of payments do you accept? =
-At this moment we're not ready to accept online payments but you’ll get access to the service as usual once your free trial is over. We'll soon be ready to accept online payments.
+You get access to all of the features of the selected plan for 7 days, after that the access on your account will be limited until you will authorize payments on your credit card.
 
 = Do I have to sign a long term contract? =
 There are no contracts. You can close your account at any time.
 
-= Any other questions? =  
-No problem. Just <a href="mailto:support@newsatme.com" target="_blank">drop us an email</a> and we'll get back to you with all the answers you need.
+= I have more questions, can I contact you? =  
+Sure! Just <a href="mailto:support@newsatme.com" target="_blank">drop us an email</a> and we'll get back to you with all the answers you need.
 
 [Home](http://newsatme.com/subscription-invitation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=HomeSignupForm&utm_campaign=Wordpress%20Plugin%20Page) | [How it
-works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up free](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
+works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 == CHANGELOG == 
 = 3.3.1 =
