@@ -5,7 +5,7 @@ Description: Convert visitors into regular readers. Keep them coming back to you
 Author: News@me 
 Author URI: http://newsatme.com/
 Plugin URI: http://wordpress.org/plugins/newsme/
-Version: 3.3.1
+Version: 3.3.2
 Text Domain: wpnewsatme
  */
 /*  Copyright 2013  News@me 
@@ -48,7 +48,7 @@ define('NEWSATME_ROOT', __FILE__);
 
 class wpNewsAtMe {
 
-  const VERSION = '3.3.1'; 
+  const VERSION = '3.3.2'; 
   const WPDOMAIN = 'wpnewsatme';
   const TAGS_META_KEY = '_newsatme_tags'; 
   const TAGS_INPUT_NAME = '_newsatme_tags'; 
@@ -260,11 +260,20 @@ class wpNewsAtMe {
     $npost = new NewsAtMe_Post($post); 
 
     if (!self::invalidNonce($post_id)) {
-      $topics = stripslashes($_POST[self::TAGS_INPUT_NAME]); 
+      if (isset($_POST[self::TAGS_INPUT_NAME])) {
+        $topics = stripslashes($_POST[self::TAGS_INPUT_NAME]); 
+      } else {
+        $topics = array(); 
+      }
+
       $npost->setTopics($topics);
 
-      if ($_POST[self::DISABLED_POST_NAME])     $npost->disable(); 
-      else                                      $npost->enable(); 
+      if (isset($_POST[self::DISABLED_POST_NAME]) && $_POST[self::DISABLED_POST_NAME]) {
+        $npost->disable();
+      } 
+      else {
+        $npost->enable();
+      }
     }
 
     if ($npost->published())        self::savePostToRemote($npost); 
@@ -316,8 +325,12 @@ class wpNewsAtMe {
       self::getConnected();
       if (self::isConnected()) {
         $response = self::$newsatme_client->getArticleTags($post_id);
-        $available_tags = $response['available_tags']; 
-        $article_tags = $response['tags']; 
+        if (isset($response['available_tags'])) {
+          $available_tags = $response['available_tags'];
+        }
+        if (isset($response['tags'])) {
+          $article_tags = $response['tags']; 
+        }
       } else { throw new Exception('not connected'); }
     } catch ( Exception $e) {
       $connection_error = true;
@@ -463,6 +476,8 @@ class wpNewsAtMe {
   }
 
   static function isWidgetShowable($post) {
+    if ($post == NULL) return false; 
+
     $npost = new NewsAtMe_Post($post);
     $is_single = $post->post_type == 'page' || is_single(); 
 
@@ -508,7 +523,7 @@ class wpNewsAtMe {
 
   static function postTypeEnabled($name) {
     $values = get_option(NEWSATME_POST_TYPES_OPTION_NAME, array()); 
-    return $values[$name] == '1'; 
+    return isset($values[$name]) && $values[$name] == '1'; 
   }
 }
 

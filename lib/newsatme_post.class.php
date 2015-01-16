@@ -16,8 +16,6 @@ class NewsAtMe_Post {
   const SAVED_TOPICS_META_KEY = 'newsatme_saved_topics'; 
   const DISABLED_POST = 'disabled_post'; 
 
-  function NewsAtMe_Post($post) { $this->__construct($post); }
-
   function __construct($post) {
     $this->id          = $post->ID;
     $this->permalink   = get_permalink($this->id);
@@ -31,6 +29,8 @@ class NewsAtMe_Post {
     $this->disabled    = $this->isDisabled(); 
     $this->topics      = array(); 
   }
+
+  function NewsAtMe_Post($post) { $this->__construct($post); }
 
   function setTopics($topics) {
     if (is_array($topics)) {

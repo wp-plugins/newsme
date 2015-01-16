@@ -65,6 +65,7 @@ class NewsAtMe_Views {
   
   static function renderTopicsMetaBox($post, $nonce, $available_tags, $error) {
     $disabled = $post->disabled; 
+    $disabled_checked = null; 
     if ($disabled) {
       $disabled_checked = " checked=\"checked\" ";
     }

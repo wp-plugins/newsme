@@ -8,7 +8,6 @@ class NewsAtMe_Client {
   var $api;
   var $output;
 
-  function NewsAtMe_Client($api) { $this->__construct($api); }
 
   function __construct($api) {
     if ( empty($api) ) throw new NewsAtMe_ClientException('Invalid API key');
@@ -23,6 +22,8 @@ class NewsAtMe_Client {
       throw new NewsAtMe_ClientException($e->getMessage());
     }
   }
+
+  function NewsAtMe_Client($api) { $this->__construct($api); }
 
   static function baseURL() {
     return 'https://app.newsatme.com/' ;
