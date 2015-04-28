@@ -129,20 +129,20 @@ h2.newsatme-header {
 	line-height: 32px;
 }
 
-.global-nav {
+.newsatme-global-nav {
 	position: relative;
 }
 
-.global-nav li {
-	display: inline-block;
+.newsatme-global-nav li {
+	display: inline;
 	padding: 4px 0;
 }
 
-.global-nav a {
+.newsatme-global-nav a {
 	padding: 0 10px 0 0;
 }
 
-.wrap-form-options {
+.wrap-newsatme-form-options {
 	clear: both;
 }
 
@@ -175,22 +175,7 @@ h2.newsatme-header {
 	text-decoration: none;
 }
 
-.clearfix {
-  *zoom: 1;
-}
-
-.clearfix:before,
-.clearfix:after {
-	display: table;
-	content: "";
-	line-height: 0;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
-.wrap_tag_list{
+.wrap_newsatme_tag_list {
 	height: 140px;
 	overflow-y: auto;	
 }
@@ -214,12 +199,12 @@ h2.newsatme-header {
 
 /* Helper class */
 
-#plugin-now-active-header {
+#newsatme-plugin-now-active-header {
 	width: 100%;
 	max-width: 720px;
 }
 
-.label-field {
+.wrap-newsatme-form-options .label-field {
 	display: block;
 	padding: 0 0 4px;
 }
@@ -231,7 +216,7 @@ h2.newsatme-header {
 
 /* Metabox layout */
 
-.wrap-topics-stuff {
+.wrap-newsatme-topics-stuff {
 	margin-top: 15px;
 	padding: 0 12px 12px;
 }
@@ -240,7 +225,7 @@ h2.newsatme-header {
 	padding: 0;
 }
 
-.existing-topics {
+.newsatme-existing-topics {
 	border-color: #ddd;
 	margin: 5px 0 10px;
 	padding: 8px;
@@ -276,25 +261,25 @@ h2.newsatme-header {
 	background-color: #f6fbfd;
 }
 
-.topics-state-info-icon {
+.newsatme-topics-state-info-icon {
 	color: #2ea2cc;
 }
 
-.topics-state-success-icon {
+.newsatme-topics-state-success-icon {
 	color: #3c763d;
 }
 
-.topics-state-icon:before {
+.newsatme-topics-state-icon:before {
   top: 5px
 }
 
-.topics-state-icon:before {
+.newsatme-topics-state-icon:before {
   -webkit-transition: all .1s ease-in-out;
   -moz-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out
 }
 
-.topics-state-icon:before {
+.newsatme-topics-state-icon:before {
   position: relative;
   display: inline-block;
   margin-right: 1px;
@@ -317,16 +302,16 @@ h2.newsatme-header {
 
 /* Wrap intro section plugin page */
 
-.wrap-intro-section h1, 
-.wrap-intro-section h2
+.wrap-newsatme-intro-section h1, 
+.wrap-newsatme-intro-section h2
  {
 	line-height: 1.4em;
 }
 
-.wrap-intro-section h1 {
+.wrap-newsatme-intro-section h1 {
 	margin: 0;
 }
 
-.wrap-intro-section h2 {
+.wrap-newsatme-intro-section h2 {
 	font-weight: 300;
 }

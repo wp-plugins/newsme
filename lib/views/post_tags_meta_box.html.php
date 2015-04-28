@@ -5,13 +5,13 @@
   <div class="updated">
     <p><?php _e('News@me is not able to retrieve your topics at the moment. Please try again later.', 'wpnewsatme'); ?></p>
   </div>
-  <div class="wrap-topics-stuff">
+  <div class="wrap-newsatme-topics-stuff">
   <div class="newsatme_metabox_notice_updated">
     <p><?php _e('News@me is not able to retrieve your topics at the moment. Please try again later.', 'wpnewsatme'); ?></p>
   </div>
 </div>
 <?php } else { ?>
-<div class="wrap-topics-stuff">
+<div class="wrap-newsatme-topics-stuff">
   <input type="text" id="newsatme_topics_input" class="newtag form-input-tip" autocomplete="off" />
   <input type="button" value="<?php _e('Add', 'wpnewsatme'); ?>" class="button" id="newsatme_topics_add_button" />
   <p class="howto"><?php _e('Separate topics with commas', 'wpnewsatme'); ?></p>
@@ -19,7 +19,7 @@
 
   <?php if (!$post->isDisabled() && $post->emptyTopics() && wpNewsAtMe::anyModeEnabled()) { ?>
     <div class="newsatme_metabox_notice_info">
-      <div class="topics-state-info-icon topics-state-icon dashicons-info">
+      <div class="newsatme-topics-state-info-icon newsatme-topics-state-icon dashicons-info">
       <?php if (wpNewsAtMe::autoModeEnbled()) { ?> 
         <?php _e('<b>Auto mode</b>: when no topics added, News@me adds your tags or categories as topics. You can add or remove topics at any time.', 'wpnewsatme'); ?>
       <?php } else if (wpNewsAtMe::useCategories()) { ?> 
@@ -35,7 +35,7 @@
 
   <?php if (!$post->isDisabled() && !$post->emptyTopics() && wpNewsAtMe::anyModeEnabled()) { ?>
     <div class="newsatme_metabox_notice_success">
-      <div class="topics-state-success-icon topics-state-icon dashicons-yes">
+      <div class="newsatme-topics-state-success-icon newsatme-topics-state-icon dashicons-yes">
         <?php _e('<b>Great!</b> Subscribers following these topics will see this post in the digest.<br><br>New subscribers to this post will start following these topics.', 'wpnewsatme'); ?>
       </div>
     </div>
@@ -43,14 +43,14 @@
 
   <?php if ($available_tags) { ?>
   <a href="javascript:void(0);" class="newsatme_toggle_available_topics"><?php _e('Choose from existing topics', 'wpnewsatme'); ?> </a>
-  <div class="newsatme_available_topics existing-topics"> 
+  <div class="newsatme_available_topics newsatme-existing-topics"> 
     <div class="newsatme_tags_sorting">
     <?php _e('Sort by:', 'wpnewsatme'); ?>
       <a href="javascript:;" id="newsatme_tags_sort_name"><?php _e('A - Z', 'wpnewsatme'); ?></a> |
       <a href="javascript:;" id="newsatme_tags_sort_count"><?php _e('Subscribers', 'wpnewsatme'); ?></a>
     </div>
 
-    <div class="wrap_tag_list">
+    <div class="wrap_newsatme_tag_list">
       <ul id="newsatme_tags_list">
       <?php foreach($available_tags as $key => $value) { ?>
         <li class="newsatme_available_tag_row test">

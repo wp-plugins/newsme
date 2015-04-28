@@ -1,7 +1,7 @@
 <div class="wrap">
   <?php echo NewsAtMe_Views::navigation(array('page' => 'preferences')); ?>
 
-  <div class="wrap-intro-section">
+  <div class="wrap-newsatme-intro-section">
     <h1>
       <?php _e('Segment your audience using "News@me topics".', 'wpnewsatme') ?></h1>
     <h2>          
@@ -9,7 +9,7 @@
   </h2></div>
 <br>
 <hr>
-  <div class="wrap-form-options">
+  <div class="wrap-newsatme-form-options">
     <form method="post" action="options.php">
       <div>
         <h2>
