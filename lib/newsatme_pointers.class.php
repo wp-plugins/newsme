@@ -5,7 +5,7 @@ class NewsAtMe_Pointers {
 
     function pointer_on_admin_posts( $p ) {
       $p['newsatme_onmenu4a'] = array(
-        'target' => '#plugin-now-active-header',  // 'target' => '#menu-plugins', 
+        'target' => '#newsatme-plugin-now-active-header',  // 'target' => '#menu-plugins', 
         'options' => array(
           'content' => sprintf( '<h3> %s </h3> <p> %s </p>',
           __('New! Audience segmentation gets smarter', 'wpnewsatme'), 

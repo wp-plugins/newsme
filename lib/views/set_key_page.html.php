@@ -5,9 +5,9 @@
   <p></p>
   <?php } else { ?>
   <h2><?php _e('Your account is currently active', 'wpnewsatme'); ?></h2>
-  <p id="plugin-now-active-header"><?php _e('Check out your <a href="https://app.newsatme.com/dashboard?utm_source=wordpress-plugin&utm_medium=link-dashboard-plugin-activated-page&utm_campaign=wordpress-plugin" target="_blank">Dashboard</a> for widget impressions, conversions, subscriptions, audience segmentation and much more!', 'wpnewsatme'); ?></p>
+  <p id="newsatme-plugin-now-active-header"><?php _e('Check out your <a href="https://app.newsatme.com/dashboard?utm_source=wordpress-plugin&utm_medium=link-dashboard-plugin-activated-page&utm_campaign=wordpress-plugin" target="_blank">Dashboard</a> for widget impressions, conversions, subscriptions, audience segmentation and much more!', 'wpnewsatme'); ?></p>
   <?php } ?>
-  <div class="wrap-form-options">
+  <div class="wrap-newsatme-form-options">
     <form method="post" action="options.php">
       <div>
         <?php settings_fields(NEWSATME_API_KEY_OPTION_GROUP); ?>

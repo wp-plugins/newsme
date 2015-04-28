@@ -180,6 +180,15 @@ Sure! Just <a href="mailto:support@newsatme.com" target="_blank">drop us an emai
 works](http://wordpress.org/plugins/newsme/screenshots/) | [Performance](http://newsatme.com/improve-the-performance-of-your-quality-content/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Performance&utm_campaign=Wordpress%20Plugin%20Page) | [Audience segmentation](http://newsatme.com/audience-segmentation/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=AudienceSegmentation&utm_campaign=Wordpress%20Plugin%20Page) | [Sign up](http://newsatme.com/pricing-plans/?utm_source=Wordpress&utm_medium=plugin%20page&utm_content=Get%20Started&utm_campaign=Wordpress%20Plugin%20Page)
 
 == CHANGELOG == 
+= 3.3.3 =
+
+* CHANGE: Replace selector with suffix-based in admin styles
+* CHANGE: Replace markup of generic classes across plugin
+
+= 3.3.2 =
+
+* CHANGE: Edit to avoid PHP warnings
+
 = 3.3.1 =
 
 * CHANGE: Replace urls pointing to public site and support
