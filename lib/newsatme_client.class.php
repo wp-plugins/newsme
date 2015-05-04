@@ -9,11 +9,12 @@ class NewsAtMe_Client {
   var $output;
 
 
-  function __construct($api) {
+  function __construct($siteurl, $api) {
     if ( empty($api) ) throw new NewsAtMe_ClientException('Invalid API key');
     try {
       $this->api = $api;
-      $response = $this->ping($api);
+      $this->siteurl = $siteurl; 
+      $response = $this->ping();
 
       if (!$response) {
         throw new NewsAtMe_ClientException('Invalid API key');
@@ -23,7 +24,7 @@ class NewsAtMe_Client {
     }
   }
 
-  function NewsAtMe_Client($api) { $this->__construct($api); }
+  function NewsAtMe_Client($siteurl, $api) { $this->__construct($siteurl, $api); }
 
   static function baseURL() {
     return 'https://app.newsatme.com/' ;
@@ -33,7 +34,7 @@ class NewsAtMe_Client {
     return $this->request(sprintf('articles/%s/tags', $article_id), array(), 'GET'); 
   }
 
-  public function ping($api_key) {
+  public function ping() {
     $ret = $this->request('ping', array(), 'GET' );
     if ($ret !== false) {
       return $ret['PING'] == 'PONG!';
@@ -159,7 +160,10 @@ class NewsAtMe_Client {
         curl_setopt($ch, CURLOPT_POSTFIELDS, $fields);
       }
 
-      $header = array("Expect:", "X-Newsatme-Auth: " . $this->api); 
+      $header = array(
+        "Expect:", 
+        "X-Newsatme-Auth: " . $this->api, 
+        "X-Newsatme-SiteUrl: " . $this->siteurl);
 
       curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
       curl_setopt($ch, CURLOPT_HEADER, false);
